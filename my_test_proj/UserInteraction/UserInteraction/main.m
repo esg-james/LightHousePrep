@@ -32,7 +32,7 @@ int main()
     char mid_name[80];
     char last_name[80];
     char e_mail[80];
-    int long ph_number;
+    int ph_number;
     int total_number;
     int total_chars[3];
     int sum = 0;
@@ -70,22 +70,7 @@ int main()
     sum += total_number;
     printf("Length of the string = %d\n", total_number);
     
-    //ph#
-    /*
-    printf("Enter your phone # with no special characters\n");
-    scanf("%79d", ph_number);
-    total_number = strlen(ph_number);
-    gets(ph_number);
-    sum += total_number;
-    printf("Length of the string = %d\n", total_number);
-    */
-    
     
     printf("Total characters in sign-up = %d\n", sum);
-    
-    //display form results to user
-    //ask if the information is correct
-    //if y, confirm sign-up (email verification)
-    //if n, REDO IT ALL SUCKAAAA (because I don't know how to allow it to correct specific pieces of this form
 }
 

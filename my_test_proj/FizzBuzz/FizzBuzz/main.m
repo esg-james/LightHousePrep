@@ -24,7 +24,7 @@ int main(){
             printf("Buzz \n");
         else
             printf("The number is %d \n",i);
-       // printf("Always talking %d",i);
+        
     }
     
     
