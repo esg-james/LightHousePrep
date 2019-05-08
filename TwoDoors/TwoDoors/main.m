@@ -43,7 +43,7 @@ int main(int argc, const char * argv[]) {
                 break;
         }
         //had trouble with this, looked up other approaches on the help forum and discovered that using a while loop was more suitable for this block, since if the user assigns y to play, the loop will always continue
-        printf("Would you like to play again? (y/n): ");
+        printf("Would you like to play again!? (y/n): ");
         scanf(" %c", &play);
     }
     
