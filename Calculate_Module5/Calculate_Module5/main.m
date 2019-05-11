@@ -11,13 +11,15 @@
 #import <Foundation/Foundation.h>
 
 //enum to string experiment
+//I was looking around regarding #define and apparently the problem with it is it's hard to debug Could be wrong though?
 #define ENUM_TABLE \
 X(ADDITION),    \
 X(SUBTRACTION),     \
 X(MULTIPLICATION),\
 X(DIVISION)\
+//^operations contained in enum to spit out as strings
 
-
+//read up on x macros and preprocessors during this assignment
 #define X(a)    a
 typedef enum Foo {
     ENUM_TABLE
@@ -25,6 +27,7 @@ typedef enum Foo {
 #undef X
 
 #define X(a)    @#a
+//assigning values as strings
 NSString * const enumAsString[] = {
     ENUM_TABLE
 };
@@ -49,7 +52,7 @@ void arithmetic(){
     //operations
     enum operationType{add, subtract, multiply, divide};
     
-    
+    //asks for user input for mathematical function to perform, 0-addition, 1-subtraction, 2-multiplication, 3-division
     enum operationType currentOperation = multiply;
     NSLog(@"Enter a number from 0 to 3:\n");
     scanf("%d", &currentOperation);

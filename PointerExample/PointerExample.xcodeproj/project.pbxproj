@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		558AF8F022865EFB00D1A40F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 558AF8EF22865EFB00D1A40F /* main.m */; };
+		550C6ECA228745D8008E68F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 550C6EC9228745D8008E68F1 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		558AF8EA22865EFB00D1A40F /* CopyFiles */ = {
+		550C6EC4228745D8008E68F1 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,13 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		558AF8EC22865EFB00D1A40F /* EnumToStringTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EnumToStringTest; sourceTree = BUILT_PRODUCTS_DIR; };
-		558AF8EF22865EFB00D1A40F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		558AF8F622865F0400D1A40F /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		550C6EC6228745D8008E68F1 /* PointerExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PointerExample; sourceTree = BUILT_PRODUCTS_DIR; };
+		550C6EC9228745D8008E68F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		558AF8E922865EFB00D1A40F /* Frameworks */ = {
+		550C6EC3228745D8008E68F1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,95 +38,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		558AF8E322865EFB00D1A40F = {
+		550C6EBD228745D8008E68F1 = {
 			isa = PBXGroup;
 			children = (
-				558AF8EE22865EFB00D1A40F /* EnumToStringTest */,
-				558AF8ED22865EFB00D1A40F /* Products */,
+				550C6EC8228745D8008E68F1 /* PointerExample */,
+				550C6EC7228745D8008E68F1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		558AF8ED22865EFB00D1A40F /* Products */ = {
+		550C6EC7228745D8008E68F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				558AF8EC22865EFB00D1A40F /* EnumToStringTest */,
+				550C6EC6228745D8008E68F1 /* PointerExample */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		558AF8EE22865EFB00D1A40F /* EnumToStringTest */ = {
+		550C6EC8228745D8008E68F1 /* PointerExample */ = {
 			isa = PBXGroup;
 			children = (
-				558AF8EF22865EFB00D1A40F /* main.m */,
-				558AF8F622865F0400D1A40F /* Header.h */,
+				550C6EC9228745D8008E68F1 /* main.m */,
 			);
-			path = EnumToStringTest;
+			path = PointerExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		558AF8EB22865EFB00D1A40F /* EnumToStringTest */ = {
+		550C6EC5228745D8008E68F1 /* PointerExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 558AF8F322865EFB00D1A40F /* Build configuration list for PBXNativeTarget "EnumToStringTest" */;
+			buildConfigurationList = 550C6ECD228745D8008E68F1 /* Build configuration list for PBXNativeTarget "PointerExample" */;
 			buildPhases = (
-				558AF8E822865EFB00D1A40F /* Sources */,
-				558AF8E922865EFB00D1A40F /* Frameworks */,
-				558AF8EA22865EFB00D1A40F /* CopyFiles */,
+				550C6EC2228745D8008E68F1 /* Sources */,
+				550C6EC3228745D8008E68F1 /* Frameworks */,
+				550C6EC4228745D8008E68F1 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = EnumToStringTest;
-			productName = EnumToStringTest;
-			productReference = 558AF8EC22865EFB00D1A40F /* EnumToStringTest */;
+			name = PointerExample;
+			productName = PointerExample;
+			productReference = 550C6EC6228745D8008E68F1 /* PointerExample */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		558AF8E422865EFB00D1A40F /* Project object */ = {
+		550C6EBE228745D8008E68F1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "James Oliver";
 				TargetAttributes = {
-					558AF8EB22865EFB00D1A40F = {
+					550C6EC5228745D8008E68F1 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 558AF8E722865EFB00D1A40F /* Build configuration list for PBXProject "EnumToStringTest" */;
+			buildConfigurationList = 550C6EC1228745D8008E68F1 /* Build configuration list for PBXProject "PointerExample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 558AF8E322865EFB00D1A40F;
-			productRefGroup = 558AF8ED22865EFB00D1A40F /* Products */;
+			mainGroup = 550C6EBD228745D8008E68F1;
+			productRefGroup = 550C6EC7228745D8008E68F1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				558AF8EB22865EFB00D1A40F /* EnumToStringTest */,
+				550C6EC5228745D8008E68F1 /* PointerExample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		558AF8E822865EFB00D1A40F /* Sources */ = {
+		550C6EC2228745D8008E68F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				558AF8F022865EFB00D1A40F /* main.m in Sources */,
+				550C6ECA228745D8008E68F1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		558AF8F122865EFB00D1A40F /* Debug */ = {
+		550C6ECB228745D8008E68F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -186,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		558AF8F222865EFB00D1A40F /* Release */ = {
+		550C6ECC228745D8008E68F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -238,7 +236,7 @@
 			};
 			name = Release;
 		};
-		558AF8F422865EFB00D1A40F /* Debug */ = {
+		550C6ECE228745D8008E68F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -247,7 +245,7 @@
 			};
 			name = Debug;
 		};
-		558AF8F522865EFB00D1A40F /* Release */ = {
+		550C6ECF228745D8008E68F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -259,25 +257,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		558AF8E722865EFB00D1A40F /* Build configuration list for PBXProject "EnumToStringTest" */ = {
+		550C6EC1228745D8008E68F1 /* Build configuration list for PBXProject "PointerExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				558AF8F122865EFB00D1A40F /* Debug */,
-				558AF8F222865EFB00D1A40F /* Release */,
+				550C6ECB228745D8008E68F1 /* Debug */,
+				550C6ECC228745D8008E68F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		558AF8F322865EFB00D1A40F /* Build configuration list for PBXNativeTarget "EnumToStringTest" */ = {
+		550C6ECD228745D8008E68F1 /* Build configuration list for PBXNativeTarget "PointerExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				558AF8F422865EFB00D1A40F /* Debug */,
-				558AF8F522865EFB00D1A40F /* Release */,
+				550C6ECE228745D8008E68F1 /* Debug */,
+				550C6ECF228745D8008E68F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 558AF8E422865EFB00D1A40F /* Project object */;
+	rootObject = 550C6EBE228745D8008E68F1 /* Project object */;
 }
