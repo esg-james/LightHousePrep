@@ -14,6 +14,9 @@ int main(int argc, const char * argv[]) {
         
         NSString *name = @"James";
         NSLog(@"My name is: %@", name);
+        NSUInteger stringLength = [name length];
+        NSLog(@"The length of my name is: %lu",stringLength);
+        
     }
     return 0;
 }
