@@ -36,19 +36,23 @@ void arithmetic(void);
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        MyFooEnum t = SUBTRACTION;
         
         arithmetic();
-        
+        //NSLog(@"The operation is %c and the result", *math);
     }
     return 0;
 }
 
 void arithmetic(){
     
+    
     //operations
     enum operationType{add, subtract, multiply, divide};
+    
+    
     enum operationType currentOperation = multiply;
+    NSLog(@"Enter a number from 0 to 3:\n");
+    scanf("%d", &currentOperation);
     
     //declarations
     NSInteger firstNumber = 66;
