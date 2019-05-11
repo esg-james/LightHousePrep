@@ -42,6 +42,20 @@ int main(int argc, const char * argv[]) {
         NSLog(@"who knows if %@",realName);
         
         
+        NSString *madLib = @"Yesterday, Isabelle and I went to the _ADJECTIVE_1 park. On our way to the _ADJECTIVE_3 park, we saw a _ADJECTIVE_2 _NOUN_ on a bike. We also saw big _ADJECTIVE_2 balloons tied to the _ADJECTIVE_4. Once we got to the _ADJECTIVE_1 park, the sky turned _ADJECTIVE_5. It started to _VERB_1. Isabelle and I _VERB_2 all the way home.";
+        
+        madLib = [madLib stringByReplacingOccurrencesOfString:@"Isabelle" withString:@"BUM"];
+        madLib = [madLib stringByReplacingOccurrencesOfString:@"_ADJECTIVE_1" withString:@"rainbow"];
+        madLib = [madLib stringByReplacingOccurrencesOfString:@"_ADJECTIVE_3" withString:@"very wonderful"];
+        madLib = [madLib stringByReplacingOccurrencesOfString:@"_ADJECTIVE_4" withString:@"bike racks"];
+        madLib = [madLib stringByReplacingOccurrencesOfString:@"_ADJECTIVE_5" withString:@"ice cream"];
+        madLib = [madLib stringByReplacingOccurrencesOfString:@"_ADJECTIVE_2" withString:@"direwolf"];
+        madLib = [madLib stringByReplacingOccurrencesOfString:@"_NOUN_" withString:@"dancing"];
+        madLib = [madLib stringByReplacingOccurrencesOfString:@"_VERB_1" withString:@"rain"];
+        madLib = [madLib stringByReplacingOccurrencesOfString:@"_VERB_2" withString:@"flew"];
+        
+        NSLog(@"%@", madLib);
+        
         
     }
     return 0;
