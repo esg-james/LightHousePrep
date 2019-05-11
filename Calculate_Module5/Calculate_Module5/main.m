@@ -7,19 +7,39 @@
 //
 
 //importing foundation library
+
 #import <Foundation/Foundation.h>
 
+//enum to string experiment
+#define ENUM_TABLE \
+X(ADDITION),    \
+X(SUBTRACTION),     \
+X(MULTIPLICATION),\
+X(DIVISION)\
 
-//NSString *math = @"math";
+
+#define X(a)    a
+typedef enum Foo {
+    ENUM_TABLE
+} MyFooEnum;
+#undef X
+
+#define X(a)    @#a
+NSString * const enumAsString[] = {
+    ENUM_TABLE
+};
+#undef X
+
 //function prototype
 void arithmetic(void);
 
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        MyFooEnum t = SUBTRACTION;
         
-        //function call
         arithmetic();
+        
     }
     return 0;
 }
@@ -28,32 +48,37 @@ void arithmetic(){
     
     //operations
     enum operationType{add, subtract, multiply, divide};
-    enum operationType currentOperation = divide;
+    enum operationType currentOperation = multiply;
     
     //declarations
     NSInteger firstNumber = 66;
     NSInteger secondNumber = 33;
     NSInteger result = firstNumber / secondNumber;
     //NSString *math = @"addition";
+    MyFooEnum t;
+    //NSLog(@"%@", enumAsString[t]);
     
     
     switch(currentOperation){
         case add:
             result = firstNumber + secondNumber;
-            NSLog(@"the operation is addition and the result is %li",result);
+            t = ADDITION;
+            NSLog(@"The operation is %@ and the result is: %ld", enumAsString[t],result);
             break;
         case subtract:
             result = firstNumber - secondNumber;
-            NSLog(@"the operation is subtraction and the result is %li",result);
+            t = SUBTRACTION;
+            NSLog(@"The operation is %@ and the result is: %ld", enumAsString[t],result);
             break;
         case multiply:
             result = firstNumber * secondNumber;
-            NSLog(@"the operation is multiplication and the result is %li",result);
+            t = MULTIPLICATION;
+            NSLog(@"The operation is %@ and the result is: %ld", enumAsString[t],result);
             break;
         case divide:
             result = firstNumber / secondNumber;
-            NSLog(@"the operation is division and the result is %li",result);
+            t = DIVISION;
+            NSLog(@"The operation is %@ and the result is: %ld", enumAsString[t],result);
             break;
     }
-    //NSLog(math,currentOperation,result);
 }
