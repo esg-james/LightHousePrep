@@ -28,7 +28,6 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%@",[formatter dateFormat]);*/
         
         NSString *startDate = @"89-04-04";
-        
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
         [formatter setDateFormat:@"yy-MM-dd"];
         NSDate *start = [formatter dateFromString:startDate];
@@ -50,8 +49,8 @@ int main(int argc, const char * argv[]) {
         NSDate *dateOfBirth = [g dateFromComponents:bdayComps];
         //assigning seconds since my birth to double d, then printing out how many seconds it has been from when i was born
         NSDate *now = [NSDate date];
-        NSDate *later = [now dateByAddingTimeInterval:100000];
-        double d = [later timeIntervalSinceDate:dateOfBirth];
+        //NSDate *later = [now dateByAddingTimeInterval:100000];
+        double d = [now timeIntervalSinceDate:dateOfBirth];
         NSLog(@"It has been %f seconds since I was born on %@",d,dateOfBirth);
      
         
