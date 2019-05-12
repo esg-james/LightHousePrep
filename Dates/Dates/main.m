@@ -14,6 +14,11 @@ int main(int argc, const char * argv[]) {
         NSNumber *age = [NSNumber numberWithInteger: 30];
         NSLog(@"My age is %@, it's not my birthday yet",age);
         
+        NSInteger newAge = [age integerValue];
+        newAge++;
+        NSNumber *myAge = [NSNumber numberWithInteger: newAge];
+        NSLog(@"Hey, it was my birthday recently, now I'm %@",myAge);
+        
         
     }
     return 0;
