@@ -19,6 +19,15 @@ int main(int argc, const char * argv[]) {
         NSNumber *myAge = [NSNumber numberWithInteger: newAge];
         NSLog(@"Hey, it was my birthday recently, now I'm %@",myAge);
         
+     
+        
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+        [dateFormatter setDateFormat:@"1989-04-04"];
+
+        NSLog(@"my birthday is: %@",[dateFormatter dateFormat]);
+        
+        
+      
         
     }
     return 0;
