@@ -74,6 +74,59 @@ int main(int argc, const char * argv[]) {
         BOOL dstIsOn = [systemTimeZone isDaylightSavingTime];
         NSLog(@"DST: %hhd",dstIsOn);
         
+        NSString *lament = @"Why me?!";
+        NSLog(@"%@",lament);
+        //NSLog(@"",)
+        NSString *x = [NSString stringWithFormat:@"the best number is %d", 5];
+        NSLog(@"%@",x);
+        
+        //changed strings to match in character count for if to run
+        NSUInteger charCount = [x length];
+        NSLog(@"%lu ",(unsigned long)charCount);
+        if([lament isEqual:x])
+            NSLog(@"%@ and %@ are equal",lament,x);
+        [[NSHost currentHost] localizedName];
+       // + (NSHost *) currentHost;
+        NSHost *host;
+        
+        host = [NSHost currentHost];
+        [host name];
+       // + (NSHost *)
+        //- (NSString *)localizedname
+        NSLog(@"%@ and are equal",host);
+        
+       
+        //NSInteger myValue = 30;
+        //NSNumber *myAge;
+       // myAge = [NSNumber numberWithInteger:30];
+        //NSInteger value = [myAge integerValue];
+      //  NSNumber *number = [NSNumber numberWithInteger: myValue];
+       // NSLog (@"It's my birthday and now I'm %ld", (long)value);
+        
+        
+        NSNumber *age = [NSNumber numberWithInteger: 30];
+        NSLog(@"%@",age);
+        NSInteger newAge = [age integerValue];
+        newAge++;
+        NSNumber *myAge = [NSNumber numberWithInteger: newAge];
+        NSLog(@"%@",myAge);
+        
+        
+       
+        /*
+        
+        NSNumber *myInt1;
+        NSNumber *myInt2;
+        
+        myInt1 = [NSNumber numberWithInteger:10];
+        myInt2 = [NSNumber numberWithInteger:11];
+        
+        if ([myInt1 isEqualToNumber: myInt2])
+            NSLog (@"Numbers are equal");
+        else
+            NSLog (@"Numbers are not equal");*/
+        
+        
         
     }
     return 0;

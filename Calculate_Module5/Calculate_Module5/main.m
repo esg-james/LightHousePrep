@@ -41,6 +41,9 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
         arithmetic();
+        
+        //create function that loops, incrementing int i
+        
         //NSLog(@"The operation is %c and the result", *math);
     }
     return 0;
