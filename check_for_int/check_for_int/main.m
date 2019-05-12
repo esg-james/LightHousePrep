@@ -41,9 +41,9 @@ int main(int argc, const char * argv[]) {
         
         //using the class method NSDateComponents in a nested message send to assign my birthday to *comps
         NSDateComponents *comps = [[NSDateComponents alloc] init];
-        [comps setYear:1995];
+        [comps setYear:1989];
         [comps setMonth:4];
-        [comps setDay:12];
+        [comps setDay:4];
         [comps setHour:4];
         [comps setMinute:1];
         [comps setSecond:1];
@@ -95,13 +95,6 @@ int main(int argc, const char * argv[]) {
         //- (NSString *)localizedname
         NSLog(@"%@ and are equal",host);
         
-       
-        //NSInteger myValue = 30;
-        //NSNumber *myAge;
-       // myAge = [NSNumber numberWithInteger:30];
-        //NSInteger value = [myAge integerValue];
-      //  NSNumber *number = [NSNumber numberWithInteger: myValue];
-       // NSLog (@"It's my birthday and now I'm %ld", (long)value);
         
         
         NSNumber *age = [NSNumber numberWithInteger: 30];
@@ -113,7 +106,7 @@ int main(int argc, const char * argv[]) {
         
         
        
-        /*
+        
         
         NSNumber *myInt1;
         NSNumber *myInt2;
@@ -124,7 +117,7 @@ int main(int argc, const char * argv[]) {
         if ([myInt1 isEqualToNumber: myInt2])
             NSLog (@"Numbers are equal");
         else
-            NSLog (@"Numbers are not equal");*/
+            NSLog (@"Numbers are not equal");
         
         
         
