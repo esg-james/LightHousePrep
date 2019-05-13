@@ -40,9 +40,9 @@ int main(int argc, const char * argv[]) {
         [bdayComps setYear:1989];
         [bdayComps setMonth:4];
         [bdayComps setDay:4];
-        [bdayComps setHour:4];
-        [bdayComps setMinute:1];
-        [bdayComps setSecond:1];
+        [bdayComps setHour:0];
+        [bdayComps setMinute:0];
+        [bdayComps setSecond:0];
         
         //creating an object from the year/month/day/hour/minute/second of my birth
         NSCalendar *g = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
@@ -52,7 +52,7 @@ int main(int argc, const char * argv[]) {
         //NSDate *later = [now dateByAddingTimeInterval:100000];
         double d = [now timeIntervalSinceDate:dateOfBirth];
         NSLog(@"It has been %f seconds since I was born on %@",d,dateOfBirth);
-     
+        
         
         
         
