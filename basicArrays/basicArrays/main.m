@@ -17,6 +17,8 @@ int main(int argc, const char * argv[]) {
         //NSString *replacement = @"six";
         NSLog(@"the third value is %@",myStringArray[2]);
         
+        
+        
     }
     return 0;
 }
