@@ -28,6 +28,21 @@ int main(int argc, const char * argv[]) {
                             @"Slalom Skiing"];*/
         for(NSArray *n in sports)
             NSLog(@"%@",n);
+        
+        NSMutableDictionary *sportEmojis = [[NSMutableDictionary alloc]
+                                       initWithObjectsAndKeys:
+                                       @"Hockey",@"🏒",
+                                       @"Soccer",@"⚽️",
+                                       @"Volleyball",@"🏐",
+                                       @"Basketball",@"🏀",nil];
+        
+        NSArray *key;
+        key = [sportEmojis allKeys];
+        
+        for (NSString *key in sportEmojis) {
+            id value = sportEmojis[key];
+            NSLog(@"%@ emoji for %@", key, value);
+        }
             
         
         
