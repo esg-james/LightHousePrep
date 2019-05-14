@@ -52,7 +52,8 @@ int main(int argc, const char * argv[]) {
         //NSDate *later = [now dateByAddingTimeInterval:100000];
         double d = [now timeIntervalSinceDate:dateOfBirth];
         NSLog(@"It has been %f seconds since I was born on %@",d,dateOfBirth);
-        
+       //[dateOfBirth timeIntervalSinceNow]
+        //figured out how to call timeintervalsincenow 🙄 will be fixing this code to be right tomorrow
         
         
         
