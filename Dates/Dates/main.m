@@ -37,12 +37,12 @@ int main(int argc, const char * argv[]) {
         NSLog(@"time interval in seconds since I was born on %@: %f", startDate, interval);
         
         NSDateComponents *bdayComps = [[NSDateComponents alloc] init];
-        [bdayComps setYear:1989];
-        [bdayComps setMonth:4];
-        [bdayComps setDay:4];
-        [bdayComps setHour:0];
-        [bdayComps setMinute:0];
-        [bdayComps setSecond:0];
+        [bdayComps setYear:1988];
+        [bdayComps setMonth:1];
+        [bdayComps setDay:23];
+        [bdayComps setHour:11];
+        [bdayComps setMinute:46];
+        [bdayComps setSecond:1];
         
         //creating an object from the year/month/day/hour/minute/second of my birth
         NSCalendar *g = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];

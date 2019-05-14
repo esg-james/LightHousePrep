@@ -66,7 +66,6 @@ void arithmetic(){
     NSInteger result = firstNumber / secondNumber;
     //NSString *math = @"addition";
     MyFooEnum t;
-    //NSLog(@"%@", enumAsString[t]);
     
     
     switch(currentOperation){
