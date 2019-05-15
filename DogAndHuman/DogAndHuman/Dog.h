@@ -12,7 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Dog : NSObject
 
-@property NSString *name;
+@property NSString* name;
+@property NSString* speak;
+
 
 @end
 

@@ -40,16 +40,23 @@ int main(int argc, const char * argv[]) {
         
         //Iterate through stocks, showing name, value, cost and profit.
         for (StockHolding *d in holdings) {
-            if ([d valueInDollars] > [d costInDollars]){
+            //can use bool as condition for printing out holdings
+            BOOL isProfitable = [d valueInDollars] > [d costInDollars];
+            BOOL isLoss = [d valueInDollars] < [d costInDollars];
+            BOOL isEqual = [d valueInDollars] == [d costInDollars];
+            if (isProfitable){
                 NSLog(@"I have %@ stock worth %.2f dollars that cost me %.2f dollars giving me a profit of %.2f dollars.",
                       [d name],[d valueInDollars],[d costInDollars], ([d valueInDollars] - [d costInDollars]));
-            }else if ([d valueInDollars] < [d costInDollars]){
+            }
+            else if (isLoss){
                 NSLog(@"I have %@ stock worth %.2f dollars that cost me %.2f dollars giving me a loss of %.2f dollars.",
                       [d name],[d valueInDollars],[d costInDollars], ([d valueInDollars] - [d costInDollars]));
-            }else if ([d valueInDollars] == [d costInDollars]){
+            }else if (isEqual){
                 NSLog(@"I have %@ stock worth %.2f dollars that cost me %.2f, so there is neither profit nor loss.",
                       [d name],[d valueInDollars],[d costInDollars]);
-            }}
+            }
+            
+        }
         return 0;
     }
 }

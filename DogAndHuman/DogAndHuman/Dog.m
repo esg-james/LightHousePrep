@@ -10,4 +10,10 @@
 
 @implementation Dog
 
+@synthesize speak;
+
+-(void) speak:(NSString *)speak{
+    NSLog(@"Woof");
+}
+
 @end
