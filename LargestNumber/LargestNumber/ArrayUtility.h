@@ -16,10 +16,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property NSNumber* largestNumber;
 @property NSNumber* smallestNumber;
+@property float medianNumber;
 @property NSArray* theArray;
+@property NSInteger count;
+@property NSArray *sortedArrayUsingSelector;
+@property float floatValue;
+@property int countGreater;
+@property int countLesser;
+
+
+
 
 - (NSNumber *) largestNumber:(NSArray *)theArray;
 - (NSNumber *) smallestNumber:(NSArray *)theArray;
+- (float) medianNumber:(NSArray *)theArray;
 
 
 

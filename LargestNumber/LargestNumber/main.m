@@ -22,12 +22,19 @@ int main(int argc, const char * argv[]) {
         NSArray *arrayNum3 = @[@3,@7,@57,@33,@65,@87,@99];
         [arrayUtility smallestNumber:arrayNum3];
         
+        NSArray *arrayNum4 = @[@3,@7,@57,@33,@65,@87,@99];
+        [arrayUtility medianNumber:arrayNum4];
+        //NSLog(@"the median number is %@",[arrayUtility smallestNumber:arrayNum4]);
+        
         
         
         
         NSLog(@"the largest number is %@",[arrayUtility largestNumber:arrayNum]);
         NSLog(@"the largest number is %@",[arrayUtility largestNumber:arrayNum2]);
         NSLog(@"the smallest number is %@",[arrayUtility smallestNumber:arrayNum3]);
+        NSLog(@"the median number is %f",[arrayUtility medianNumber:arrayNum4]);
+        
+
         
         
     }
