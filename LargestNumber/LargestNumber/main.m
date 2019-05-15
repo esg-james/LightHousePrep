@@ -16,6 +16,7 @@ int main(int argc, const char * argv[]) {
         //i originally had a @-1 in there but it read as the highest number, not 100% sure why, will have to check in on that
         //defining var to hold the 'highest' value
         NSNumber *highestNum = @0;
+        //newstuff
         
         //for loop using count to cycle through array elements
         for(int i = 1; i <[higherNum count]; i++){
