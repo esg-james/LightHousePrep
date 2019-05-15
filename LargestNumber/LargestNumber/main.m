@@ -13,10 +13,14 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
         
-        ArrayUtility *number = [[ArrayUtility alloc]init];
-        [number largestNumber];
+        ArrayUtility *arrayUtility = [[ArrayUtility alloc]init];
+        NSArray *arrayNum = @[@2,@4,@1,@101,@87,@1010,@3,@209,@411,@6,@566];
+        [arrayUtility largestNumber:arrayNum];
         
-        NSLog(@"%@",number);
+        
+        
+        
+        NSLog(@"%@",[arrayUtility largestNumber:arrayNum]);
     
         
         
