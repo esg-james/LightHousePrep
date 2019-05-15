@@ -18,7 +18,7 @@ int main(int argc, const char * argv[]) {
         NSNumber *highestNum = @0;
         
         //for loop using count to cycle through array elements
-        for(int i = 0; i <[higherNum count]; i++){
+        for(int i = 1; i <[higherNum count]; i++){
             //defining and assigning value to newNum from array index[i]
             NSNumber *newNum = [higherNum objectAtIndex:i];
             
