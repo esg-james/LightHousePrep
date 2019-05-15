@@ -15,9 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ArrayUtility : NSObject
 
 @property NSNumber* largestNumber;
+@property NSNumber* smallestNumber;
 @property NSArray* theArray;
 
 - (NSNumber *) largestNumber:(NSArray *)theArray;
+- (NSNumber *) smallestNumber:(NSArray *)theArray;
 
 
 
