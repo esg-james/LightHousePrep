@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "Person.h"
+//^import person header for maid to access
 
 NS_ASSUME_NONNULL_BEGIN
-
+//maid inherits from person
 @interface Maid : Person
 
 @property (nonatomic) int cleaningBill;

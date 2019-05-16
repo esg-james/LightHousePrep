@@ -10,7 +10,7 @@
 
 @implementation Person
 
-@synthesize heightInMeters, weightInKilos;
+@synthesize heightInMeters, weightInKilos, name, pet, dateOfBirth;
 - (float) bodyMassIndex {
     float h = [self heightInMeters];
     return [self weightInKilos] / (h*h);
@@ -26,6 +26,16 @@
     eyeColor = newEyeColor;
 }
 
+-(id)initWithProductName:(NSString *)pn{
+    self = [super init];
+    if(self){
+        //[self setProductName:pn];
+        name = [pn copy];
+        pet = @"hey";
+        dateOfBirth = [NSDate dateWithTimeIntervalSinceReferenceDate:2000000];
+    }
+    return self;
+}
 
 /*- (void) setHeightInMeters:(float)h {
     heightInMeters = h;

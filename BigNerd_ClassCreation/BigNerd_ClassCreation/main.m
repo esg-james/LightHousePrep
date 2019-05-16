@@ -32,6 +32,12 @@ int main(int argc, const char * argv[]) {
         person4.eyeColor = @"magenta";
         NSLog(@"The toilet cleaning bill is %d and your maids eye colour is %@",person4.cleaningBill,person4.eyeColor);
         
+        Person *person5 = [[Person alloc]initWithProductName:@"Hey"];
+        [person5 setValue:@"Dick Washer" forKey:@"name"];
+        [person5 setValue:[NSString stringWithFormat:@"I wash Dick"] forKey:@"pet"];
+        //person5.dateOfBirth = [NSDate dateWithTimeIntervalSince1970:200000];
+        NSLog(@"%@ %@ %@",[person5 valueForKey:@"name"], [person5 valueForKey:@"pet"], [person5 valueForKey:@"dateOfBirth"]);
+        
         
        // NSLog(@"person is %@",[person theArray]);
         

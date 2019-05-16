@@ -15,14 +15,20 @@ NS_ASSUME_NONNULL_BEGIN
 float heightInMeters;
 int weightInKilos;
 NSString *eyeColor;
+
 }
 @property int weightInKilos;
 @property float heightInMeters;
-
+@property NSString * name;
+@property NSString * pet;
+@property (readonly) NSDate * dateOfBirth;
 
 -(NSString *) eyeColor;
 -(void) setEyeColor: (NSString *) newEyeColor;
 - (float) bodyMassIndex;
+
+//This is the designated initializer
+-(id)initWithProductName: (NSString *)pn;
 
 
 @end
