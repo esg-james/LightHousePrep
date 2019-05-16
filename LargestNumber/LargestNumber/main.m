@@ -24,7 +24,10 @@ int main(int argc, const char * argv[]) {
         
         NSArray *arrayNum4 = @[@3,@7,@57,@33,@65,@87,@99];
         [arrayUtility medianNumber:arrayNum4];
-        //NSLog(@"the median number is %@",[arrayUtility smallestNumber:arrayNum4]);
+        
+        NSArray *arrayNum5 = @[@3,@7,@57,@33,@65,@87,@99,@203,@706,@1919,@2020,@20,@31,@56,@89];
+        [arrayUtility medianNumber:arrayNum5];
+        
         
         
         
@@ -33,6 +36,7 @@ int main(int argc, const char * argv[]) {
         NSLog(@"the largest number is %@",[arrayUtility largestNumber:arrayNum2]);
         NSLog(@"the smallest number is %@",[arrayUtility smallestNumber:arrayNum3]);
         NSLog(@"the median number is %f",[arrayUtility medianNumber:arrayNum4]);
+        NSLog(@"the median number is %f",[arrayUtility medianNumber:arrayNum5]);
         
 
         

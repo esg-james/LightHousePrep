@@ -14,12 +14,16 @@ NS_ASSUME_NONNULL_BEGIN
 {
 float heightInMeters;
 int weightInKilos;
+NSString *eyeColor;
 }
 @property int weightInKilos;
 @property float heightInMeters;
+@property (nonatomic) int cleaningBill;
 
-
+-(NSString *) eyeColor;
+-(void) setEyeColor: (NSString *) newEyeColor;
 - (float) bodyMassIndex;
+
 
 @end
 

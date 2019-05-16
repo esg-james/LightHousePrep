@@ -19,6 +19,16 @@
 - (void) addYourselfToArray:(NSMutableArray *)theArray {
     [theArray addObject:self];
 }
+-(NSString *) eyeColor {
+    return eyeColor;
+}
+-(void) setEyeColor:(NSString *)newEyeColor {
+    eyeColor = newEyeColor;
+}
+-(int) cleaningBill {
+    return _cleaningBill;
+}
+
 /*- (void) setHeightInMeters:(float)h {
     heightInMeters = h;
 }

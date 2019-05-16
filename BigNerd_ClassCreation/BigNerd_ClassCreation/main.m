@@ -19,7 +19,16 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Person has a BMI of %f",bmi);
         
         NSLog(@"Person (%d Kilos, %f Meters) has a BMI of %f",[person weightInKilos],[person heightInMeters],bmi);
-     
+        
+        Person *person2 = [[Person alloc]init];
+        person2.eyeColor = @"blue";
+        NSLog(@"my eye color is %@",person2.eyeColor);
+        
+        Person *person3 = [[Person alloc]init];
+        person3.cleaningBill = 3000;
+        NSLog(@"The toilet cleaning bill is %d",person3.cleaningBill);
+        
+        
        // NSLog(@"person is %@",[person theArray]);
         
         
