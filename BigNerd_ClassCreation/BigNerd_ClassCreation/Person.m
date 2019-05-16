@@ -33,6 +33,7 @@
         name = [pn copy];
         pet = @"hey";
         dateOfBirth = [NSDate dateWithTimeIntervalSinceReferenceDate:2000000];
+        NSLog(@"This init is called and the date is %@",dateOfBirth);
     }
     return self;
 }
