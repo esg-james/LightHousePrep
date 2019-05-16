@@ -18,7 +18,7 @@ NSString *eyeColor;
 }
 @property int weightInKilos;
 @property float heightInMeters;
-@property (nonatomic) int cleaningBill;
+
 
 -(NSString *) eyeColor;
 -(void) setEyeColor: (NSString *) newEyeColor;

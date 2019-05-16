@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		550C6FBA228B61B9008E68F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 550C6FB9228B61B9008E68F1 /* main.m */; };
 		550C6FC2228B61C9008E68F1 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 550C6FC1228B61C9008E68F1 /* Person.m */; };
+		550C7023228CE8C9008E68F1 /* Maid.m in Sources */ = {isa = PBXBuildFile; fileRef = 550C7022228CE8C9008E68F1 /* Maid.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		550C6FB9228B61B9008E68F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		550C6FC0228B61C9008E68F1 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		550C6FC1228B61C9008E68F1 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		550C7021228CE8C9008E68F1 /* Maid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Maid.h; sourceTree = "<group>"; };
+		550C7022228CE8C9008E68F1 /* Maid.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Maid.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 			children = (
 				550C6FB9228B61B9008E68F1 /* main.m */,
 				550C6FC0228B61C9008E68F1 /* Person.h */,
+				550C7021228CE8C9008E68F1 /* Maid.h */,
+				550C7022228CE8C9008E68F1 /* Maid.m */,
 				550C6FC1228B61C9008E68F1 /* Person.m */,
 			);
 			path = BigNerd_ClassCreation;
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				550C7023228CE8C9008E68F1 /* Maid.m in Sources */,
 				550C6FC2228B61C9008E68F1 /* Person.m in Sources */,
 				550C6FBA228B61B9008E68F1 /* main.m in Sources */,
 			);

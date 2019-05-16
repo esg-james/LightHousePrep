@@ -27,6 +27,12 @@ int main(int argc, const char * argv[]) {
         
         NSArray *arrayNum5 = @[@3,@7,@57,@33,@65,@87,@99,@203,@706,@1919,@2020,@20,@31,@56,@89];
         [arrayUtility medianNumber:arrayNum5];
+        NSArray *arrayNum6 = @[@3,@7,@57,@33,@65,@87,@99,@203,@706,@1919,@2020,@20,@31,@56,@89,@1800];
+        [arrayUtility medianNumber:arrayNum6];
+        NSArray *arrayNum7 = @[@1,@65,@66,@100];
+        [arrayUtility medianNumber:arrayNum7];
+        NSArray *arrayNum8 = @[@0];
+        [arrayUtility medianNumber:arrayNum8];
         
         
         
@@ -37,6 +43,9 @@ int main(int argc, const char * argv[]) {
         NSLog(@"the smallest number is %@",[arrayUtility smallestNumber:arrayNum3]);
         NSLog(@"the median number is %f",[arrayUtility medianNumber:arrayNum4]);
         NSLog(@"the median number is %f",[arrayUtility medianNumber:arrayNum5]);
+        NSLog(@"the median number is %f",[arrayUtility medianNumber:arrayNum6]);
+        NSLog(@"the median number is %f",[arrayUtility medianNumber:arrayNum7]);
+        NSLog(@"the median number is %f",[arrayUtility medianNumber:arrayNum8]);
         
 
         

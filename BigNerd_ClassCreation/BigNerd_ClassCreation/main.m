@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Person.h"
+#import "Maid.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -24,9 +25,12 @@ int main(int argc, const char * argv[]) {
         person2.eyeColor = @"blue";
         NSLog(@"my eye color is %@",person2.eyeColor);
         
-        Person *person3 = [[Person alloc]init];
-        person3.cleaningBill = 3000;
-        NSLog(@"The toilet cleaning bill is %d",person3.cleaningBill);
+        
+        
+        Maid *person4 = [[Maid alloc]init];
+        person4.cleaningBill = 3000;
+        person4.eyeColor = @"magenta";
+        NSLog(@"The toilet cleaning bill is %d and your maids eye colour is %@",person4.cleaningBill,person4.eyeColor);
         
         
        // NSLog(@"person is %@",[person theArray]);

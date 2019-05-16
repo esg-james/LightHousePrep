@@ -39,6 +39,8 @@
 -(float)medianNumber:(NSArray *)theArray  {
     //assigning float value to medianNumber
     float medianNumber = 0.0;
+    float medianLessOne = 0.0;
+    float medianPlusOne = 0.0;
     //dividing array count by 2 to grab index of median
     unsigned long halfArrayCount = theArray.count / 2;
     //checking each number in the array to find the midpoint
@@ -66,7 +68,16 @@
         if(countGreater == halfArrayCount && countLesser == halfArrayCount) {
             medianNumber = [newNum floatValue];
         }
+        else if (countGreater - countLesser == 1) {
+            medianPlusOne = [newNum floatValue];
+        }
+        else if (countLesser - countGreater == 1) {
+            medianLessOne = [newNum floatValue];
+        }
         
+    }
+    if(theArray.count % 2 == 0){
+        return (medianPlusOne + medianLessOne) / 2;
     }
     return medianNumber;
     
