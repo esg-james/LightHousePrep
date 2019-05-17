@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSString * model;
 @property NSString * make;
 -(NSString *)drive;
--(id)initWithModel: (NSString *)pn;
+-(id)initWithModel: (NSString *)pn : (NSString *) make;
 
 @end
 
