@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		550C708C228E14F6008E68F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 550C708B228E14F6008E68F1 /* main.m */; };
 		550C7094228E15C2008E68F1 /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 550C7093228E15C2008E68F1 /* Vehicle.m */; };
+		550C7097228E1AB5008E68F1 /* Train.m in Sources */ = {isa = PBXBuildFile; fileRef = 550C7096228E1AB5008E68F1 /* Train.m */; };
+		550C709A228E2C93008E68F1 /* Bicycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 550C7099228E2C93008E68F1 /* Bicycle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,10 @@
 		550C708B228E14F6008E68F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		550C7092228E15C2008E68F1 /* Vehicle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
 		550C7093228E15C2008E68F1 /* Vehicle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
+		550C7095228E1AB5008E68F1 /* Train.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Train.h; sourceTree = "<group>"; };
+		550C7096228E1AB5008E68F1 /* Train.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Train.m; sourceTree = "<group>"; };
+		550C7098228E2C93008E68F1 /* Bicycle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bicycle.h; sourceTree = "<group>"; };
+		550C7099228E2C93008E68F1 /* Bicycle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bicycle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				550C708B228E14F6008E68F1 /* main.m */,
+				550C7098228E2C93008E68F1 /* Bicycle.h */,
+				550C7099228E2C93008E68F1 /* Bicycle.m */,
 				550C7092228E15C2008E68F1 /* Vehicle.h */,
 				550C7093228E15C2008E68F1 /* Vehicle.m */,
+				550C7095228E1AB5008E68F1 /* Train.h */,
+				550C7096228E1AB5008E68F1 /* Train.m */,
 			);
 			path = Inheritance;
 			sourceTree = "<group>";
@@ -123,8 +133,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				550C7097228E1AB5008E68F1 /* Train.m in Sources */,
 				550C7094228E15C2008E68F1 /* Vehicle.m in Sources */,
 				550C708C228E14F6008E68F1 /* main.m in Sources */,
+				550C709A228E2C93008E68F1 /* Bicycle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
