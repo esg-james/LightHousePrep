@@ -11,16 +11,16 @@
 @implementation Car
 
 
-- (NSString *)description {
-    return [NSString stringWithFormat:@"This is a %@",_model];
-    return [NSString stringWithFormat:@"This is a %@",_make];
+- (NSString *)drive {
+    return [NSString stringWithFormat:@"%@",_model];
+    return [NSString stringWithFormat:@"%@",_make];
 }
 
 - (int) score {
     return _score;
 }
 
-- (id)initWithModel:(NSString *)pn : (NSString *)make : (int)score
+- (id)initWithModel:(NSString *)pn : (NSString *)make
 {
     //OPEN a connection to a DB
     

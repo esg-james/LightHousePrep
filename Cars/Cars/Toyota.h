@@ -1,22 +1,19 @@
 //
-//  Car.h
+//  Toyota.h
 //  Cars
 //
 //  Created by James Oliver on 2019-05-16.
 //  Copyright © 2019 James Oliver. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "Car.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Car : NSObject
+@interface Toyota : Car
 
-@property (nonatomic) int score;
-@property NSString * model;
-@property NSString * make;
--(NSString *)drive;
 -(id)initWithModel: (NSString *)pn;
+@property NSString * model;
 
 @end
 

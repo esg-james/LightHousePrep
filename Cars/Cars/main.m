@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Car.h"
+#import "Toyota.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -15,11 +16,16 @@ int main(int argc, const char * argv[]) {
         
         
         Car *nissan = [[Car alloc]init];
-        
         [nissan setValue:@"Rogue" forKey:@"model"];
         [nissan setValue:@"Nissan" forKey:@"make"];
         [nissan setScore:5000];
         NSLog(@"This is the new %@ %@ travelling at %d miles per hour!!!!",nissan.make, nissan.model, nissan.score);
+        
+        Toyota *toyota = [[Toyota alloc]init];
+        [toyota setValue:@"Toyota" forKey:@"make"];
+        NSLog(@"This is the new %@ %@!!!!",toyota.make,toyota.description);
+        //[toyota self]
+        
         
     }
     return 0;
