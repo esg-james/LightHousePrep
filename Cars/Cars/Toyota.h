@@ -12,8 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Toyota : Car
 
--(id)initWithModel: (NSString *)pn;
--(NSString *)drive;
+//-(id)initWithModel: (NSString *)pn;
+//-(NSString *)drive;
+//@property NSString * model2;
 
 @end
 

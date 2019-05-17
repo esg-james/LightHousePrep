@@ -15,15 +15,16 @@ int main(int argc, const char * argv[]) {
         
         
         
-        Car *nissan = [[Car alloc]init];
-        [nissan setValue:@"Rogue" forKey:@"model"];
-        [nissan setValue:@"Nissan" forKey:@"make"];
+        Car *nissan = [[Car alloc]initWithModel:@"Rogue" :@"Nissan"];
+        //[nissan setValue:@"Rogue" forKey:@"model"];
+        //[nissan setValue:@"Nissan" forKey:@"make"];
+        [nissan drive];
         [nissan setSpeed:5000];
         NSLog(@"This is the new %@ %@ travelling at %d miles per hour!!!!",nissan.make, nissan.model, nissan.speed);
         
         Toyota *toyota = [[Toyota alloc]init];
         [toyota setValue:@"Toyota" forKey:@"make"];
-        NSLog(@"This is the new %@ %@!!!!",toyota.make,toyota);
+        NSLog(@"This is the new %@!!!!",[toyota model]);
         //[toyota self]
         
         

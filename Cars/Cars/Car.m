@@ -11,9 +11,8 @@
 @implementation Car
 
 
-- (NSString *)drive {
-    return [NSString stringWithFormat:@"%@",_model];
-    return [NSString stringWithFormat:@"%@",_make];
+- (void)drive {
+    NSLog(@"This is the new %@ %@",_make,_model);
 }
 
 - (int) speed {
@@ -24,7 +23,7 @@
 {
     //OPEN a connection to a DB
     
-    self = [super init];
+    //self = [super init];
     if (self) {
         _model = pn;
         _make = make;
