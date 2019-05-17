@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Car : NSObject
 
-@property (nonatomic) int score;
+@property (nonatomic) int speed;
 @property NSString * model;
 @property NSString * make;
 -(NSString *)drive;

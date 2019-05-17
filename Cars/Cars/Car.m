@@ -16,8 +16,8 @@
     return [NSString stringWithFormat:@"%@",_make];
 }
 
-- (int) score {
-    return _score;
+- (int) speed {
+    return _speed;
 }
 
 - (id)initWithModel:(NSString *)pn : (NSString *)make

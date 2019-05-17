@@ -10,14 +10,20 @@
 
 @implementation Toyota
 
+//do I use this?!
+-(NSString *) drive {
+    return [NSString stringWithFormat:@"Prius"];
+}
+
+
 - (id)initWithModel:(NSString *)pn
 {
     //OPEN a connection to a DB
     
     self = [super init];
     if (self) {
-        //_model = pn;
-      
+        pn = @"@Prius";
+//can't figure out how to F'n send the prius back to main
     }
     return self;
 }
