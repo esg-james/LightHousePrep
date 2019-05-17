@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Appliances : NSObject {
     NSString * productName;
-    int voltage;
+    
 }
 
 //@property (copy, nonatomic) NSString * productName;
