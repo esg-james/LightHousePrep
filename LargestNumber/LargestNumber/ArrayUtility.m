@@ -35,6 +35,21 @@
     return smallestNumber;
 }
 
+- (instancetype)initWithNumbers:(NSArray *)numbers {
+    
+    //self = [super init];
+    if (self) {
+        numbers = numbers;
+    }
+    return self;
+    
+}
+
+- (NSString *) process {
+    NSLog(@"Hey");
+    return 0;
+}
+
 //Function that TAKES an array and RETURNS the median value of that array
 -(float)medianNumber:(NSArray *)theArray  {
     //assigning float value to medianNumber

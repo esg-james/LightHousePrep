@@ -24,8 +24,7 @@ int main(int argc, const char * argv[]) {
         
         Toyota *toyota = [[Toyota alloc]init];
         [toyota setValue:@"Toyota" forKey:@"make"];
-        NSLog(@"This is the new %@!!!!",[toyota model]);
-        //[toyota self]
+        NSLog(@"This is the new %@ %@!!!!",[toyota make],[toyota model]);
         
         
     }
