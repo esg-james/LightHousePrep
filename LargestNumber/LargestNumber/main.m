@@ -8,6 +8,31 @@
 
 #import <Foundation/Foundation.h>
 #import "ArrayUtility.h"
+//POTENTIAL
+/*int Occurence(NSArray * A, int size, int n)
+{
+    static int occur=0;
+    if(size == 0)
+    {
+        int occur2 = (int) occur;
+        return occur2;
+    }
+    
+    else
+    {
+        if ( n == A[size-1])
+            occur++;
+        Occurence(A, size-1, n);
+        return Occurence(A, size-1, n) ;
+    }
+}
+NSArray * A = @[@1,@3,@2,@5,@1,@2,@3,@7,@7,@8,@8,@4,@6,@9,@9,@0];
+int size = sizeof(A)/sizeof(A[0]);
+
+int n;
+
+NSLog(@"%@",A.attributeKeys);*/
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -57,35 +82,60 @@ int main(int argc, const char * argv[]) {
         
         for (int i = 0; i<strr.count; i++) {
             iC = [strr objectAtIndex:i];
-            if ([iC  isEqual: @3]){
+            if ([iC  isEqual: @7]){
                 count++;
                 iC = [strr objectAtIndex:i];
             }
         }
         NSLog(@"Counted times: %@ %d", iC, count);
         
-        /*int count = 0;
-        NSArray *strr = @[@3,@7,@57,@33,@65,@87,@99,@203,@706,@1919,@2020,@20,@31,@56,@89];
-        NSString *iC;
-        NSNumber *iCC;
+        NSArray *array = @[@1,@2,@1,@2,@1,@2,@2,@2];
+        NSMutableArray *m;
+        int i = 0;
+    
         
-        for (int i = 0; i<strr.count; i++) {
-            iCC = [strr objectAtIndex:i];
-            if (iCC == @3){
-                count++;
-                iCC = [strr objectAtIndex:i];
-            }
-        }
-        NSLog(@"Counted times: %@ %d", strr[0], count);*/
+ 
         
         
         
-        ArrayUtility *repeater1 = [[ArrayUtility alloc] initWithNumbers: @[@[@1, @10]]];
+        /*ArrayUtility *repeater1 = [[ArrayUtility alloc] initWithNumbers: @[@[@1, @10]]];
         NSLog(@"%@", [repeater1 process]);
         ArrayUtility *repeater2 = [[ArrayUtility alloc] initWithNumbers: @[@[@1, @2], @[@2, @3]]];
         //NSLog(@"%@", [repeater2 process]);
         ArrayUtility *repeater3 = [[ArrayUtility alloc] initWithNumbers: @[@[@10, @4], @[@34, @6], @[@92, @2]]];
         //NSLog(@"%@", [repeater3 process]);
+        
+        //NSString *string1= @"Jordan Mike Liam Taylor Jill Gordon Phil Mark";
+        //NSString *string2= @"Marcus Tony Taylor Anny Keenan Brittany Gordon Mike";
+        
+        NSArray *array=@[@"one",@"one",@"one",@"two",@"two",@"four",@"four",@"four"];
+        NSString *priorString = array[0];
+        NSMutableDictionary *duplicatesByKey = [[NSMutableDictionary alloc] init];
+        NSMutableArray *indexesOfDuplicates = [[NSMutableArray alloc] init];
+        
+        
+        //More potential
+        NSArray *n = @[@1,@2,@1,@2,@2,@3,@4,@4,@1,@1,@1,@2,@2,@2];
+        
+        NSMutableArray *tempArray= [[NSMutableArray alloc] init];
+        [tempArray addObjectsFromArray:n];
+        //[tempArray addObjectsFromArray:[string2 componentsSeparatedByString:@" "]];
+        
+        NSCountedSet *bag = [[NSCountedSet alloc] initWithArray:tempArray];
+        
+        
+        NSUInteger repeats = 0;
+        NSMutableArray *matches = [[NSMutableArray alloc] init];
+        for (NSString *s in bag)
+        {
+            if ([bag countForObject:s] > 1)
+            {
+                repeats++;
+                [matches addObject:s];
+            }
+        }
+        NSLog(@"Number of names repeated: %ld", repeats);
+        NSLog(@"Matches: %@", matches);*/
         
         
         
@@ -102,12 +152,10 @@ int main(int argc, const char * argv[]) {
         NSLog(@"the median number is %f",[arrayUtility medianNumber:arrayNum8]);
         
 
-       /* NSArray *nameArray= [[NSArray alloc] initWithObjects: @"james", @"megan", @"lauren", @"mike" @"james", nil];
-        NSCountedSet *set = [[NSCountedSet alloc] nameArray];*/
         
         
         
-        int *input;
+      /*  int *input;
         int n, c;
         
         NSLog(@"Enter the number of elements in the array:");
@@ -123,25 +171,27 @@ int main(int argc, const char * argv[]) {
         int count1 = 1;
         int i;
         int ARRAYSIZE = n;
+        NSArray * arrayRepeater = @[@10, @5, @10, @5, @10,@5,@5,@10,@6,@6];
         
         for (i = 1; i < ARRAYSIZE; i++) {
             
             if (input[i] == prev) {
-                count++;
+                count1++;
             }
             else {
-                NSLog(@"%d=%d ", prev, count);
+                NSLog(@"%d=%d ", prev, count1);
                 prev = input[i];
-                count = 1;
+                count1 = 1;
             }
             
         }
         
-        NSLog(@"%d=%d\n", prev, count);
-        free(input);
-    
-        
-        
+        NSLog(@"%d=%d\n", prev, count1);
+        NSLog(@"%d", prev);
+        free(input);*/
     }
+    
     return 0;
+    
 }
+

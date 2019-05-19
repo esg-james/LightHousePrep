@@ -14,7 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ArrayUtility : NSObject
 
-//@property NSCountedSet countedSet;
 @property NSNumber* largestNumber;
 @property NSNumber* smallestNumber;
 @property float medianNumber;
@@ -27,6 +26,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithNumbers:(NSArray *)numbers;
 - (NSString *)process;
+@property int *input;
+@property int n, c;
 
 
 - (NSNumber *) largestNumber:(NSArray *)theArray;
