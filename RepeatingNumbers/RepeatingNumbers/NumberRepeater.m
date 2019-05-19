@@ -32,26 +32,48 @@
 }
 
 -(NSString *)process {
-    NSString *theString;
     
+    NSString *theString = @"";
     for(NSArray *n in _theArray){
-        
-        for(int i = 0; i < [n count]; i++)
-            {
-                
-                [theString stringByAppendingString:n[0]];
-                //[theString componentsSeparatedByString:@","];
+        NSInteger m = [n[1] intValue];
+        for ( int i = 0; i < m; ++i)  {
+               // NSLog(@"%d",(int)n[1]);
+            
+                theString = [theString stringByAppendingString:[n[0] stringValue]];
+            
+                //[theString componentsSeparatedByCharactersInSet:valuesComma];
             }
-     
+        if(n.count > 1){
+            theString = [theString stringByAppendingString:@", "];
+        }
+        else {
+            theString = [theString stringByAppendingString:@", "];
+        }
+        
+        
         
     }
-    
-    
-
     return theString;
-    //supposed to return a string here with each of the numbers repeated the appropriate amount of times
 }
 
-
-
 @end
+
+/* NSInteger idx1 = 3;
+ NSInteger idx2 = 3;
+ NSInteger arr [3][3] = {{0, 0, 0},
+ {0, 0, 0},
+ {0, 0, 0}};
+ 
+ 
+ NSMutableString *finalString = [NSMutableString new];
+ 
+ for ( NSInteger i = 0; i < idx1; ++i) {
+ NSMutableString *temp = [NSMutableString new];
+ for ( NSInteger j = 0; j < idx2; ++j) {
+ [temp appendString:[NSString stringWithFormat:@"%ld", arr[i][j] ]];
+ }
+ [temp appendString: @""];
+ [finalString appendString:temp];
+ }
+ 
+ NSLog(@"%@", finalString);*/

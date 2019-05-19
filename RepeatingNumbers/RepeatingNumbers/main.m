@@ -22,16 +22,17 @@ int main(int argc, const char * argv[]) {
         NumberRepeater *repeater1 = [[NumberRepeater alloc] initWithNumbers: @[@[@1, @10]]];
         NSLog(@"%@", [repeater1 process]);
         
-       // NumberRepeater *repeater2 = [[NumberRepeater alloc] initWithNumbers: @[@[@1, @2], @[@2, @3]]];
-       // NSLog(@"%@", [repeater2 process]);
-        //NumberRepeater *repeater3 = [[NumberRepeater alloc] initWithNumbers: @[@[@10, @4], @[@34, @6], @[@92, @2]]];
-        //NSLog(@"%@", [repeater3 process]);
+        NumberRepeater *repeater2 = [[NumberRepeater alloc] initWithNumbers: @[@[@1, @2], @[@2, @3]]];
+        NSLog(@"%@", [repeater2 process]);
+        NumberRepeater *repeater3 = [[NumberRepeater alloc] initWithNumbers: @[@[@10, @4], @[@34, @6], @[@92, @2]]];
+        NSLog(@"%@", [repeater3 process]);
         
-        
-        
-    
-        
-        
+       /* NSMutableString* output = [NSMutableString stringWithFormat:@"response: %@",[JSON valueForKeyPath:@"Status"]];
+        int x;
+        for (x=0; x<[dataarray count]; x++) {
+            NSLog(@"%d : %@",x, [dataarray objectAtIndex:x]);
+            [output appendFormat:@" %@ ",[dataarray objectAtIndex:x]];
+        }*/
         
         
         
