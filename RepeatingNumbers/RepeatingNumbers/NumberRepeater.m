@@ -43,11 +43,11 @@
             
                 //[theString componentsSeparatedByCharactersInSet:valuesComma];
             }
-        if(n.count > 1){
+        if(m > n.count){
             theString = [theString stringByAppendingString:@", "];
         }
         else {
-            theString = [theString stringByAppendingString:@", "];
+            break;
         }
         
         
