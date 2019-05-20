@@ -14,7 +14,7 @@ int main(int argc, const char * argv[]) {
         
         NSMutableArray *holdings = [[NSMutableArray alloc]init];
         
-        //Create Elan, Set values
+        //Create James, Set values
         StockHolding *james = [[StockHolding alloc]init];
         [james setName:@"James"];
         [james setPurchaseSharePrice:12.78];
@@ -22,7 +22,7 @@ int main(int argc, const char * argv[]) {
         [james setNumberOfShares:100];
         [holdings addObject:james];
         
-        //Create Apple, Set values
+        //Create Nick, Set values
         StockHolding *nick = [[StockHolding alloc]init];
         [nick setName:@"Nick"];
         [nick setPurchaseSharePrice:322.57];
@@ -30,7 +30,7 @@ int main(int argc, const char * argv[]) {
         [nick setNumberOfShares:100];
         [holdings addObject:nick];
         
-        //Create Microsoft, Set values
+        //Create Julie, Set values
         StockHolding *julie = [[StockHolding alloc]init];
         [julie setName:@"Julie"];
         [julie setPurchaseSharePrice:57.44];
