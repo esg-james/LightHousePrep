@@ -15,7 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSArray* theArray;
 
 - (instancetype)initWithNumbers:(NSArray *)numbers;
-
 - (int)sumWithCondition:(NSString *)condition;
 
 @end

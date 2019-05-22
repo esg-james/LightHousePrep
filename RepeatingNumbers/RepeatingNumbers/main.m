@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "NumberRepeater.h"
 #import "ConditionalAdder.h"
+#import "TalkingCalendar.h"
 
 
 int main(int argc, const char * argv[]) {
@@ -35,6 +36,27 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%i", [adder2 sumWithCondition:@"even"]);
         ConditionalAdder *adder3 = [[ConditionalAdder alloc] initWithNumbers:@[]];
         NSLog(@"%i", [adder3 sumWithCondition:@"odd"]);
+        
+        
+         TalkingCalendar *calendar1 = [[TalkingCalendar alloc] initWithDate:@"2017/12/02"];
+         NSLog(@"%@", [calendar1 parse]);
+         TalkingCalendar *calendar2 = [[TalkingCalendar alloc] initWithDate:@"2007/11/11"];
+         NSLog(@"%@", [calendar2 parse]);
+         TalkingCalendar *calendar3 = [[TalkingCalendar alloc] initWithDate:@"1987/08/24"];
+         NSLog(@"%@", [calendar3 parse]);
+        
+        
+        //suffix experiment
+      /*  NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+        formatter.numberStyle = NSNumberFormatterOrdinalStyle;
+        NSArray<NSNumber *> *numbers = @[@3, @2, @3, @2, @5];
+        
+        for (NSNumber *number in numbers) {
+            NSLog(@"%@", [formatter stringFromNumber:number]);
+        }
+        // "1st", "2nd", "3rd", "4th", "5th"*/
+        
+        
         
         
         
