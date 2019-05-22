@@ -18,7 +18,7 @@
 - (NSString *)parse {
     
     NSString *temp = _myDate;
-    NSString *temp2 = _myDate;
+    NSString *temp2;
     NSString *suffix = @"th";
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
     
