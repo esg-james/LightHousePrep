@@ -20,19 +20,19 @@
     NSString *temp = _myDate;
     NSString *temp2;
     NSString *suffix = @"th";
-    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-    
-    [dateFormat setDateFormat:@"YYYY-MM-dd"];
-    NSDate *dte = [dateFormat dateFromString:temp];
     NSDateFormatter *dF = [[NSDateFormatter alloc] init];
     NSDateFormatter *dF2 = [[NSDateFormatter alloc] init];
+    
+    [dF setDateFormat:@"YYYY-MM-dd"];
+    NSDate *dte = [dF dateFromString:temp];
+    
     [dF setDateFormat:@"MMMM d"];
     temp = [dF stringFromDate:dte];
+    
     [dF2 setDateFormat:@", yyyy"];
     temp2 = [dF2 stringFromDate:dte];
-    if ([temp length] == 2 && [temp characterAtIndex:0] == '1') {
-        return suffix;
-    }
+    
+    
     
     switch ([temp characterAtIndex:[temp length]-1]) {
         case '1':

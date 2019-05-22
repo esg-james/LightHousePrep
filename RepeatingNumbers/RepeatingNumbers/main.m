@@ -44,6 +44,8 @@ int main(int argc, const char * argv[]) {
          NSLog(@"%@", [calendar2 parse]);
          TalkingCalendar *calendar3 = [[TalkingCalendar alloc] initWithDate:@"1987/08/24"];
          NSLog(@"%@", [calendar3 parse]);
+        TalkingCalendar *calendar4 = [[TalkingCalendar alloc] initWithDate:@"2122/12/31"];
+        NSLog(@"%@", [calendar4 parse]);
         
         
         //suffix experiment
