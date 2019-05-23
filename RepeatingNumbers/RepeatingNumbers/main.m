@@ -10,11 +10,12 @@
 #import "NumberRepeater.h"
 #import "ConditionalAdder.h"
 #import "TalkingCalendar.h"
+#import "ChangeCalculator.h"
 
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-
+        
         NumberRepeater *arrayUtility = [[NumberRepeater alloc]init];
         NSArray *arrayNum = @[@10000,@3,@876,@1011,@80,@5000,@9999,@8888];
         [arrayUtility largestNumber:arrayNum];
@@ -38,29 +39,23 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%i", [adder3 sumWithCondition:@"odd"]);
         
         
-         TalkingCalendar *calendar1 = [[TalkingCalendar alloc] initWithDate:@"2017/12/02"];
-         NSLog(@"%@", [calendar1 parse]);
-         TalkingCalendar *calendar2 = [[TalkingCalendar alloc] initWithDate:@"2007/11/11"];
-         NSLog(@"%@", [calendar2 parse]);
-         TalkingCalendar *calendar3 = [[TalkingCalendar alloc] initWithDate:@"1987/08/24"];
-         NSLog(@"%@", [calendar3 parse]);
+        TalkingCalendar *calendar1 = [[TalkingCalendar alloc] initWithDate:@"2017/12/02"];
+        NSLog(@"%@", [calendar1 parse]);
+        TalkingCalendar *calendar2 = [[TalkingCalendar alloc] initWithDate:@"2007/11/11"];
+        NSLog(@"%@", [calendar2 parse]);
+        TalkingCalendar *calendar3 = [[TalkingCalendar alloc] initWithDate:@"1987/08/24"];
+        NSLog(@"%@", [calendar3 parse]);
         TalkingCalendar *calendar4 = [[TalkingCalendar alloc] initWithDate:@"2122/12/31"];
         NSLog(@"%@", [calendar4 parse]);
         
         
-        //suffix experiment
-      /*  NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
-        formatter.numberStyle = NSNumberFormatterOrdinalStyle;
-        NSArray<NSNumber *> *numbers = @[@3, @2, @3, @2, @5];
+        ChangeCalculator * calculator1 = [[ChangeCalculator alloc]initWithTransactionTotal:1787 cashGiven:2000];
+        ChangeCalculator * calculator2 = [[ChangeCalculator alloc]initWithTransactionTotal:2623 cashGiven:4000];
+        ChangeCalculator * calculator3 = [[ChangeCalculator alloc]initWithTransactionTotal:501 cashGiven:1000];
         
-        for (NSNumber *number in numbers) {
-            NSLog(@"%@", [formatter stringFromNumber:number]);
-        }
-        // "1st", "2nd", "3rd", "4th", "5th"*/
-        
-        
-        
-        
+        NSLog(@"%@",[calculator1 calculateChange]);
+        NSLog(@"%@",[calculator2 calculateChange]);
+        NSLog(@"%@",[calculator3 calculateChange]);
         
     }
     return 0;
