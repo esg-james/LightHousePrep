@@ -14,7 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property NSString * thisWord;
 -(NSString *)process;
--(instancetype)initWithString:(NSString *)string;
 
 @end
 

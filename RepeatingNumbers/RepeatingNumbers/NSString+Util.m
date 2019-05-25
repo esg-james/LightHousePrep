@@ -10,14 +10,6 @@
 
 @implementation NSString(Util)
 
-@dynamic thisWord;
-
--(instancetype)initWithString:(NSString *)string {
-    
-    self = [self initWithString:@""];
-    return string;
-    
- }
 //did some reading on categories for this method, I was having trouble solving the exercise with the methods provided, ended up using a category of NSString to achieve the same output
  -(NSString *)process {
  NSMutableString *res = [NSMutableString string];
