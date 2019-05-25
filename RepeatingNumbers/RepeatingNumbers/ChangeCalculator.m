@@ -16,55 +16,55 @@
     return self;
 }
 
--(NSDictionary *)calculateChange {
-    
-    int pennies = _cashTotal - _transaction;
-    NSNumber *amt1;
-    int amounts[9];
-    NSArray *denominations = [[NSArray alloc]initWithObjects: @"Twenty", @"Ten", @"Five", @"Two", @"One", @"Quarter", @"Dime", @"Nickel", @"Penny", nil];
-    NSMutableDictionary *dict;
-    
-    dict = [@{@"Twenty" : @0,
-              @"Ten"  : @0,
-              @"Five" : @0,
-              @"Two"  : @0,
-              @"One"  : @0,
-              @"Quarter"  : @0,
-              @"Dime"  : @0,
-              @"Nickel"  : @0,
-              @"Penny"  : @0} mutableCopy];
-    
-    //amounts[0] Twenty
-    //amounts[1] Ten
-    //amounts[2] Five
-    //amounts[3] Two
-    //amounts[4] One
-    //amounts[5] Quarter
-    //amounts[6] Dime
-    //amounts[7] Nickel
-    //amounts[8] Penny
-    amounts[0] = pennies / 2000;
-    amounts[1] = (pennies - (amounts[0] * 2000)) / 1000;
-    amounts[2] = (pennies - (amounts[0] * 2000 + amounts[1] * 1000)) / 500;
-    amounts[3] = (pennies - (amounts[0] * 2000 + amounts[1] * 1000 + amounts[2] * 500)) / 200;
-    amounts[4] = (pennies - (amounts[0] * 2000 + amounts[1] * 1000 + amounts[2] * 500 + amounts[3] * 200)) / 100;
-    amounts[5] = (pennies - (amounts[0] * 2000 + amounts[1] * 1000 + amounts[2] * 500 + amounts[3] * 200 + amounts[4] * 100)) / 25;
-    amounts[6] = (pennies - (amounts[0] * 2000 + amounts[1] * 1000 + amounts[2] * 500 + amounts[3] * 200 + amounts[4] * 100 + amounts[5] * 25)) / 10;
-    amounts[7] = (pennies - (amounts[0] * 2000 + amounts[1] * 1000 + amounts[2] * 500 + amounts[3] * 200 + amounts[4] * 100 + amounts[5] * 25 + amounts[6] * 10)) / 5;
-    amounts[8] = (pennies - (amounts[0] * 2000 + amounts[1] * 1000 + amounts[2] * 500 + amounts[3] * 200 + amounts[4] * 100 + amounts[5] * 25 + amounts[6] * 10 + amounts[7] * 5));
-    
-    for(int i = 0; i < 9; i++) {
-        if (amounts[i] > 0) {
-            amt1 = [NSNumber numberWithInt:amounts[i]];
-            [dict setValue:amt1 forKey:denominations[i]];
+    -(NSDictionary *)calculateChange {
+        
+        int pennies = _cashTotal - _transaction;
+        NSNumber *amt1;
+        int amounts[9];
+        NSArray *denominations = [[NSArray alloc]initWithObjects: @"Twenty", @"Ten", @"Five", @"Two", @"One", @"Quarter", @"Dime", @"Nickel", @"Penny", nil];
+        NSMutableDictionary *dict;
+        
+        dict = [@{@"Twenty" : @0,
+                  @"Ten"  : @0,
+                  @"Five" : @0,
+                  @"Two"  : @0,
+                  @"One"  : @0,
+                  @"Quarter"  : @0,
+                  @"Dime"  : @0,
+                  @"Nickel"  : @0,
+                  @"Penny"  : @0} mutableCopy];
+        
+        //amounts[0] Twenty
+        //amounts[1] Ten
+        //amounts[2] Five
+        //amounts[3] Two
+        //amounts[4] One
+        //amounts[5] Quarter
+        //amounts[6] Dime
+        //amounts[7] Nickel
+        //amounts[8] Penny
+        amounts[0] = pennies / 2000;
+        amounts[1] = (pennies - (amounts[0] * 2000)) / 1000;
+        amounts[2] = (pennies - (amounts[0] * 2000 + amounts[1] * 1000)) / 500;
+        amounts[3] = (pennies - (amounts[0] * 2000 + amounts[1] * 1000 + amounts[2] * 500)) / 200;
+        amounts[4] = (pennies - (amounts[0] * 2000 + amounts[1] * 1000 + amounts[2] * 500 + amounts[3] * 200)) / 100;
+        amounts[5] = (pennies - (amounts[0] * 2000 + amounts[1] * 1000 + amounts[2] * 500 + amounts[3] * 200 + amounts[4] * 100)) / 25;
+        amounts[6] = (pennies - (amounts[0] * 2000 + amounts[1] * 1000 + amounts[2] * 500 + amounts[3] * 200 + amounts[4] * 100 + amounts[5] * 25)) / 10;
+        amounts[7] = (pennies - (amounts[0] * 2000 + amounts[1] * 1000 + amounts[2] * 500 + amounts[3] * 200 + amounts[4] * 100 + amounts[5] * 25 + amounts[6] * 10)) / 5;
+        amounts[8] = (pennies - (amounts[0] * 2000 + amounts[1] * 1000 + amounts[2] * 500 + amounts[3] * 200 + amounts[4] * 100 + amounts[5] * 25 + amounts[6] * 10 + amounts[7] * 5));
+        
+        for(int i = 0; i < 9; i++) {
+            if (amounts[i] > 0) {
+                amt1 = [NSNumber numberWithInt:amounts[i]];
+                [dict setValue:amt1 forKey:denominations[i]];
+            }
+            else {
+                [dict removeObjectForKey:denominations[i]];
+            }
         }
-        else {
-            [dict removeObjectForKey:denominations[i]];
-        }
+        
+        return dict;
     }
-    
-    return dict;
-}
 
 
 @end

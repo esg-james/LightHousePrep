@@ -11,6 +11,8 @@
 		550C70C92290C84F008E68F1 /* NumberRepeater.m in Sources */ = {isa = PBXBuildFile; fileRef = 550C70C82290C84F008E68F1 /* NumberRepeater.m */; };
 		550C70DF2291EF52008E68F1 /* ConditionalAdder.m in Sources */ = {isa = PBXBuildFile; fileRef = 550C70DE2291EF52008E68F1 /* ConditionalAdder.m */; };
 		557867C92294EB7E00C9F516 /* ChangeCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 557867C82294EB7E00C9F516 /* ChangeCalculator.m */; };
+		557867CC2298E50600C9F516 /* NSString+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 557867CB2298E50600C9F516 /* NSString+Util.m */; };
+		557867CF2299E75E00C9F516 /* CaseMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 557867CE2299E75E00C9F516 /* CaseMaker.m */; };
 		55C535092293748A001BFCE0 /* TalkingCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C535082293748A001BFCE0 /* TalkingCalendar.m */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,10 @@
 		550C70DE2291EF52008E68F1 /* ConditionalAdder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConditionalAdder.m; sourceTree = "<group>"; };
 		557867C72294EB7E00C9F516 /* ChangeCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeCalculator.h; sourceTree = "<group>"; };
 		557867C82294EB7E00C9F516 /* ChangeCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeCalculator.m; sourceTree = "<group>"; };
+		557867CA2298E50600C9F516 /* NSString+Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Util.h"; sourceTree = "<group>"; };
+		557867CB2298E50600C9F516 /* NSString+Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Util.m"; sourceTree = "<group>"; };
+		557867CD2299E75E00C9F516 /* CaseMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaseMaker.h; sourceTree = "<group>"; };
+		557867CE2299E75E00C9F516 /* CaseMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaseMaker.m; sourceTree = "<group>"; };
 		55C535072293748A001BFCE0 /* TalkingCalendar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TalkingCalendar.h; sourceTree = "<group>"; };
 		55C535082293748A001BFCE0 /* TalkingCalendar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TalkingCalendar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +82,10 @@
 				557867C82294EB7E00C9F516 /* ChangeCalculator.m */,
 				550C70C72290C84F008E68F1 /* NumberRepeater.h */,
 				550C70C82290C84F008E68F1 /* NumberRepeater.m */,
+				557867CA2298E50600C9F516 /* NSString+Util.h */,
+				557867CB2298E50600C9F516 /* NSString+Util.m */,
+				557867CD2299E75E00C9F516 /* CaseMaker.h */,
+				557867CE2299E75E00C9F516 /* CaseMaker.m */,
 				550C70DD2291EF52008E68F1 /* ConditionalAdder.h */,
 				550C70DE2291EF52008E68F1 /* ConditionalAdder.m */,
 			);
@@ -139,9 +149,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				55C535092293748A001BFCE0 /* TalkingCalendar.m in Sources */,
+				557867CF2299E75E00C9F516 /* CaseMaker.m in Sources */,
 				550C70C92290C84F008E68F1 /* NumberRepeater.m in Sources */,
 				557867C92294EB7E00C9F516 /* ChangeCalculator.m in Sources */,
 				550C70C12290C837008E68F1 /* main.m in Sources */,
+				557867CC2298E50600C9F516 /* NSString+Util.m in Sources */,
 				550C70DF2291EF52008E68F1 /* ConditionalAdder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

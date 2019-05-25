@@ -11,6 +11,8 @@
 #import "ConditionalAdder.h"
 #import "TalkingCalendar.h"
 #import "ChangeCalculator.h"
+#import "NSString+Util.h"
+#import "CaseMaker.h"
 
 
 int main(int argc, const char * argv[]) {
@@ -24,12 +26,12 @@ int main(int argc, const char * argv[]) {
         
         NumberRepeater *repeater1 = [[NumberRepeater alloc] initWithNumbers: @[@[@1, @10]]];
         NSLog(@"%@", [repeater1 process]);
-        
         NumberRepeater *repeater2 = [[NumberRepeater alloc] initWithNumbers: @[@[@1, @2], @[@2, @3]]];
         NSLog(@"%@", [repeater2 process]);
         NumberRepeater *repeater3 = [[NumberRepeater alloc] initWithNumbers: @[@[@10, @4], @[@34, @6], @[@92, @2]]];
         NSLog(@"%@", [repeater3 process]);
         
+       
         ConditionalAdder *adder1 = [[ConditionalAdder alloc] initWithNumbers:@[@1, @2, @3, @4, @5]];
         NSLog(@"%i", [adder1 sumWithCondition:@"even"]);
         NSLog(@"%i", [adder1 sumWithCondition:@"odd"]);
@@ -53,9 +55,46 @@ int main(int argc, const char * argv[]) {
         ChangeCalculator * calculator2 = [[ChangeCalculator alloc]initWithTransactionTotal:2623 cashGiven:4000];
         ChangeCalculator * calculator3 = [[ChangeCalculator alloc]initWithTransactionTotal:501 cashGiven:1000];
         
+        
+        
         NSLog(@"%@",[calculator1 calculateChange]);
         NSLog(@"%@",[calculator2 calculateChange]);
         NSLog(@"%@",[calculator3 calculateChange]);
+        
+        //Used a category of NSString to achieve correct output
+        NSLog(@"%@", @"this is a string".process);
+        NSLog(@"%@", @"loopy lighthouse".process);
+        NSLog(@"%@", @"supercalifragalisticexpialidocious".process);
+        NSLog(@"%@", @"HELLO BRO".process);
+        
+        
+        //CaseMaker *maker3 = [[CaseMaker alloc] initWithString:@"Hello world"];
+        //NSLog(@"%@", [maker3 process]);
+        
+        
+        
+        
+        
+        //experimentation with reading characters in strings as upper/lower case
+       /* int i = 0;
+        NSString *name = @"James Oliver Is Cool";
+        char twoChar = [name characterAtIndex:i];
+        NSCharacterSet *upper = [NSCharacterSet uppercaseLetterCharacterSet];
+        NSCharacterSet *lower = [NSCharacterSet lowercaseLetterCharacterSet];
+        
+        BOOL isUppercase = [[NSCharacterSet uppercaseLetterCharacterSet] characterIsMember:[name characterAtIndex:i]];
+        NSLog(@"%@",name);
+        for(i = 0; i < name.length; i++)
+        {
+            twoChar = [name characterAtIndex:i];
+            if(isUppercase)
+               name = [name stringByReplacingOccurrencesOfString:@" " withString:@""];
+            
+            
+        }
+        NSLog(@"%@",name);*/
+        
+        
         
     }
     return 0;
