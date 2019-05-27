@@ -13,6 +13,7 @@
 #import "ChangeCalculator.h"
 #import "NSString+Util.h"
 #import "CaseMaker.h"
+#import "MultiplicationTableBuilder.h"
 
 
 int main(int argc, const char * argv[]) {
@@ -55,19 +56,6 @@ int main(int argc, const char * argv[]) {
         ChangeCalculator * calculator2 = [[ChangeCalculator alloc]initWithTransactionTotal:2623 cashGiven:4000];
         ChangeCalculator * calculator3 = [[ChangeCalculator alloc]initWithTransactionTotal:501 cashGiven:1000];
         
-        
-        
-        NSLog(@"%@",[calculator1 calculateChange]);
-        NSLog(@"%@",[calculator2 calculateChange]);
-        NSLog(@"%@",[calculator3 calculateChange]);
-        
-        //Used a category of NSString to achieve correct output
-        NSLog(@"%@", @"this is a string".process);
-        NSLog(@"%@", @"loopy lighthouse".process);
-        NSLog(@"%@", @"supercalifragalisticexpialidocious".process);
-        NSLog(@"%@", @"HELLO BRO".process);
-        
-        
         CaseMaker *maker3 = [[CaseMaker alloc] initWithString:@"Hello world"];
         NSLog(@"%@", [maker3 process]);
         CaseMaker *maker1 = [[CaseMaker alloc] initWithString:@"this is a string"];
@@ -78,6 +66,19 @@ int main(int argc, const char * argv[]) {
         
         CaseMaker *maker4 = [[CaseMaker alloc] initWithString:@"supercalifragalisticexpialidocious"];
         NSLog(@"%@", [maker4 process]);
+        
+        NSLog(@"%@",[calculator1 calculateChange]);
+        NSLog(@"%@",[calculator2 calculateChange]);
+        NSLog(@"%@",[calculator3 calculateChange]);
+        
+        //Used a category of NSString to achieve correct output
+        NSLog(@"%@", @"this is a string".camelcaseString);
+        NSLog(@"%@", @"loopy lighthouse".camelcaseString);
+        NSLog(@"%@", @"supercalifragalisticexpialidocious".camelcaseString);
+        //NSLog(@"%@", @"HELLO BRO".process);
+        
+        
+        
         
         
         

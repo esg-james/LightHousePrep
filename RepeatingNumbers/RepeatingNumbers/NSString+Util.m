@@ -10,7 +10,7 @@
 
 @implementation NSString(Util)
 
-- (NSString *)process {
+- (NSString *)camelcaseString {
     NSMutableString *res = [NSMutableString string];
     [[self componentsSeparatedByString:@" "] enumerateObjectsUsingBlock:^(NSString * _Nonnull string, NSUInteger idx, BOOL * _Nonnull stop) {
         [res appendString:idx == 0 ? [string lowercaseString] : [string capitalizedString]];

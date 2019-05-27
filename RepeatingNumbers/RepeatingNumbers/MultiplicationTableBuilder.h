@@ -1,8 +1,8 @@
 //
-//  CaseMaker.h
+//  MultiplicationTableBuilder.h
 //  RepeatingNumbers
 //
-//  Created by James Oliver on 2019-05-24.
+//  Created by James Oliver on 2019-05-26.
 //  Copyright © 2019 James Oliver. All rights reserved.
 //
 
@@ -10,9 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSString(Util)
+@interface MultiplicationTableBuilder : NSObject
 
-@property (readonly, copy) NSString *camelcaseString;
+//+ (NSString *)drawTable:(int)maxValue;
 
 @end
 
