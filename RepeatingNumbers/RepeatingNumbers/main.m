@@ -68,8 +68,16 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%@", @"HELLO BRO".process);
         
         
-        //CaseMaker *maker3 = [[CaseMaker alloc] initWithString:@"Hello world"];
-        //NSLog(@"%@", [maker3 process]);
+        CaseMaker *maker3 = [[CaseMaker alloc] initWithString:@"Hello world"];
+        NSLog(@"%@", [maker3 process]);
+        CaseMaker *maker1 = [[CaseMaker alloc] initWithString:@"this is a string"];
+        NSLog(@"%@", [maker1 process]);
+        
+        CaseMaker *maker2 = [[CaseMaker alloc] initWithString:@"loopy lighthouse"];
+        NSLog(@"%@", [maker2 process]);
+        
+        CaseMaker *maker4 = [[CaseMaker alloc] initWithString:@"supercalifragalisticexpialidocious"];
+        NSLog(@"%@", [maker4 process]);
         
         
         

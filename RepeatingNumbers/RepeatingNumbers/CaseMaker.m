@@ -11,24 +11,26 @@
 @implementation CaseMaker
 
 -(instancetype)initWithString:(NSString *)string {
-    
-    self = [self initWithString:@""];
-    return self;
-    
+        self = [super init];
+        if (self) {
+            _aString = string;
+        }
+        return self;
 }
 
 -(NSString *)process {
-    NSArray *components = [_aString componentsSeparatedByString:@" "];
-    NSMutableString *camelCaseString = [NSMutableString string];
-    [components enumerateObjectsUsingBlock:^(NSString *component, NSUInteger idx, BOOL *stop) {
-        [camelCaseString appendString:(idx == 0 ? component : [component capitalizedString])];
-        if (idx > 0) {
-            [camelCaseString appendString:[component capitalizedString]];
-        } else {
-            [camelCaseString appendString:component];
-        }
-    }];
-    return [camelCaseString copy];
+    NSString *s;
+    NSString *m;
+    s =_aString;
+    s = [s capitalizedString];
+    
+    m = [s substringToIndex:1];
+    m = [m lowercaseString];
+    s = [s substringFromIndex:1];
+    
+    s = [s stringByReplacingOccurrencesOfString:@" " withString:@""];
+    s = [m stringByAppendingString:s];
+    return s;
 }
 
 @end
