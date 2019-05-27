@@ -23,7 +23,7 @@
 {
     //OPEN a connection to a DB
     
-    //self = [super init];
+    self = [super init];
     if (self) {
         _model = pn;
         _make = make;

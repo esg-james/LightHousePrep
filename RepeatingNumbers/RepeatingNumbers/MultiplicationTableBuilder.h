@@ -12,7 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MultiplicationTableBuilder : NSObject
 
-//+ (NSString *)drawTable:(int)maxValue;
++ (NSString *)drawTable:(int)maxValue;
+-(instancetype)initWithMaxValue:(int)thisValue;
+@property int myInt;
 
 @end
 

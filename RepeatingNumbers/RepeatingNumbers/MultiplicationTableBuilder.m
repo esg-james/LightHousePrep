@@ -10,8 +10,25 @@
 
 @implementation MultiplicationTableBuilder
 
-/*+ (NSString *)drawTable:(int)maxValue {
-    return 0;
-}*/
+-(instancetype)initWithMaxValue:(int)thisValue {
+    self = [super init];
+    if (self) {
+        _myInt = thisValue;
+    }
+    return self;
+}
+
++ (NSString *)drawTable:(int)maxValue {
+    maxValue = 20;
+    NSString *s = @"";
+    for(NSUInteger i = 0; i < maxValue; i++) {
+        s = [s stringByAppendingString:@"|__|"];
+        if(i > 10){
+            s = [s stringByAppendingString:@"\n"];
+        }
+    }
+    s = [s stringByReplacingOccurrencesOfString:@"__" withString:@"2"];
+    return s;
+}
 
 @end

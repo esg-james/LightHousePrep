@@ -80,28 +80,9 @@ int main(int argc, const char * argv[]) {
         
         
         
-        
-        
-        
-        
-        //experimentation with reading characters in strings as upper/lower case
-       /* int i = 0;
-        NSString *name = @"James Oliver Is Cool";
-        char twoChar = [name characterAtIndex:i];
-        NSCharacterSet *upper = [NSCharacterSet uppercaseLetterCharacterSet];
-        NSCharacterSet *lower = [NSCharacterSet lowercaseLetterCharacterSet];
-        
-        BOOL isUppercase = [[NSCharacterSet uppercaseLetterCharacterSet] characterIsMember:[name characterAtIndex:i]];
-        NSLog(@"%@",name);
-        for(i = 0; i < name.length; i++)
-        {
-            twoChar = [name characterAtIndex:i];
-            if(isUppercase)
-               name = [name stringByReplacingOccurrencesOfString:@" " withString:@""];
-            
-            
-        }
-        NSLog(@"%@",name);*/
+        NSLog(@"\n%@", [MultiplicationTableBuilder drawTable:1]);
+        NSLog(@"\n%@", [MultiplicationTableBuilder drawTable:5]);
+        NSLog(@"\n%@", [MultiplicationTableBuilder drawTable:10]);
         
         
         
