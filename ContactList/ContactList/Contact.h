@@ -1,6 +1,6 @@
 //
-//  InputHandler.h
-//  Maths
+//  Contact.h
+//  ContactList
 //
 //  Created by James Oliver on 2019-05-28.
 //  Copyright © 2019 James Oliver. All rights reserved.
@@ -10,9 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface InputHandler : NSObject
+@interface Contact : NSObject
 
-+(NSString *)getInputFor:(NSString *)questionString;
+@property NSString * name;
+@property NSString * email;
+- (instancetype)initWithName:(NSString *)name andEmail:(NSString *)email;
 
 @end
 

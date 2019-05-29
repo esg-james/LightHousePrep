@@ -1,6 +1,6 @@
 //
-//  InputHandler.h
-//  Maths
+//  InputCollector.h
+//  ContactList
 //
 //  Created by James Oliver on 2019-05-28.
 //  Copyright © 2019 James Oliver. All rights reserved.
@@ -10,9 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface InputHandler : NSObject
+@interface InputCollector : NSObject
 
-+(NSString *)getInputFor:(NSString *)questionString;
+-(NSString *)inputForPrompt:(NSString *)promptString;
 
 @end
 
