@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)list;
 -(void)showContact:(NSInteger)contactIndex;
 -(void)findContact:(NSString *)matchingInfo;
+-(void)duplicateEntry:(NSString *)isItDuplicate:(BOOL)canAddToList;
 
 @end
 

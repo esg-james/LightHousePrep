@@ -26,8 +26,10 @@ int main(int argc, const char * argv[]) {
             
             else if([userInput isEqual:@"new"]) {
     
-                NSString *name = [input inputForPrompt:@"Enter Your Name: "];
-                NSString *email = [input inputForPrompt:@"Enter Your Email: "];
+                
+                NSString *name = [input inputForPrompt:@"Enter Your E-Mail: "];
+                [contactList duplicateEntry:name];
+                NSString *email = [input inputForPrompt:@"Enter Your Name: "];
                 Contact *contactInfo = [[Contact alloc]initWithName:name andEmail:email];
                 [contactList addContact:contactInfo];
                 [contactInfo description];
@@ -38,9 +40,7 @@ int main(int argc, const char * argv[]) {
             else if ([userInput hasPrefix:@"show"]) {
                 
                 NSArray *componentsArray = [userInput componentsSeparatedByString:@" "];
-               // int component = componentsArray[1];
                 NSInteger component = [componentsArray[1] integerValue];
-                //NSLog(@"%@",componentsArray);
                 [contactList showContact:component];
             }
             else if([userInput hasPrefix:@"find"]) {

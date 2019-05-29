@@ -20,8 +20,11 @@
 }
 
 -(void)addContact:(Contact *)newContact {
+    
     [_contactList addObject:newContact];
+    
 }
+
 
 -(void)list {
     for(int i = 0; i < [_contactList count]; i++) {
@@ -50,5 +53,10 @@
         }
     }
 }
+
+- (void)duplicateEntry:(NSString *)isItDuplicate :(BOOL)canAddToList {
+    
+}
+//try bonus in the morning, use the same approach, remember you have the variable you need to do this, and the methods at your disposal, read documentation
 
 @end
