@@ -28,7 +28,7 @@ int main(int argc, const char * argv[]) {
     
                 
                 NSString *name = [input inputForPrompt:@"Enter Your E-Mail: "];
-                [contactList duplicateEntry:name];
+               // [contactList duplicateEntry:name];
                 NSString *email = [input inputForPrompt:@"Enter Your Name: "];
                 Contact *contactInfo = [[Contact alloc]initWithName:name andEmail:email];
                 [contactList addContact:contactInfo];
