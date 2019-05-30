@@ -21,7 +21,6 @@
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"Name: %@ Specialization: %@", _name,_specialization];
+    return [NSString stringWithFormat:@"Hello, my name is %@, I'm a doctor specializing in %@", _name,_specialization];
 }
-
 @end

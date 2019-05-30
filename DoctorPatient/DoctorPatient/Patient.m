@@ -10,7 +10,7 @@
 
 @implementation Patient
 
-- (instancetype)initWithName:(NSString *)myName Age:(int)myAge andHealthNumber:(int)myHealthNumber {
+- (instancetype)initWithName:(NSString *)myName Age:(int)myAge andHealthNumber:(NSString *)myHealthNumber {
     self = [super init];
     
     if(self) {
@@ -19,6 +19,11 @@
         _healthNumber = myHealthNumber;
     }
     return self;
+}
+
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"\nPatient Name: %@\nPatient Age: %d\nPatient HN: %@", _name,_age,_healthNumber];
 }
 
 @end

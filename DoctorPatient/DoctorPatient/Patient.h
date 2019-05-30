@@ -14,9 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property int age;
 @property NSString *name;
-@property int healthNumber;
+@property (nonatomic, strong)NSString *healthNumber;
 @property int money;
--(instancetype)initWithName:(NSString *)myName Age:(int)myAge andHealthNumber:(int)myHealthNumber;
+-(instancetype)initWithName:(NSString *)myName Age:(int)myAge andHealthNumber:(NSString *)myHealthNumber;
 
 @end
 

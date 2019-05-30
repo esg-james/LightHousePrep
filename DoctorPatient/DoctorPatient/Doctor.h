@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property int patientHN;
 
 -(instancetype)initWithName:(NSString *)myName andSpecialization:(NSString *)mySpec;
+@property NSDictionary *patientInfo;
 
 @end
 
