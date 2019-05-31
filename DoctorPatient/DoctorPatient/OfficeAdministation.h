@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)setUp;
 - (BOOL)patientHN:(NSString *)healthNumberInput;
 -(NSMutableDictionary *)arrayOf:(NSString *)Patients;
+@property NSMutableDictionary *patientArray;
 
 @end
 

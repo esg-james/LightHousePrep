@@ -13,6 +13,15 @@
 
 @implementation OfficeAdministation
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _patientArray = [NSMutableDictionary new];
+    }
+    return self;
+}
+
 -(void)setUp {
     
 }
@@ -28,10 +37,9 @@
     
 }
 -(NSMutableDictionary *)arrayOf:(NSString *)Patients {
-    NSMutableDictionary *patientArray = [NSMutableDictionary new];
-    [patientArray setValue:Patients forKey:@"Patients"];
-    NSLog(@"%@", patientArray);
-    return patientArray;
+    //increment the key every time a patient is added, gotta figure that out
+    [_patientArray setValue:Patients forKey:@"Patients"];
+    return _patientArray;
 }
 
 //can insert values for keys in dictionary in office admin

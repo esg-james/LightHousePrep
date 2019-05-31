@@ -45,12 +45,13 @@ int main(int argc, const char * argv[]) {
             [doctor eligibleForAppointment:healthNumberCheck];
             
             //patient information is added to patient files
-            [patientFiles setObject:healthNumber forKey:@"Patient"];
+            //[patientFiles setObject:healthNumber forKey:@"Patient"];
             
             
             NSString *patientSymptoms = [InputHandler getInputFor:@"What can I help you with today?"];
             [theirSymptoms symptomsofPatient:patientSymptoms];
             [frontDesk arrayOf:healthNumber];
+            NSLog(@"%@",frontDesk.patientArray);
             
         }
         
