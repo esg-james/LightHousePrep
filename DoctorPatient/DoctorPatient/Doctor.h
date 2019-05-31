@@ -15,9 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSString *specialization;
 @property NSString *name;
 @property int patientHN;
-
+-(BOOL)hasHealthNumber:(NSMutableArray *)patientFiles;
 -(instancetype)initWithName:(NSString *)myName andSpecialization:(NSString *)mySpec;
 @property NSDictionary *patientInfo;
+-(BOOL)eligibleForAppointment:(BOOL)letsDoThis;
 
 @end
 

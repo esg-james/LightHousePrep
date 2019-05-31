@@ -12,6 +12,7 @@
 		5599E93822A037AB009522EE /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5599E93722A037AB009522EE /* Patient.m */; };
 		5599E93F22A046BF009522EE /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5599E93E22A046BF009522EE /* InputHandler.m */; };
 		5599E94222A05E6D009522EE /* OfficeAdministation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5599E94122A05E6D009522EE /* OfficeAdministation.m */; };
+		5599E94822A1899B009522EE /* Symptoms.m in Sources */ = {isa = PBXBuildFile; fileRef = 5599E94722A1899B009522EE /* Symptoms.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		5599E93E22A046BF009522EE /* InputHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
 		5599E94022A05E6D009522EE /* OfficeAdministation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OfficeAdministation.h; sourceTree = "<group>"; };
 		5599E94122A05E6D009522EE /* OfficeAdministation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OfficeAdministation.m; sourceTree = "<group>"; };
+		5599E94622A1899B009522EE /* Symptoms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Symptoms.h; sourceTree = "<group>"; };
+		5599E94722A1899B009522EE /* Symptoms.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Symptoms.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				5599E94022A05E6D009522EE /* OfficeAdministation.h */,
 				5599E94122A05E6D009522EE /* OfficeAdministation.m */,
 				5599E92C22A0356C009522EE /* main.m */,
+				5599E94622A1899B009522EE /* Symptoms.h */,
+				5599E94722A1899B009522EE /* Symptoms.m */,
 				5599E93D22A046BF009522EE /* InputHandler.h */,
 				5599E93E22A046BF009522EE /* InputHandler.m */,
 				5599E93622A037AB009522EE /* Patient.h */,
@@ -141,6 +146,7 @@
 				5599E93822A037AB009522EE /* Patient.m in Sources */,
 				5599E93522A03587009522EE /* Doctor.m in Sources */,
 				5599E94222A05E6D009522EE /* OfficeAdministation.m in Sources */,
+				5599E94822A1899B009522EE /* Symptoms.m in Sources */,
 				5599E92D22A0356C009522EE /* main.m in Sources */,
 				5599E93F22A046BF009522EE /* InputHandler.m in Sources */,
 			);

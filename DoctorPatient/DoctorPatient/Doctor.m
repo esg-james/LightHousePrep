@@ -7,6 +7,7 @@
 //
 
 #import "Doctor.h"
+#import "OfficeAdministation.h"
 
 @implementation Doctor
 
@@ -17,6 +18,16 @@
         _specialization = mySpec;
     }
     return self;
+}
+-(BOOL)eligibleForAppointment:(BOOL)letsDoThis {
+    if(letsDoThis) {
+        NSLog(@"your'e good to go");
+        return YES;
+    }
+    else {
+        NSLog(@"get out");
+        return NO;
+    }
 }
 
 - (NSString *)description

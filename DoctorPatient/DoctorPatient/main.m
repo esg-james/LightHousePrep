@@ -10,25 +10,56 @@
 #import "Doctor.h"
 #import "Patient.h"
 #import "InputHandler.h"
+#import "OfficeAdministation.h"
+#import "Symptoms.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        
+        //contains patient files when a valid health number is provided
         NSMutableDictionary *patientFiles = [NSMutableDictionary new];
-        Doctor *doctor = [[Doctor alloc]initWithName:@"Dr Jum" andSpecialization:@"Butts"];
-        NSLog(@"%@", doctor);
-        NSString *healthNumber = [InputHandler getInputFor:@"Please provide your health number"];
-        Patient *patient = [[Patient alloc]initWithName:@"Bum Commerford" Age:24 andHealthNumber:healthNumber];
-        if([healthNumber length] == 9) {
-            NSLog(@"Thank you, your health number is: %@", healthNumber);
-            [patientFiles setObject:healthNumber forKey:@"Patient 1"];
+        
+        //the front desk holds patient information
+        OfficeAdministation *frontDesk = [[OfficeAdministation alloc] init];
+        [frontDesk setUp];
+        
+        //symptoms provided by patient
+        Symptoms *theirSymptoms = [[Symptoms alloc] init];
+        
+        while(1) {
+            
+            //instantiating doctor and calling description
+            Doctor *doctor = [[Doctor alloc]initWithName:@"Dr Jum" andSpecialization:@"Butts"];
+            NSLog(@"%@", doctor);
+            
+            //getting input for health number
+            NSString *name = [InputHandler getInputFor:@"Please provide your name"];
+            NSString *healthNumber = [InputHandler getInputFor:@"Please provide your health number"];
+            NSString *age = [InputHandler getInputFor:@"What is your age?"];
+            
+            Patient *patient = [[Patient alloc]initWithName:name Age:age andHealthNumber:healthNumber];
+            
+            
+            //doctor checks if front desk has valid information for patient
+            BOOL healthNumberCheck = [frontDesk patientHN:healthNumber];
+            [doctor eligibleForAppointment:healthNumberCheck];
+            
+            //patient information is added to patient files
+            [patientFiles setObject:healthNumber forKey:@"Patient"];
+            
+            
+            NSString *patientSymptoms = [InputHandler getInputFor:@"What can I help you with today?"];
+            [theirSymptoms symptomsofPatient:patientSymptoms];
+            [frontDesk arrayOf:healthNumber];
+            
         }
-        else {
-            NSLog(@"That is not  a valid health number, please supply a valid health number to receive prescriptions");
-        }
-       // [patientFiles setObject:healthNumber forKey:];
-        NSLog(@"%@", patientFiles);
+        
+        
+        
+        
+        //@protocol - This requires any classes using the delegate to do something with the delegate methods by default
+        //@optional - if methods are defined as optional, delegates do not NEED to use them
+        //@required - these methods will always be required
         
     }
     return 0;

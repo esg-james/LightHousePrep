@@ -22,7 +22,7 @@ typedef enum PizzaSize {
 @property PizzaSize pizzaSize;
 @property NSMutableArray<NSString*> * pizzaToppings;
 
-- (instancetype)initWithSize: (PizzaSize)size andToppings: (NSArray*) arrayOfPizzaToppings;
+- (instancetype)initWithSize: (PizzaSize)size andToppings: (NSMutableArray*) arrayOfPizzaToppings;
 
 @end
 

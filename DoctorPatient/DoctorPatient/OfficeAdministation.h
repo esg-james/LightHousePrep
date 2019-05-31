@@ -7,13 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Patient.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface OfficeAdministation : NSObject
-
--(BOOL)hasHealthNumber:(NSString *)healthNumber;
-
+-(void)setUp;
+- (BOOL)patientHN:(NSString *)healthNumberInput;
+-(NSMutableDictionary *)arrayOf:(NSString *)Patients;
 
 @end
 

@@ -26,14 +26,30 @@ int main(int argc, const char * argv[])
         while (TRUE) {
             
             NSString *formattedUserInputString = [InputHandler formatUserInput];
+            NSArray *pizzaSizes = @[@"small", @"medium", @"large"];
+            NSMutableArray *commandWords = [[formattedUserInputString componentsSeparatedByString:@" "]mutableCopy];
+            int pizzaSize = 0;
+            if(commandWords.count >0) {
+                NSString *theSize = commandWords[0];
+                
+                [commandWords removeObject:commandWords[0]];
+                if([theSize isEqualToString:@"small"]) {
+                    pizzaSize = 0;
+                }
+                else if([theSize isEqualToString:@"medium"]) {
+                    pizzaSize = 1;
+                }
+                else if([theSize isEqualToString:@"large"]) {
+                    pizzaSize = 2;
+                }
+            }
+            else {
+                NSLog(@"nah");
+            }
             
-            NSMutableArray *commandWords = [formattedUserInputString componentsSeparatedByString:@" "];
-            NSString *theSize = commandWords[0];
             
-            NSLog(@"%@", theSize);
-            [commandWords removeObject:commandWords[0]];
-            Pizza *myPizza = [[Pizza alloc]initWithSize:small andToppings:commandWords];
-            NSLog(@"%@",myPizza);
+            Pizza *myPizza = [[Pizza alloc]initWithSize:pizzaSize andToppings:commandWords];
+            NSLog(@"%@",[myPizza description]);
             
             // And then send some message to the kitchen...
         }
