@@ -19,18 +19,21 @@ int main(int argc, const char * argv[]) {
         GameController *ctrl = [[GameController alloc]init];
         [ctrl addDie];
         NSLog(@"%@",[ctrl description]); 
-        NSLog(@"⚀ ⚁ ⚂ ⚃ ⚄ ⚅");
-        NSString *userInput = [InputHandler getInputFor:@"Welcome to Threelow, the game of having less\nWould you like to 'roll'?"];
+//        NSLog(@"⚀ ⚁ ⚂ ⚃ ⚄ ⚅");
+        NSString *userInput = [InputHandler getInputFor:@"Welcome to Threelow, the game of winning with less\nWould you like to 'roll'?"];
         NSLog(@"%@",[userInput description]);
         NSLog(@"hey");
-        if([userInput isEqual:@"roll"]) {
-
-        }
-        else if([userInput hasPrefix:@"remove"]) {
-            NSArray *componentsArray = [userInput componentsSeparatedByString:@" "];
-            NSInteger component = [componentsArray[1] integerValue];
-            NSLog(@"%ld",(long)component);
-        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         //maybe change die initialization in gamecontroller to be only prompted when the user enters roll
         //use inputString isEqualTo to check for roll
