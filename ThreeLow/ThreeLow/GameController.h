@@ -14,9 +14,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property NSMutableArray *dieHeld;
 @property NSMutableArray *dieLeft;
+@property int rollsSinceLastReset;
+
 -(NSMutableArray *) addDie;
--(NSMutableArray *) holdDie;
--(void) removeDie;
+-(void) holdDie: (int)atIndex;
+-(void) removeDie: (int)atIndex;
+-(void) unholdDie: (int)atIndex;
+-(void) resetHeldDie;
+-(int)finalScore;
+-(void)rollsSinceReset;
 
 @end
 

@@ -10,17 +10,25 @@
 
 @implementation Dice
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        _die = arc4random_uniform(6);
+
+-(void)rollDie {
+    
+    int diceVal;
+    
+    diceVal = 1 + arc4random_uniform(6);
+    
+    if(diceVal == 3) {
+        _rolledNumber = 0;
     }
-    return self;
+    else {
+        _rolledNumber = diceVal;
+    }
+    
 }
+
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"%d", _die];
+    return [NSString stringWithFormat:@"%d", _rolledNumber];
 }
 
 @end
