@@ -56,6 +56,18 @@ SketchState *currentState;
 //}
 
 
+- (IBAction)ClickedRandomFaceButton:(UIButton *)sender {
+    
+    [currentState randomFace];
+    UIImage *newImage = [UIImage imageNamed:currentState.currentEyes];
+    _eyes_image.image = newImage;
+    UIImage *newImage2 = [UIImage imageNamed:currentState.currentNose];
+    _nose_image.image = newImage2;
+    UIImage *newImage3 = [UIImage imageNamed:currentState.currentMouth];
+    _mouth_image.image = newImage3;
+    
+}
+
 - (IBAction)ClickNextEyeButton:(UIButton *)sender {
     
     [currentState nextEyes];
@@ -93,4 +105,5 @@ SketchState *currentState;
     UIImage *newImage = [UIImage imageNamed:currentState.currentMouth];
     _mouth_image.image = newImage;
 }
+
 @end

@@ -20,8 +20,11 @@
 @property (weak, nonatomic) IBOutlet UIImageView *eyes_image;
 @property (weak, nonatomic) IBOutlet UIImageView *nose_image;
 @property (weak, nonatomic) IBOutlet UIImageView *mouth_image;
+@property (weak, nonatomic) IBOutlet UIButton *RandomFaceButton;
 
 
+
+- (IBAction)ClickedRandomFaceButton:(UIButton *)sender;
 
 - (IBAction)ClickNextEyeButton:(UIButton *)sender;
 - (IBAction)ClickNextNoseButton:(UIButton *)sender;
@@ -31,7 +34,6 @@
 - (IBAction)ClickPrevMouthButton:(UIButton *)sender;
 
 
-@property (nonatomic, strong) UIView *viewB;
 
 //initwithframe
 //initwithcoder

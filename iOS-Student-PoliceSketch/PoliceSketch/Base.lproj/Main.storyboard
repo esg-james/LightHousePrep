@@ -61,14 +61,6 @@
                                     <action selector="ClickPrevNoseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RJo-vm-MRM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gAl-8P-dgr" userLabel="Button_mouth_left">
-                                <rect key="frame" x="16" y="210" width="50" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="arrow_left"/>
-                                <connections>
-                                    <action selector="ClickPrevMouthButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="med-oT-N3d"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rB3-5q-FYD" userLabel="Button_mouth_right">
                                 <rect key="frame" x="309" y="210" width="50" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -77,10 +69,33 @@
                                     <action selector="ClickNextMouthButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I2C-Vh-Gtu"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gAl-8P-dgr" userLabel="Button_mouth_left">
+                                <rect key="frame" x="16" y="210" width="50" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="arrow_left"/>
+                                <connections>
+                                    <action selector="ClickPrevMouthButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="med-oT-N3d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Jvs-kn-BT7" userLabel="random_face">
+                                <rect key="frame" x="131" y="367" width="113" height="227"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                                </accessibility>
+                                <state key="normal" title="Rand" image="arrow_right">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="ClickNextEyeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="61p-lK-8w1"/>
+                                    <action selector="ClickedRandomFaceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vU7-Wc-7OH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="RandomFaceButton" destination="Jvs-kn-BT7" id="DFV-vq-sIt"/>
                         <outlet property="eyes_image" destination="aFc-k7-zB4" id="Fae-Hf-r05"/>
                         <outlet property="mouth_image" destination="3xe-lc-OQE" id="YnC-PX-o06"/>
                         <outlet property="nextEyeButton" destination="uqI-ao-Gr6" id="tqy-cO-t28"/>
@@ -94,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="86.25" y="148.96333333333331"/>
+            <point key="canvasLocation" x="85.599999999999994" y="148.87556221889056"/>
         </scene>
     </scenes>
     <resources>

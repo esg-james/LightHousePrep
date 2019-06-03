@@ -24,6 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)previousNose;
 -(void)nextMouth;
 -(void)previousMouth;
+-(void)randomFace;
 
 
 

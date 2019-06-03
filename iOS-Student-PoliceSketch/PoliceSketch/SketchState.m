@@ -74,12 +74,13 @@
    self.currentMouth =  [self previous:self.currentMouth];
 }
 
+- (void)randomFace {
+    self.currentEyes = [NSString stringWithFormat:@"eyes_%d",1 + arc4random_uniform(5)];
+    self.currentNose = [NSString stringWithFormat:@"nose_%d",1 + arc4random_uniform(5)];
+    self.currentMouth = [NSString stringWithFormat:@"mouth_%d",1 + arc4random_uniform(5)];
+}
 
-//Nose
 
-
-
-//Mouth
 
 
 @end
