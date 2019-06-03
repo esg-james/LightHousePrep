@@ -7,40 +7,27 @@
 //
 
 #import "LHLViewController.h"
+#import "SketchState.h"
 
 @interface LHLViewController ()
 
+
 @end
 
-@implementation LHLViewController {
-    UIView *_viewA;
-    UIView *_viewB;
-    UIView *_viewC;
-    UIView *_viewD;
-    UIView *_viewE;
-    
-}
+@implementation LHLViewController
+SketchState *currentState;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    currentState = [[SketchState alloc]init];
+    
+    
 //    // Do any additional setup after loading the view, typically from a nib.
-//    _viewA = [[UIView alloc]initWithFrame:CGRectMake(20, 44, 374, 808)];
-//    [_viewA setBackgroundColor:[UIColor blueColor]];
-//    [self.view addSubview:_viewA];
-//
-//    _viewB = [[UIView alloc]initWithFrame:CGRectMake(8, 8, 358, 300)];
-//    _viewB.backgroundColor = UIColor.yellowColor;
-//    [self.view addSubview:_viewB];
-//
-//    _viewC = [[UIView alloc]initWithFrame:CGRectMake(8, 316, 358, 484)];
-//    _viewC.backgroundColor = [UIColor blueColor];
-//    [self.view addSubview:_viewC];
-//
-//    _viewD = [[UIView alloc]initWithFrame:CGRectMake(8, 316, 342, 227)];
-//    _viewD.backgroundColor = UIColor.redColor;
-//    [self.view addSubview:_viewD];
-//
+//     _viewB = [UIImage imageNamed:@"eyes_2"];
+//     _viewB = [[UIView alloc]initWithFrame:CGRectMake(8, 8, 358, 300)];
+//     [self.view addSubview:_viewB];
+
 //    _viewE = [[UIView alloc]initWithFrame:CGRectMake(8, 8, 342, 227)];
 //    _viewE.backgroundColor = UIColor.grayColor;
 //    [self.view addSubview:_viewE];
@@ -69,4 +56,41 @@
 //}
 
 
+- (IBAction)ClickNextEyeButton:(UIButton *)sender {
+    
+    [currentState nextEyes];
+    UIImage *newImage = [UIImage imageNamed:currentState.currentEyes];
+    _eyes_image.image = newImage;
+    
+}
+- (IBAction)ClickNextNoseButton:(UIButton *)sender {
+    
+    [currentState nextNose];
+    UIImage *newImage = [UIImage imageNamed:currentState.currentNose];
+    _nose_image.image = newImage;
+}
+- (IBAction)ClickNextMouthButton:(UIButton *)sender {
+    
+    [currentState nextMouth];
+    UIImage *newImage = [UIImage imageNamed:currentState.currentMouth];
+    _mouth_image.image = newImage;
+}
+- (IBAction)ClickPrevEyesButton:(UIButton *)sender {
+    
+    [currentState previousEyes];
+    UIImage *newImage = [UIImage imageNamed:currentState.currentEyes];
+    _eyes_image.image = newImage;
+}
+- (IBAction)ClickPrevNoseButton:(UIButton *)sender {
+    
+    [currentState previousNose];
+    UIImage *newImage = [UIImage imageNamed:currentState.currentNose];
+    _nose_image.image = newImage;
+}
+- (IBAction)ClickPrevMouthButton:(UIButton *)sender {
+    
+    [currentState previousMouth];
+    UIImage *newImage = [UIImage imageNamed:currentState.currentMouth];
+    _mouth_image.image = newImage;
+}
 @end

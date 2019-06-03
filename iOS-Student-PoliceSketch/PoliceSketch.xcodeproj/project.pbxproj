@@ -14,6 +14,7 @@
 		221F8A901F8C1C14009790AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221F8A8E1F8C1C14009790AF /* LaunchScreen.storyboard */; };
 		221F8A931F8C1C14009790AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F8A921F8C1C14009790AF /* main.m */; };
 		221F8A9D1F8C1C14009790AF /* PoliceSketchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F8A9C1F8C1C14009790AF /* PoliceSketchTests.m */; };
+		5580FF8F22A599D3005A5993 /* SketchState.m in Sources */ = {isa = PBXBuildFile; fileRef = 5580FF8E22A599D3005A5993 /* SketchState.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		221F8A981F8C1C14009790AF /* PoliceSketchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoliceSketchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		221F8A9C1F8C1C14009790AF /* PoliceSketchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoliceSketchTests.m; sourceTree = "<group>"; };
 		221F8A9E1F8C1C14009790AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5580FF8D22A599D3005A5993 /* SketchState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SketchState.h; sourceTree = "<group>"; };
+		5580FF8E22A599D3005A5993 /* SketchState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SketchState.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				221F8A841F8C1C14009790AF /* LHLAppDelegate.m */,
 				221F8A861F8C1C14009790AF /* LHLViewController.h */,
 				221F8A871F8C1C14009790AF /* LHLViewController.m */,
+				5580FF8D22A599D3005A5993 /* SketchState.h */,
+				5580FF8E22A599D3005A5993 /* SketchState.m */,
 				221F8A891F8C1C14009790AF /* Main.storyboard */,
 				221F8A8C1F8C1C14009790AF /* Assets.xcassets */,
 				221F8A8E1F8C1C14009790AF /* LaunchScreen.storyboard */,
@@ -147,7 +152,7 @@
 		221F8A781F8C1C14009790AF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Sam Meech-Ward";
 				TargetAttributes = {
 					221F8A7F1F8C1C14009790AF = {
@@ -208,6 +213,7 @@
 				221F8A881F8C1C14009790AF /* LHLViewController.m in Sources */,
 				221F8A931F8C1C14009790AF /* main.m in Sources */,
 				221F8A851F8C1C14009790AF /* LHLAppDelegate.m in Sources */,
+				5580FF8F22A599D3005A5993 /* SketchState.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +269,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -270,6 +277,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -318,6 +326,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -325,6 +334,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

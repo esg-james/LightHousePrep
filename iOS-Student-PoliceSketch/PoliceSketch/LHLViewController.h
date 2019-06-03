@@ -10,12 +10,28 @@
 
 @interface LHLViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *nextEyeButton;
+@property (weak, nonatomic) IBOutlet UIButton *nextNoseButton;
+@property (weak, nonatomic) IBOutlet UIButton *nextMouthButton;
+@property (weak, nonatomic) IBOutlet UIButton *prevEyesButton;
+@property (weak, nonatomic) IBOutlet UIButton *prevNoseButton;
+@property (weak, nonatomic) IBOutlet UIButton *prevMouthButton;
 
-//@property (nonatomic, strong) UIView *viewA;
-//@property (nonatomic, strong) UIView *viewB;
-//@property (nonatomic, strong) UIView *viewC;
-//@property (nonatomic, strong) UIView *viewD;
-//@property (nonatomic, strong) UIView *viewE;
+@property (weak, nonatomic) IBOutlet UIImageView *eyes_image;
+@property (weak, nonatomic) IBOutlet UIImageView *nose_image;
+@property (weak, nonatomic) IBOutlet UIImageView *mouth_image;
+
+
+
+- (IBAction)ClickNextEyeButton:(UIButton *)sender;
+- (IBAction)ClickNextNoseButton:(UIButton *)sender;
+- (IBAction)ClickNextMouthButton:(UIButton *)sender;
+- (IBAction)ClickPrevEyesButton:(UIButton *)sender;
+- (IBAction)ClickPrevNoseButton:(UIButton *)sender;
+- (IBAction)ClickPrevMouthButton:(UIButton *)sender;
+
+
+@property (nonatomic, strong) UIView *viewB;
 
 //initwithframe
 //initwithcoder

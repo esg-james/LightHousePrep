@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,32 +17,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eyes_1" translatesAutoresizingMaskIntoConstraints="NO" id="aFc-k7-zB4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eyes_1" id="aFc-k7-zB4">
                                 <rect key="frame" x="77" y="20" width="220" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqI-ao-Gr6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nose_1" id="RcJ-Fm-0xJ" userLabel="nose_1">
+                                <rect key="frame" x="77" y="120" width="220" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mouth_1" id="3xe-lc-OQE" userLabel="mouth_1">
+                                <rect key="frame" x="77" y="220" width="220" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uqI-ao-Gr6" userLabel="Button_eyes_right">
                                 <rect key="frame" x="309" y="20" width="50" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arrow_right"/>
+                                <connections>
+                                    <action selector="ClickNextEyeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="byA-LG-Toi"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAO-EM-ERB">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rAO-EM-ERB" userLabel="Button_eyes_left">
                                 <rect key="frame" x="16" y="20" width="50" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arrow_left"/>
+                                <connections>
+                                    <action selector="ClickPrevEyesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M1E-tM-soQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ToY-bm-DHj" userLabel="Button_nose_right">
+                                <rect key="frame" x="309" y="128" width="50" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="arrow_right"/>
+                                <connections>
+                                    <action selector="ClickNextNoseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xdQ-Ve-i27"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4te-yn-5Gn" userLabel="Button_nose_left">
+                                <rect key="frame" x="16" y="128" width="50" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="arrow_left"/>
+                                <connections>
+                                    <action selector="ClickPrevNoseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RJo-vm-MRM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gAl-8P-dgr" userLabel="Button_mouth_left">
+                                <rect key="frame" x="16" y="210" width="50" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="arrow_left"/>
+                                <connections>
+                                    <action selector="ClickPrevMouthButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="med-oT-N3d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rB3-5q-FYD" userLabel="Button_mouth_right">
+                                <rect key="frame" x="309" y="210" width="50" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="arrow_right"/>
+                                <connections>
+                                    <action selector="ClickNextMouthButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I2C-Vh-Gtu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="eyes_image" destination="aFc-k7-zB4" id="Fae-Hf-r05"/>
+                        <outlet property="mouth_image" destination="3xe-lc-OQE" id="YnC-PX-o06"/>
+                        <outlet property="nextEyeButton" destination="uqI-ao-Gr6" id="tqy-cO-t28"/>
+                        <outlet property="nextMouthButton" destination="rB3-5q-FYD" id="T1Q-SD-Xj7"/>
+                        <outlet property="nextNoseButton" destination="ToY-bm-DHj" id="xHo-pn-GxL"/>
+                        <outlet property="nose_image" destination="RcJ-Fm-0xJ" id="ADX-63-Cii"/>
+                        <outlet property="prevEyesButton" destination="rAO-EM-ERB" id="scq-1d-peV"/>
+                        <outlet property="prevMouthButton" destination="gAl-8P-dgr" id="0HI-Pk-20B"/>
+                        <outlet property="prevNoseButton" destination="4te-yn-5Gn" id="doS-Ef-wQh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="86.25" y="148.96333333333331"/>
         </scene>
     </scenes>
     <resources>
         <image name="arrow_left" width="50" height="100"/>
         <image name="arrow_right" width="50" height="100"/>
         <image name="eyes_1" width="220" height="100"/>
+        <image name="mouth_1" width="220" height="100"/>
+        <image name="nose_1" width="220" height="100"/>
     </resources>
 </document>
