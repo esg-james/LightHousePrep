@@ -11,5 +11,12 @@
 @interface LHLViewController : UIViewController
 
 
+//@property (nonatomic, strong) UIView *viewA;
+//@property (nonatomic, strong) UIView *viewB;
+//@property (nonatomic, strong) UIView *viewC;
+//@property (nonatomic, strong) UIView *viewD;
+//@property (nonatomic, strong) UIView *viewE;
+
+
 @end
 
