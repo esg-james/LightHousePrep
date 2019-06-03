@@ -17,6 +17,10 @@
 //@property (nonatomic, strong) UIView *viewD;
 //@property (nonatomic, strong) UIView *viewE;
 
+//initwithframe
+//initwithcoder
+
+
 
 @end
 
