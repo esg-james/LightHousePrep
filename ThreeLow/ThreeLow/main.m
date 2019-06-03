@@ -98,7 +98,7 @@ int main(int argc, const char * argv[]) {
 //if 3, don't add to score
 //score tallied at end of game, when there are no die left(?)
 //who am I rolling against, another player? An object? <--- probably and object that basically does the same thing after my turn completes?
-//features to add - game loop /held die:this will allow user to freeze die? using indexes of array element to freeze them, set them to a BOOL value that means they are perhaps deleted from one array but added to another? maybe if I add an array to an array and then remove the objects that aren't to be rolled (store their values as score?) then use that new array to continue game? <---- this will be hard
+//features to add - game loop /held die:this will allow user to freeze die? using indexes of array element to  freeze them, set them to a BOOL value that means they are perhaps deleted from one array but added to another? maybe if I add an array to an array and then remove the objects that aren't to be rolled (store their values as score?) then use that new array to continue game? <---- this will be hard
 //^similar, but we want to unhold if the user makes a mistake, for these methods listed, I need to display the die face for ease
 //reset held die, should be similar to the unhold die method, remember that holding and unholding are basically just switching the arrays they are in?
 //score keeper
