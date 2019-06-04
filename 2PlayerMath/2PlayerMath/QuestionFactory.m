@@ -18,11 +18,12 @@
     return self;
 }
 
+
 - (Question *)generateRandomQuestion {
-    int randomSelector = 0 + arc4random_uniform(4);
-    NSString *randomChoice = _questionSubclassNames[randomSelector];
-    //_questionSubclassNames = _questionSubclassNames[randomSelector];
-    return [[NSClassFromString(randomChoice) alloc]init];
+    
+    NSString *className = [_questionSubclassNames objectAtIndex:arc4random_uniform(4)];
+    NSLog(@"%@",className);
+    return [[NSClassFromString(className) alloc]init];
 }
 
 @end

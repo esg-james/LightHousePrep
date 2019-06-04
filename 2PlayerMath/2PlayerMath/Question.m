@@ -15,8 +15,9 @@
     self = [super init];
     if (self) {
         _startTime = [NSDate date];
-        _rightValue = 10 + arc4random_uniform(90);
-        _leftValue = 10 + arc4random_uniform(90);
+        _rightValue = 1 + arc4random_uniform(20);
+        _leftValue = 1 + arc4random_uniform(20);
+        _playerNumber = 1;
     }
     return self;
 }

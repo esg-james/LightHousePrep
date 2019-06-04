@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "Question.h"
+#import "ScoreKeeper.h"
+#import "QuestionManager.h"
+#import "QuestionFactory.h"
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {

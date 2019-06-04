@@ -11,6 +11,16 @@
 @implementation ScoreKeeper
 
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _rightCount = 0;
+        _wrongCount = 0;
+        _playerNumber = 1;
+    }
+    return self;
+}
 
 - (void)getScore:(BOOL)isAnswerCorrect {
     

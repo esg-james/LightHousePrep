@@ -44,7 +44,7 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANSWER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qmn-Ha-7Dl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qmn-Ha-7Dl">
                                 <rect key="frame" x="20" y="148" width="375" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.27683046369999997" green="0.91422441710000002" blue="0.85013176729999995" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
@@ -59,6 +59,9 @@
                                 <color key="backgroundColor" red="0.27683046366803182" green="0.9142244170984456" blue="0.85013176733730911" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="0"/>
+                                <connections>
+                                    <action selector="touchKey0Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LWk-KY-fdL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="n7w-80-Ope">
                                 <rect key="frame" x="149" y="325" width="114" height="114"/>
@@ -66,6 +69,9 @@
                                 <color key="backgroundColor" red="0.27683046369999997" green="0.91422441710000002" blue="0.85013176729999995" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="touchKey1Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VGw-Ar-tei"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3J4-Wh-vPf">
                                 <rect key="frame" x="279" y="325" width="114" height="114"/>
@@ -73,6 +79,9 @@
                                 <color key="backgroundColor" red="0.27683046369999997" green="0.91422441710000002" blue="0.85013176729999995" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="touchKey2Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fwv-mh-pjW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WfN-fH-HHh">
                                 <rect key="frame" x="20" y="460" width="114" height="114"/>
@@ -80,6 +89,9 @@
                                 <color key="backgroundColor" red="0.27683046369999997" green="0.91422441710000002" blue="0.85013176729999995" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="touchKey3Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BOD-On-sgN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MBN-IX-1Kq">
                                 <rect key="frame" x="149" y="460" width="114" height="114"/>
@@ -87,6 +99,9 @@
                                 <color key="backgroundColor" red="0.27683046369999997" green="0.91422441710000002" blue="0.85013176729999995" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="4"/>
+                                <connections>
+                                    <action selector="touchKey4Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pzD-Qb-e7e"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Oky-Hu-Mj7">
                                 <rect key="frame" x="279" y="460" width="114" height="114"/>
@@ -94,6 +109,9 @@
                                 <color key="backgroundColor" red="0.27683046369999997" green="0.91422441710000002" blue="0.85013176729999995" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="5"/>
+                                <connections>
+                                    <action selector="touchKey5Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tOZ-H2-nHy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2Xd-vl-mmz">
                                 <rect key="frame" x="20" y="595" width="114" height="114"/>
@@ -101,6 +119,9 @@
                                 <color key="backgroundColor" red="0.27683046369999997" green="0.91422441710000002" blue="0.85013176729999995" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="6"/>
+                                <connections>
+                                    <action selector="touchKey6Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uLS-cr-XWg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="48c-WH-3Wa">
                                 <rect key="frame" x="20" y="730" width="114" height="114"/>
@@ -108,6 +129,9 @@
                                 <color key="backgroundColor" red="0.27683046369999997" green="0.91422441710000002" blue="0.85013176729999995" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="9"/>
+                                <connections>
+                                    <action selector="touchKey9Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EVN-jF-YaI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5jR-bn-1gC">
                                 <rect key="frame" x="149" y="595" width="114" height="114"/>
@@ -115,6 +139,9 @@
                                 <color key="backgroundColor" red="0.27683046369999997" green="0.91422441710000002" blue="0.85013176729999995" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="7"/>
+                                <connections>
+                                    <action selector="touchKey7Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="slW-Nm-pO6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pLG-Ty-Ry3">
                                 <rect key="frame" x="279" y="595" width="114" height="114"/>
@@ -122,6 +149,9 @@
                                 <color key="backgroundColor" red="0.27683046369999997" green="0.91422441710000002" blue="0.85013176729999995" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="8"/>
+                                <connections>
+                                    <action selector="touchKey8Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sW2-ec-OkY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cqg-X6-xTu">
                                 <rect key="frame" x="149" y="730" width="244" height="114"/>
@@ -129,10 +159,30 @@
                                 <color key="backgroundColor" red="0.27683046369999997" green="0.91422441710000002" blue="0.85013176729999995" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="ENTER"/>
+                                <connections>
+                                    <action selector="touchKeyEnterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vlN-7V-SuW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="qmn-Ha-7Dl" id="kBv-Mb-X56"/>
+                        <outlet property="keyPad0Button" destination="vPy-qU-oot" id="gen-v0-VHa"/>
+                        <outlet property="keyPad1Button" destination="n7w-80-Ope" id="c6B-T4-fgr"/>
+                        <outlet property="keyPad2Button" destination="3J4-Wh-vPf" id="d2p-ZP-RNi"/>
+                        <outlet property="keyPad3Button" destination="WfN-fH-HHh" id="Pn3-mw-Ot5"/>
+                        <outlet property="keyPad4Button" destination="MBN-IX-1Kq" id="qg5-CF-k9f"/>
+                        <outlet property="keyPad5Button" destination="Oky-Hu-Mj7" id="KdE-5y-Qaa"/>
+                        <outlet property="keyPad6Button" destination="2Xd-vl-mmz" id="CVQ-1M-d8R"/>
+                        <outlet property="keyPad7Button" destination="5jR-bn-1gC" id="Mbw-68-MT5"/>
+                        <outlet property="keyPad8Button" destination="pLG-Ty-Ry3" id="XiA-E2-mjt"/>
+                        <outlet property="keyPad9Button" destination="48c-WH-3Wa" id="m53-KB-GC1"/>
+                        <outlet property="keyPadEnterButton" destination="cqg-X6-xTu" id="z2F-rR-nLO"/>
+                        <outlet property="mathQuestionLabel" destination="BgW-YP-sue" id="HFN-dD-koY"/>
+                        <outlet property="player1ScoreLabel" destination="m3W-nC-m7M" id="Q6p-pu-71l"/>
+                        <outlet property="player2ScoreLabel" destination="9kb-pw-GyI" id="lRX-9g-DLa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

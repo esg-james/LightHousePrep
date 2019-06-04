@@ -13,16 +13,15 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Question : NSObject
 
 - (NSTimeInterval)timeDiff;
--(void)generateQuestion;
 
-@property NSInteger number1;
-@property NSInteger number2;
+
 @property (nonatomic) NSInteger answer;
 @property (nonatomic, copy) NSString *question;
 @property (nonatomic, strong) NSDate *startTime;
 @property (nonatomic, strong) NSDate *endTime;
 @property (nonatomic) NSInteger rightValue;
 @property (nonatomic) NSInteger leftValue;
+@property (nonatomic) NSInteger playerNumber;
 
 @end
 

@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface QuestionFactory : NSObject
 
 @property NSArray *questionSubclassNames;
--(Question *)generateRandomQuestion;
+- (Question *)generateRandomQuestion;
 
 
 @end

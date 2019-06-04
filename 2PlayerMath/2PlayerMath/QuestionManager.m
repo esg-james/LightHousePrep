@@ -16,21 +16,14 @@
 {
     self = [super init];
     if (self) {
-        _questions = [[NSMutableArray alloc]init];
+        self.questions = [[NSMutableArray alloc]init];
     }
     return self;
 }
 
-//-(void)addQuestion:(NSString *)newQuestion {
-//    
-//    [_questions addObject:newQuestion];
-//    NSLog(@"%@",newQuestion);
-//    
-//}
-
 - (NSString *)description
 {
-    for (id obj in _questions) {
+    for (id obj in self.questions) {
         
         NSString *description = [obj description];
         NSLog(@"%@",description);
@@ -42,11 +35,11 @@
 
     int totalTimePassed = 0, averageTimePassed = 0;
     
-    for(Question *question in _questions) {
+    for(Question *question in self.questions) {
 
         totalTimePassed += [question timeDiff];
         
-        averageTimePassed = totalTimePassed / _questions.count;
+        averageTimePassed = totalTimePassed / self.questions.count;
 
     }
     NSLog(@"Total Time: %1$lds Average Time Per Question: %2$lds",(long)totalTimePassed,(long)averageTimePassed);

@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property int rightCount;
 @property int wrongCount;
+@property int playerNumber;
 - (void)getScore:(BOOL)isAnswerCorrect;
 
 @end
