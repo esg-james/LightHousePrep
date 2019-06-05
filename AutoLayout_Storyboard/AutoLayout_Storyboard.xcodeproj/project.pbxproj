@@ -15,6 +15,7 @@
 		55B3E8EC22A71869008D2859 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B3E8EB22A71869008D2859 /* main.m */; };
 		55B3E8F622A71869008D2859 /* AutoLayout_StoryboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B3E8F522A71869008D2859 /* AutoLayout_StoryboardTests.m */; };
 		55B3E90122A71869008D2859 /* AutoLayout_StoryboardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B3E90022A71869008D2859 /* AutoLayout_StoryboardUITests.m */; };
+		55B3E91322A72C73008D2859 /* parrotsnme.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55B3E91222A72C73008D2859 /* parrotsnme.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		55B3E8FC22A71869008D2859 /* AutoLayout_StoryboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLayout_StoryboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55B3E90022A71869008D2859 /* AutoLayout_StoryboardUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLayout_StoryboardUITests.m; sourceTree = "<group>"; };
 		55B3E90222A71869008D2859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55B3E91222A72C73008D2859 /* parrotsnme.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = parrotsnme.jpg; path = ../../../../Downloads/parrotsnme.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				55B3E8DF22A71867008D2859 /* ViewController.h */,
 				55B3E8E022A71867008D2859 /* ViewController.m */,
 				55B3E8E222A71867008D2859 /* Main.storyboard */,
+				55B3E91222A72C73008D2859 /* parrotsnme.jpg */,
 				55B3E8E522A71869008D2859 /* Assets.xcassets */,
 				55B3E8E722A71869008D2859 /* LaunchScreen.storyboard */,
 				55B3E8EA22A71869008D2859 /* Info.plist */,
@@ -235,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55B3E91322A72C73008D2859 /* parrotsnme.jpg in Resources */,
 				55B3E8E922A71869008D2859 /* LaunchScreen.storyboard in Resources */,
 				55B3E8E622A71869008D2859 /* Assets.xcassets in Resources */,
 				55B3E8E422A71867008D2859 /* Main.storyboard in Resources */,
