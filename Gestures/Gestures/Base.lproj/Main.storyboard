@@ -24,6 +24,7 @@
                         <segue destination="H8P-B3-9XS" kind="relationship" relationship="viewControllers" id="Aeh-wh-fqn"/>
                         <segue destination="p1l-jd-Dme" kind="relationship" relationship="viewControllers" id="0Ai-xC-F5w"/>
                         <segue destination="lCX-S3-oBN" kind="relationship" relationship="viewControllers" id="yhz-aN-WLs"/>
+                        <segue destination="ZGH-Tq-FBW" kind="relationship" relationship="viewControllers" id="QOB-Dq-Fhm"/>
                     </connections>
                 </tabBarController>
             </objects>
@@ -77,6 +78,22 @@
             </objects>
             <point key="canvasLocation" x="68" y="942"/>
         </scene>
+        <!--Swipe-->
+        <scene sceneID="wEU-vV-sF2">
+            <objects>
+                <viewController id="ZGH-Tq-FBW" customClass="SwipeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r4A-vW-RFz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="enc-lq-efL"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Swipe" image="item4" id="6Wf-1e-C6E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bfr-mJ-4Jt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="80" y="-1402"/>
+        </scene>
         <!--Tap-->
         <scene sceneID="AHb-0A-tHd">
             <objects>
@@ -98,5 +115,6 @@
         <image name="item1" width="30" height="30"/>
         <image name="item2" width="30" height="28"/>
         <image name="item3" width="30" height="28"/>
+        <image name="item4" width="30" height="30"/>
     </resources>
 </document>
