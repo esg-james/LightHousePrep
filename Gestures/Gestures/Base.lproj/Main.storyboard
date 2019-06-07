@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="RSD-BX-BQw">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I05-qd-VfN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController id="niR-eb-aUe" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cwJ-2n-nzi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="H8P-B3-9XS" kind="relationship" relationship="viewControllers" id="Aeh-wh-fqn"/>
+                        <segue destination="p1l-jd-Dme" kind="relationship" relationship="viewControllers" id="0Ai-xC-F5w"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="-872" y="-304"/>
+        </scene>
+        <!--Pan-->
+        <scene sceneID="Rxr-YB-Dy4">
+            <objects>
+                <viewController id="p1l-jd-Dme" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wc9-Px-K9w">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ff1-ui-1zd"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pan" image="item1" id="PaU-7h-wzn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vFg-1S-Npa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61" y="187"/>
+        </scene>
+        <!--Tap-->
+        <scene sceneID="AHb-0A-tHd">
+            <objects>
+                <viewController id="H8P-B3-9XS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7XZ-CB-owA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="svb-YN-sa1"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tap" image="item2" id="ogC-vQ-BhD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K95-Oh-58Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="62" y="-647"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="item1" width="30" height="30"/>
+        <image name="item2" width="30" height="28"/>
+    </resources>
+</document>
