@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="niR-eb-aUe">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,6 +23,7 @@
                     <connections>
                         <segue destination="H8P-B3-9XS" kind="relationship" relationship="viewControllers" id="Aeh-wh-fqn"/>
                         <segue destination="p1l-jd-Dme" kind="relationship" relationship="viewControllers" id="0Ai-xC-F5w"/>
+                        <segue destination="lCX-S3-oBN" kind="relationship" relationship="viewControllers" id="yhz-aN-WLs"/>
                     </connections>
                 </tabBarController>
             </objects>
@@ -31,27 +32,59 @@
         <!--Pan-->
         <scene sceneID="Rxr-YB-Dy4">
             <objects>
-                <viewController id="p1l-jd-Dme" sceneMemberID="viewController">
+                <viewController id="p1l-jd-Dme" customClass="PanViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wc9-Px-K9w">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="glc-zL-IE6">
+                                <rect key="frame" x="157" y="252" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.04830961332" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="d1z-4s-gMz" appends="YES" id="gRv-sK-0hh"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.93975284126244452" blue="0.49253854734485336" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Ff1-ui-1zd"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pan" image="item1" id="PaU-7h-wzn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vFg-1S-Npa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="d1z-4s-gMz">
+                    <connections>
+                        <action selector="redViewPanned:" destination="p1l-jd-Dme" id="p7D-Wi-fD2"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="61" y="187"/>
+        </scene>
+        <!--Pinch-->
+        <scene sceneID="BMA-ea-oCh">
+            <objects>
+                <viewController id="lCX-S3-oBN" customClass="PinchViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZYk-Co-1Ah">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.11383632521622766" blue="0.98596834348501416" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="evT-e5-ftu"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pinch" image="item3" id="G1I-Lp-ujg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qNr-LL-dwd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="68" y="942"/>
         </scene>
         <!--Tap-->
         <scene sceneID="AHb-0A-tHd">
             <objects>
-                <viewController id="H8P-B3-9XS" sceneMemberID="viewController">
+                <viewController id="H8P-B3-9XS" customClass="TapViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7XZ-CB-owA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="svb-YN-sa1"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tap" image="item2" id="ogC-vQ-BhD"/>
@@ -64,5 +97,6 @@
     <resources>
         <image name="item1" width="30" height="30"/>
         <image name="item2" width="30" height="28"/>
+        <image name="item3" width="30" height="28"/>
     </resources>
 </document>

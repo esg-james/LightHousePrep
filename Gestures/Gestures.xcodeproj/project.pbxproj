@@ -14,6 +14,9 @@
 		55C375E922A9E73D004894DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C375E822A9E73D004894DA /* main.m */; };
 		55C375F322A9E73E004894DA /* GesturesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C375F222A9E73E004894DA /* GesturesTests.m */; };
 		55C375FE22A9E73E004894DA /* GesturesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C375FD22A9E73E004894DA /* GesturesUITests.m */; };
+		55C3760D22A9EA57004894DA /* PanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C3760C22A9EA57004894DA /* PanViewController.m */; };
+		55C3761022A9EA6B004894DA /* TapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C3760F22A9EA6B004894DA /* TapViewController.m */; };
+		55C3761322A9FAAF004894DA /* PinchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C3761222A9FAAF004894DA /* PinchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,12 @@
 		55C375F922A9E73E004894DA /* GesturesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GesturesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C375FD22A9E73E004894DA /* GesturesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GesturesUITests.m; sourceTree = "<group>"; };
 		55C375FF22A9E73E004894DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55C3760B22A9EA57004894DA /* PanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PanViewController.h; sourceTree = "<group>"; };
+		55C3760C22A9EA57004894DA /* PanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PanViewController.m; sourceTree = "<group>"; };
+		55C3760E22A9EA6B004894DA /* TapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TapViewController.h; sourceTree = "<group>"; };
+		55C3760F22A9EA6B004894DA /* TapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapViewController.m; sourceTree = "<group>"; };
+		55C3761122A9FAAF004894DA /* PinchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinchViewController.h; sourceTree = "<group>"; };
+		55C3761222A9FAAF004894DA /* PinchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +108,12 @@
 			isa = PBXGroup;
 			children = (
 				55C375DF22A9E73C004894DA /* Main.storyboard */,
+				55C3761122A9FAAF004894DA /* PinchViewController.h */,
+				55C3761222A9FAAF004894DA /* PinchViewController.m */,
+				55C3760B22A9EA57004894DA /* PanViewController.h */,
+				55C3760C22A9EA57004894DA /* PanViewController.m */,
+				55C3760E22A9EA6B004894DA /* TapViewController.h */,
+				55C3760F22A9EA6B004894DA /* TapViewController.m */,
 				55C375E222A9E73D004894DA /* Assets.xcassets */,
 				55C375D922A9E73C004894DA /* AppDelegate.h */,
 				55C375DA22A9E73C004894DA /* AppDelegate.m */,
@@ -257,7 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C3760D22A9EA57004894DA /* PanViewController.m in Sources */,
 				55C375E922A9E73D004894DA /* main.m in Sources */,
+				55C3761322A9FAAF004894DA /* PinchViewController.m in Sources */,
+				55C3761022A9EA6B004894DA /* TapViewController.m in Sources */,
 				55C375DB22A9E73C004894DA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
