@@ -111,12 +111,12 @@
         if([self.answerLabel.text intValue] == self.q1.answer) {
             NSLog(@"You got it!");
             self.player1Score.rightCount++;
-            self.player1ScoreLabel.text = [NSString stringWithFormat:@"%d",self.player1Score.rightCount];
+            self.player1ScoreLabel.text = [NSString stringWithFormat:@"Player 1: %d",self.player1Score.rightCount];
         }
         else {
             NSLog(@"WRONGO, BOYO");
             self.player1Score.wrongCount++;
-            self.player1ScoreLabel.text = [NSString stringWithFormat:@"%d",self.player1Score.wrongCount];
+            self.player1ScoreLabel.text = [NSString stringWithFormat:@"Player: %d",self.player1Score.wrongCount];
         }
     }
     else if(self.q1.playerNumber == 2) {
