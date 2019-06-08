@@ -145,11 +145,15 @@
             [self.player1 getScore:YES];
             self.p1ScoreLabel.text = [NSString stringWithFormat:@"P1 Right: %d",self.player1.rightCount];
             
+            
         }
         else {
             
             [self.player1 getScore:NO];
             self.p1Wrong.text = [NSString stringWithFormat:@"P1 Wrong: %d",self.player1.wrongCount];
+            //if(self.player1.wrongCount >= 3) {
+            //
+            //        }
 
         }
     }
@@ -168,8 +172,7 @@
         }
         
     }
-    
-    
+
 }
 
 @end
