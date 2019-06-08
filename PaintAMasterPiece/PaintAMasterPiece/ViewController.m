@@ -188,8 +188,8 @@
 }
 
 - (void)closeSettings:(id)sender {
-    brush = ((SettingsViewController *)sender).brush;
-    opacity = ((SettingsViewController *)sender).opacity;
+    brush = ((SettingsViewController*)sender).brush;
+    opacity = ((SettingsViewController*)sender).opacity;
     red = ((SettingsViewController*)sender).red;
     green = ((SettingsViewController*)sender).green;
     blue = ((SettingsViewController*)sender).blue;

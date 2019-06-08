@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @protocol SettingsViewControllerDelegate <NSObject>
-- (void)closeSettings:(id)sender;
+- (void)closeSettings:(id _Nullable )sender;
 @end
 
 NS_ASSUME_NONNULL_BEGIN

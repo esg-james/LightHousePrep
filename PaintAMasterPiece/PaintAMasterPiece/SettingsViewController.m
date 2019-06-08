@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
 }
 
 
@@ -25,18 +27,18 @@
     
 }
 - (IBAction)sliderChanged:(id)sender {
-
-    UISlider *changedSlider = (UISlider *)sender;
+    
+    UISlider * changedSlider = (UISlider*)sender;
     
     if(changedSlider == self.brushControl) {
         
         self.brush = self.brushControl.value;
         self.brushValueLabel.text = [NSString stringWithFormat:@"%.1f", self.brush];
         
-    } else if (changedSlider == self.brushControl) {
+    } else if(changedSlider == self.opacityControl) {
         
-        self.brush = self.brushControl.value;
-        self.brushValueLabel.text = [NSString stringWithFormat:@"%.1f", self.opacity];
+        self.opacity = self.opacityControl.value;
+        self.opacityValueLabel.text = [NSString stringWithFormat:@"%.1f", self.opacity];
         
     } else if(changedSlider == self.redControl) {
         
@@ -53,24 +55,23 @@
         self.blueLabel.text = [NSString stringWithFormat:@"Blue: %d", (int)self.blueControl.value];
         
     }
-
     
     UIGraphicsBeginImageContext(self.brushPreview.frame.size);
     CGContextSetLineCap(UIGraphicsGetCurrentContext(), kCGLineCapRound);
-    CGContextSetLineWidth(UIGraphicsGetCurrentContext(), self.brush);
-    CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 0.0, 0.0, 1.0);
-    CGContextMoveToPoint(UIGraphicsGetCurrentContext(), 45.0, 45.0);
-    CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), 45.0, 45.0);
+    CGContextSetLineWidth(UIGraphicsGetCurrentContext(),self.brush);
+    CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), self.red, self.green, self.blue, 1.0);
+    CGContextMoveToPoint(UIGraphicsGetCurrentContext(), 45, 45);
+    CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), 45, 45);
     CGContextStrokePath(UIGraphicsGetCurrentContext());
     self.brushPreview.image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
     UIGraphicsBeginImageContext(self.opacityPreview.frame.size);
     CGContextSetLineCap(UIGraphicsGetCurrentContext(), kCGLineCapRound);
-    CGContextSetLineWidth(UIGraphicsGetCurrentContext(), 20.0);
-    CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 0.0, 0.0, self.opacity);
-    CGContextMoveToPoint(UIGraphicsGetCurrentContext(), 45.0, 45.0);
-    CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), 45.0, 45.0);
+    CGContextSetLineWidth(UIGraphicsGetCurrentContext(),self.brush);
+    CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), self.red, self.green, self.blue, self.opacity);
+    CGContextMoveToPoint(UIGraphicsGetCurrentContext(),45, 45);
+    CGContextAddLineToPoint(UIGraphicsGetCurrentContext(),45, 45);
     CGContextStrokePath(UIGraphicsGetCurrentContext());
     self.opacityPreview.image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
@@ -79,18 +80,21 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     
-    int redIntValue = self.red * 255;
+    int redIntValue = self.red * 255.0;
     self.redControl.value = redIntValue;
     [self sliderChanged:self.redControl];
-    int greenIntValue = self.green * 255;
+    
+    int greenIntValue = self.green * 255.0;
     self.greenControl.value = greenIntValue;
     [self sliderChanged:self.greenControl];
-    int blueIntValue = self.blue * 255;
+    
+    int blueIntValue = self.blue * 255.0;
     self.blueControl.value = blueIntValue;
     [self sliderChanged:self.blueControl];
     
     self.brushControl.value = self.brush;
     [self sliderChanged:self.brushControl];
+    
     self.opacityControl.value = self.opacity;
     [self sliderChanged:self.opacityControl];
     

@@ -16,8 +16,6 @@
 		55B3E87422A5D0A5008D2859 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B3E86B22A5D0A5008D2859 /* Question.m */; };
 		55B3E87522A5D0A5008D2859 /* QuestionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B3E86C22A5D0A5008D2859 /* QuestionFactory.m */; };
 		55B3E87622A5D0A5008D2859 /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B3E86D22A5D0A5008D2859 /* QuestionManager.m */; };
-		55B3E87B22A5D407008D2859 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B3E87A22A5D407008D2859 /* Player.m */; };
-		55B3E87E22A5D422008D2859 /* GameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B3E87D22A5D422008D2859 /* GameModel.m */; };
 		55B3E88122A5DEB1008D2859 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B3E88022A5DEB1008D2859 /* ViewController.m */; };
 		55B3E88A22A6036F008D2859 /* SubtractionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B3E88422A6036D008D2859 /* SubtractionQuestion.m */; };
 		55B3E88B22A6036F008D2859 /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B3E88922A6036F008D2859 /* AdditionQuestion.m */; };
@@ -61,10 +59,6 @@
 		55B3E86D22A5D0A5008D2859 /* QuestionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionManager.m; sourceTree = "<group>"; };
 		55B3E86F22A5D0A5008D2859 /* QuestionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionManager.h; sourceTree = "<group>"; };
 		55B3E87222A5D0A5008D2859 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
-		55B3E87922A5D407008D2859 /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
-		55B3E87A22A5D407008D2859 /* Player.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
-		55B3E87C22A5D422008D2859 /* GameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameModel.h; sourceTree = "<group>"; };
-		55B3E87D22A5D422008D2859 /* GameModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameModel.m; sourceTree = "<group>"; };
 		55B3E87F22A5DEB1008D2859 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		55B3E88022A5DEB1008D2859 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		55B3E88222A6036C008D2859 /* SubtractionQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubtractionQuestion.h; sourceTree = "<group>"; };
@@ -127,10 +121,6 @@
 				5580FF9E22A5C802005A5993 /* AppDelegate.m */,
 				55B3E87F22A5DEB1008D2859 /* ViewController.h */,
 				55B3E88022A5DEB1008D2859 /* ViewController.m */,
-				55B3E87922A5D407008D2859 /* Player.h */,
-				55B3E87A22A5D407008D2859 /* Player.m */,
-				55B3E87C22A5D422008D2859 /* GameModel.h */,
-				55B3E87D22A5D422008D2859 /* GameModel.m */,
 				5580FFA322A5C802005A5993 /* Main.storyboard */,
 				5580FFA622A5C804005A5993 /* Assets.xcassets */,
 				5580FFA822A5C804005A5993 /* LaunchScreen.storyboard */,
@@ -293,8 +283,6 @@
 				55B3E87422A5D0A5008D2859 /* Question.m in Sources */,
 				55B3E88B22A6036F008D2859 /* AdditionQuestion.m in Sources */,
 				5580FFAD22A5C804005A5993 /* main.m in Sources */,
-				55B3E87E22A5D422008D2859 /* GameModel.m in Sources */,
-				55B3E87B22A5D407008D2859 /* Player.m in Sources */,
 				55B3E88C22A6036F008D2859 /* MultiplicationQuestion.m in Sources */,
 				55B3E88D22A6036F008D2859 /* DivisionQuestion.m in Sources */,
 				55B3E88A22A6036F008D2859 /* SubtractionQuestion.m in Sources */,
