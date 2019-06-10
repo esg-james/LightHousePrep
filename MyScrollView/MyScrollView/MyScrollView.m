@@ -10,12 +10,16 @@
 
 @implementation MyScrollView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+
+
+-(void)myPanGestureRecognizer:(UIPanGestureRecognizer *)sender {
+    
+    CGPoint translationInView = [sender translationInView:self];
+    CGPoint oldCentre = sender.view.center;
+    CGPoint newCentre = CGPointMake(oldCentre.x, oldCentre.y + translationInView.y);
+    sender.view.center = newCentre;
+    [sender setTranslation:CGPointZero inView:self];
+    
 }
-*/
 
 @end
