@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ImageDetailViewController.h
 //  ScrollViewImageGalleries
 //
 //  Created by James Oliver on 2019-06-10.
@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UIScrollViewDelegate>
+NS_ASSUME_NONNULL_BEGIN
 
+@interface ImageDetailViewController : UIViewController <UIScrollViewDelegate>
+@property UIImageView *theView;
 @property (strong, nonatomic) IBOutlet UIScrollView *myScrollView;
-
 
 @end
 
+NS_ASSUME_NONNULL_END

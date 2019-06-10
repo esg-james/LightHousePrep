@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NA1-fB-E3j">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,50 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Image Detail View Controller-->
+        <scene sceneID="3OK-8B-R1n">
+            <objects>
+                <viewController id="NA1-fB-E3j" customClass="ImageDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hma-Vd-BMj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xsg-uC-voM">
+                                <rect key="frame" x="20" y="39" width="374" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PiW-nV-rel">
+                                        <rect key="frame" x="8" y="13" width="358" height="797"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="797" id="R6h-FE-92G"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="PiW-nV-rel" secondAttribute="bottom" constant="8" id="2H1-nU-c6j"/>
+                                    <constraint firstAttribute="trailing" secondItem="PiW-nV-rel" secondAttribute="trailing" constant="8" id="9bz-mv-1tC"/>
+                                    <constraint firstItem="PiW-nV-rel" firstAttribute="top" secondItem="Xsg-uC-voM" secondAttribute="top" constant="13" id="aJL-XQ-4dZ"/>
+                                    <constraint firstItem="PiW-nV-rel" firstAttribute="centerX" secondItem="Xsg-uC-voM" secondAttribute="centerX" id="gvt-Sg-EdY"/>
+                                    <constraint firstItem="PiW-nV-rel" firstAttribute="leading" secondItem="Xsg-uC-voM" secondAttribute="leading" constant="8" id="x3c-HY-ZMK"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="hnm-1k-oj5"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xsg-uC-voM" firstAttribute="leading" secondItem="ZVG-10-1LT" secondAttribute="leading" constant="20" id="C5Y-7o-cll"/>
+                            <constraint firstItem="ZVG-10-1LT" firstAttribute="trailing" secondItem="Xsg-uC-voM" secondAttribute="trailing" constant="20" id="Ir5-xj-zSb"/>
+                            <constraint firstItem="ZVG-10-1LT" firstAttribute="bottom" secondItem="Xsg-uC-voM" secondAttribute="bottom" constant="5" id="vi8-4a-QGr"/>
+                            <constraint firstItem="Xsg-uC-voM" firstAttribute="top" secondItem="Hma-Vd-BMj" secondAttribute="top" constant="39" id="zyD-C4-NIg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZVG-10-1LT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hVa-fg-uDh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-821.73913043478262" y="101.78571428571428"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
