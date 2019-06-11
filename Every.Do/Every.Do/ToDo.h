@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ToDo : NSObject
 
+
 @property (nonatomic, weak) NSString *title;
 @property (nonatomic, weak) NSString *taskDescription;
 @property (nonatomic) NSInteger taskPriority;

@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+@property NSMutableArray *taskArray;
 
 @end
 
