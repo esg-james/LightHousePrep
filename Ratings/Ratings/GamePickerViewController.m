@@ -1,27 +1,36 @@
 //
-//  PlayerDetailsViewController.m
+//  GamePickerViewController.m
 //  Ratings
 //
 //  Created by James Oliver on 2019-06-11.
 //  Copyright © 2019 James Oliver. All rights reserved.
 //
 
-#import "PlayerDetailsViewController.h"
-#import "Player.h"
+#import "GamePickerViewController.h"
 
-@interface PlayerDetailsViewController ()
+@interface GamePickerViewController ()
 
 @end
 
-@implementation PlayerDetailsViewController {
-    
-    NSString *_game;
-    
+@implementation GamePickerViewController {
+
+    NSArray *_games;
+    NSUInteger _selectedIndex;
+
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.detailLabel.text = _game;
+    
+    
+    _games = @[@"Angry Birds",
+               @"Chess",
+               @"Russian Roulette",
+               @"Spin the Bottle",
+               @"Texas Hold'em Poker",
+               @"Tic-Tac-Toe"];
+    
+    _selectedIndex = [_games indexOfObject:self.game];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -31,57 +40,47 @@
 
 #pragma mark - Table view data source
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+
+    return [_games count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"GameCell"];
+    cell.textLabel.text = _games[indexPath.row];
+    
+    if (indexPath.row == _selectedIndex) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    } else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+    return cell;
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    if(indexPath.section == 0) {
-        
-        [self.nameTextField becomeFirstResponder];
-        
+    if (_selectedIndex != NSNotFound) {
+        UITableViewCell *cell = [tableView cellForRowAtIndexPath:
+                                 [NSIndexPath indexPathForRow:_selectedIndex inSection:0]];
+        cell.accessoryType = UITableViewCellAccessoryNone;
     }
     
-}
-
-- (void)cancel:(id)sender {
+    _selectedIndex = indexPath.row;
     
-    [self.delegate playerDetailsViewControllerDidCancel:self];
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    
+    NSString *game = _games[indexPath.row];
+    [self.delegate gamePickerViewController:self didSelectGame:game];
     
 }
-
-- (void)done:(id)sender {
-    
-    Player *player = [[Player alloc]init];
-    player.name = self.nameTextField.text;
-    player.game = _game;
-    player.rating = 1;
-    [self.delegate playerDetailsViewController:self didAddPlayer:player];
-}
-
-- (id)initWithCoder:(NSCoder *)aDecoder
-{
-    if ((self = [super initWithCoder:aDecoder])) {
-        NSLog(@"init PlayerDetailsViewController");
-        _game = @"Chess";
-    }
-    return self;
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([segue.identifier isEqualToString:@"PickGame"]) {
-        GamePickerViewController *gamePickerViewController = segue.destinationViewController;
-        gamePickerViewController.delegate = self;
-        gamePickerViewController.game = _game;
-    }
-}
-
-- (void)gamePickerViewController:(GamePickerViewController *)controller didSelectGame:(NSString *)game
-{
-    _game = game;
-    self.detailLabel.text = _game;
-    
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];

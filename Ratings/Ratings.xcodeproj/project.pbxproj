@@ -19,6 +19,7 @@
 		5515C5B522AFE7B10062C47A /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 5515C5B422AFE7B10062C47A /* Player.m */; };
 		5515C5B822AFEF240062C47A /* PlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5515C5B722AFEF240062C47A /* PlayerCell.m */; };
 		5515C5BB22AFF5140062C47A /* PlayerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5515C5BA22AFF5140062C47A /* PlayerDetailsViewController.m */; };
+		5515C5BE22B0076D0062C47A /* GamePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5515C5BD22B0076D0062C47A /* GamePickerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		5515C5B722AFEF240062C47A /* PlayerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerCell.m; sourceTree = "<group>"; };
 		5515C5B922AFF5140062C47A /* PlayerDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerDetailsViewController.h; sourceTree = "<group>"; };
 		5515C5BA22AFF5140062C47A /* PlayerDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerDetailsViewController.m; sourceTree = "<group>"; };
+		5515C5BC22B0076D0062C47A /* GamePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamePickerViewController.h; sourceTree = "<group>"; };
+		5515C5BD22B0076D0062C47A /* GamePickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamePickerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 				5515C58122AFE1770062C47A /* ViewController.h */,
 				5515C58222AFE1770062C47A /* ViewController.m */,
 				5515C58422AFE1770062C47A /* Main.storyboard */,
+				5515C5BC22B0076D0062C47A /* GamePickerViewController.h */,
+				5515C5BD22B0076D0062C47A /* GamePickerViewController.m */,
 				5515C5B922AFF5140062C47A /* PlayerDetailsViewController.h */,
 				5515C5BA22AFF5140062C47A /* PlayerDetailsViewController.m */,
 				5515C5B622AFEF240062C47A /* PlayerCell.h */,
@@ -286,6 +291,7 @@
 				5515C5B222AFE73A0062C47A /* PlayersViewController.m in Sources */,
 				5515C58E22AFE1780062C47A /* main.m in Sources */,
 				5515C58022AFE1770062C47A /* AppDelegate.m in Sources */,
+				5515C5BE22B0076D0062C47A /* GamePickerViewController.m in Sources */,
 				5515C5B822AFEF240062C47A /* PlayerCell.m in Sources */,
 				5515C5B522AFE7B10062C47A /* Player.m in Sources */,
 				5515C5BB22AFF5140062C47A /* PlayerDetailsViewController.m in Sources */,

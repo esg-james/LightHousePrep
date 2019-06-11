@@ -24,21 +24,30 @@
             </objects>
             <point key="canvasLocation" x="-549" y="465"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Choose Game-->
         <scene sceneID="MEs-om-zkH">
             <objects>
-                <tableViewController id="ifl-sB-bX9" sceneMemberID="viewController">
+                <tableViewController id="ifl-sB-bX9" customClass="GamePickerViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ngb-hx-DAZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="w7Y-oq-WCO">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GameCell" textLabel="ONl-96-EGC" style="IBUITableViewCellStyleDefault" id="w7Y-oq-WCO">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w7Y-oq-WCO" id="gn4-xj-hcj">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ONl-96-EGC">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -47,6 +56,7 @@
                             <outlet property="delegate" destination="ifl-sB-bX9" id="SKY-YD-WLu"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Choose Game" id="Jat-Qp-atw"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Fm-xh-uUD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -185,6 +195,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ifl-sB-bX9" kind="push" identifier="PickGame" id="1OA-Qe-RTj"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>

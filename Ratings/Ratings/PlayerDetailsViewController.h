@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GamePickerViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -19,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)playerDetailsViewController:(PlayerDetailsViewController *)controller didAddPlayer:(Player *)player;
 @end
 
-@interface PlayerDetailsViewController : UITableViewController
+@interface PlayerDetailsViewController : UITableViewController <GamePickerViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UILabel *detailLabel;
 
