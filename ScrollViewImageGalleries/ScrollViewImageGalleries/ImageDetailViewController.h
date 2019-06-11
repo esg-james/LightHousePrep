@@ -11,8 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ImageDetailViewController : UIViewController <UIScrollViewDelegate>
-@property UIImageView *theView;
-@property (strong, nonatomic) IBOutlet UIScrollView *myScrollView;
+
+@property (nonatomic,strong) UIImage *thisImage;
+
 
 @end
 

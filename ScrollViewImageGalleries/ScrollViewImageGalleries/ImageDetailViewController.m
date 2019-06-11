@@ -10,6 +10,9 @@
 
 @interface ImageDetailViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *theView;
+@property (weak, nonatomic) IBOutlet UIScrollView *theScrollView;
+
 @end
 
 @implementation ImageDetailViewController
@@ -18,29 +21,23 @@
     
     [super viewDidLoad];
     
-    CGRect scrollRect = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
-    self.myScrollView = [[UIScrollView alloc]initWithFrame:scrollRect];
-    self.myScrollView.translatesAutoresizingMaskIntoConstraints = NO;
+
+//    self.myScrollView.translatesAutoresizingMaskIntoConstraints = NO;
     
-    UIImage *image1 = [UIImage imageNamed:@"Lighthouse.jpg"];
-    self.theView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-    self.theView.image = image1;
     
-    self.myScrollView.contentSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height);
-    [self.view addSubview:self.myScrollView];
-    self.myScrollView.contentMode = UIViewContentModeScaleAspectFit;
-    [self.myScrollView addSubview:self.theView];
+    self.theView.image = self.thisImage;
     
-    self.myScrollView.minimumZoomScale = 0.1;
-    self.myScrollView.maximumZoomScale = 1.0;
+    self.theScrollView.contentSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height);
+    self.theScrollView.contentMode = UIViewContentModeScaleAspectFit;
     
-    [self.myScrollView setDelegate:self];
+    self.theScrollView.minimumZoomScale = 0.1;
+    self.theScrollView.maximumZoomScale = 10.0;
+    
+    [self.theScrollView setDelegate:self];
     
 }
 
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
-    
-    
     return self.theView;
 }
 

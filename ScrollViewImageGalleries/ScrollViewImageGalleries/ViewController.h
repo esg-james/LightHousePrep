@@ -7,10 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ImageDetailViewController.h"
 
 @interface ViewController : UIViewController <UIScrollViewDelegate>
 
+
+@property NSArray *myImages;
 @property (strong, nonatomic) IBOutlet UIScrollView *myScrollView;
+@property UITapGestureRecognizer *myTap;
+@property ImageDetailViewController *myDetailVC;
+
+@property (weak, nonatomic) IBOutlet UIPageControl *myPageControl;
+- (IBAction)switchDotsOnPageControl:(id)sender;
 
 
 @end
