@@ -28,7 +28,8 @@
     UIImage *image1 = [UIImage imageNamed:@"Lighthouse-in-Field.jpg"];
     UIImage *image2 = [UIImage imageNamed:@"Lighthouse-night.jpg"];
     UIImage *image3 = [UIImage imageNamed:@"Lighthouse.jpg"];
-    self.myImages = [[NSArray alloc]initWithObjects:image1,image2,image3, nil];
+    UIImage *image4 = [UIImage imageNamed:@"parrotsnme.jpg"];
+    self.myImages = [[NSArray alloc]initWithObjects:image1,image2,image3,image4, nil];
     
     self.myPageControl.numberOfPages = self.myImages.count;
     
