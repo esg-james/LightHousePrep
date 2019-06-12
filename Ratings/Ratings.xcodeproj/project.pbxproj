@@ -20,6 +20,7 @@
 		5515C5B822AFEF240062C47A /* PlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5515C5B722AFEF240062C47A /* PlayerCell.m */; };
 		5515C5BB22AFF5140062C47A /* PlayerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5515C5BA22AFF5140062C47A /* PlayerDetailsViewController.m */; };
 		5515C5BE22B0076D0062C47A /* GamePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5515C5BD22B0076D0062C47A /* GamePickerViewController.m */; };
+		5515C60B22B06A7D0062C47A /* NewTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5515C60A22B06A7D0062C47A /* NewTaskViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		5515C5BA22AFF5140062C47A /* PlayerDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerDetailsViewController.m; sourceTree = "<group>"; };
 		5515C5BC22B0076D0062C47A /* GamePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamePickerViewController.h; sourceTree = "<group>"; };
 		5515C5BD22B0076D0062C47A /* GamePickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamePickerViewController.m; sourceTree = "<group>"; };
+		5515C60922B06A7D0062C47A /* NewTaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewTaskViewController.h; sourceTree = "<group>"; };
+		5515C60A22B06A7D0062C47A /* NewTaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewTaskViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 				5515C5B722AFEF240062C47A /* PlayerCell.m */,
 				5515C5B022AFE73A0062C47A /* PlayersViewController.h */,
 				5515C5B122AFE73A0062C47A /* PlayersViewController.m */,
+				5515C60922B06A7D0062C47A /* NewTaskViewController.h */,
+				5515C60A22B06A7D0062C47A /* NewTaskViewController.m */,
 				5515C5B322AFE7B10062C47A /* Player.h */,
 				5515C5B422AFE7B10062C47A /* Player.m */,
 				5515C58722AFE1780062C47A /* Assets.xcassets */,
@@ -289,6 +294,7 @@
 			files = (
 				5515C58322AFE1770062C47A /* ViewController.m in Sources */,
 				5515C5B222AFE73A0062C47A /* PlayersViewController.m in Sources */,
+				5515C60B22B06A7D0062C47A /* NewTaskViewController.m in Sources */,
 				5515C58E22AFE1780062C47A /* main.m in Sources */,
 				5515C58022AFE1770062C47A /* AppDelegate.m in Sources */,
 				5515C5BE22B0076D0062C47A /* GamePickerViewController.m in Sources */,

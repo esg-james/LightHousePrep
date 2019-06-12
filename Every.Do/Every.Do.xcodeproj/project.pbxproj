@@ -18,6 +18,7 @@
 		5515C5FF22B028230062C47A /* ToDo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5515C5FE22B028230062C47A /* ToDo.m */; };
 		5515C60222B02BCE0062C47A /* ToDoCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5515C60122B02BCE0062C47A /* ToDoCellView.m */; };
 		5515C60822B049F30062C47A /* TaskDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5515C60722B049F30062C47A /* TaskDetailsViewController.m */; };
+		5515C60E22B06A960062C47A /* NewTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5515C60D22B06A960062C47A /* NewTaskViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		5515C60122B02BCE0062C47A /* ToDoCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoCellView.m; sourceTree = "<group>"; };
 		5515C60622B049F30062C47A /* TaskDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskDetailsViewController.h; sourceTree = "<group>"; };
 		5515C60722B049F30062C47A /* TaskDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskDetailsViewController.m; sourceTree = "<group>"; };
+		5515C60C22B06A960062C47A /* NewTaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewTaskViewController.h; sourceTree = "<group>"; };
+		5515C60D22B06A960062C47A /* NewTaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewTaskViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				5515C60122B02BCE0062C47A /* ToDoCellView.m */,
 				5515C60622B049F30062C47A /* TaskDetailsViewController.h */,
 				5515C60722B049F30062C47A /* TaskDetailsViewController.m */,
+				5515C60C22B06A960062C47A /* NewTaskViewController.h */,
+				5515C60D22B06A960062C47A /* NewTaskViewController.m */,
 				5515C5D122B026480062C47A /* Main.storyboard */,
 				5515C5D422B026480062C47A /* Assets.xcassets */,
 				5515C5D622B026480062C47A /* LaunchScreen.storyboard */,
@@ -277,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5515C60E22B06A960062C47A /* NewTaskViewController.m in Sources */,
 				5515C5D022B026480062C47A /* ViewController.m in Sources */,
 				5515C5DB22B026480062C47A /* main.m in Sources */,
 				5515C60822B049F30062C47A /* TaskDetailsViewController.m in Sources */,
@@ -454,13 +460,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TNQG62A85W;
+				DEVELOPMENT_TEAM = UK4JFARFJ9;
 				INFOPLIST_FILE = Every.Do/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ESG-James.Every-Do";
+				PRODUCT_BUNDLE_IDENTIFIER = "ESG-James.Gestures";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -471,13 +478,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TNQG62A85W;
+				DEVELOPMENT_TEAM = UK4JFARFJ9;
 				INFOPLIST_FILE = Every.Do/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ESG-James.Every-Do";
+				PRODUCT_BUNDLE_IDENTIFIER = "ESG-James.Gestures";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

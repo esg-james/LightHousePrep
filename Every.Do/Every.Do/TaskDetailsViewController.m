@@ -8,16 +8,21 @@
 
 #import "TaskDetailsViewController.h"
 #import "ViewController.h"
+#import "ToDo.h"
 
 @interface TaskDetailsViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *taskLabel;
 @property (weak, nonatomic) IBOutlet UILabel *taskPriorityLabel;
 @property (weak, nonatomic) IBOutlet UILabel *taskDescriptionLabel;
+-(void)taskDetailsViewDidCancel:(TaskDetailsViewController *)controller;
+-(void)taskDetailsController:(TaskDetailsViewController *)controller didAddTask:(ToDo *)task;
 
 @end
 
-@implementation TaskDetailsViewController
+@implementation TaskDetailsViewController {
+    TaskDetailsViewController *taskController;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,9 +38,5 @@
     
     
 }
-
-
-
-
 
 @end

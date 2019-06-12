@@ -10,12 +10,10 @@
 #import "ToDoCellView.h"
 
 NS_ASSUME_NONNULL_BEGIN
+@class ToDo;
 
 @interface TaskDetailsViewController : UIViewController
-
 @property (strong,nonatomic) ToDoCellView *incomingCell;
-@property (nonatomic, weak) id <UITableViewDataSource, UITableViewDelegate> delegate;
-
 
 
 @end
