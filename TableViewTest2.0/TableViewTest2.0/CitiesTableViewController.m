@@ -7,9 +7,12 @@
 //
 
 #import "CitiesTableViewController.h"
-#import "CityFormDelegateProtocol.h"
+#import "CityFormViewController.h"
 
-@interface CitiesTableViewController () <NewCityFormDelegate>
+@interface CitiesTableViewController () 
+
+@property NSMutableArray *cities;
+@property (nonatomic, weak) id  <NewCityFormDelegate>  delegate;
 
 @end
 
@@ -17,6 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _cities = [NSMutableArray arrayWithObjects:@"San Francisco",@"Vancouver", nil];
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -27,71 +32,71 @@
 
 #pragma mark - Table view data source
 
+
+- (void)addCity:(City *)city {
+    [self.cities addObject:city.city];
+    [self.tableView reloadData];
+
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if([segue.identifier isEqualToString: @"addCity"]) {
+        CityFormViewController *cityVC = segue.destinationViewController.childViewControllers.firstObject;
+        
+        cityVC.delegate = self;
+    }
+    else if([segue.identifier isEqualToString: @"newCity"]) {
+        CityFormViewController *cityVC = segue.destinationViewController;
+        
+        cityVC.delegate = self;
+    }
+    
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return self.cities.count;
 }
 
-- (void)addCity:(City *)city {
-}
-
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"city"];
+    if(cell == nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"city"];
+    }
+    cell.textLabel.text = [self.cities objectAtIndex:indexPath.row];
     return cell;
+    
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+/*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+ if segue.identifier == "addCity" {
+ guard let newCityFormVC = segue.destination.children.first as? NewCityForm else {
+ print("no form found")
+ return
+ }
+ newCityFormVC.delegate = self
+ } else {
+ print("error")
+ }
+ }
+ 
+ // MARK: - Table view data source
+ 
+ override func numberOfSections(in tableView: UITableView) -> Int {
+ return 1
+ }
+ 
+ override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+ return cities.count
+ }
+ 
+ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+ let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+ cell.textLabel?.text = cities[indexPath.row].name
+ return cell
+ }*/
 
 @end

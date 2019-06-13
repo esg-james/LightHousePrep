@@ -8,17 +8,20 @@
 
 #import "CityFormViewController.h"
 #import "CityFormDelegateProtocol.h"
+#import "City.h"
 
 @interface CityFormViewController ()
 
-@property (nonatomic, weak) id  <NewCityFormDelegate>  delegate;
+
+- (IBAction)cancel:(id)sender;
+
+- (IBAction)done:(id)sender;
 
 @end
 
 @implementation CityFormViewController
 
-/*var delegate: NewCityFormDelegate?
- 
+/*
  @IBOutlet weak var newCity: UITextField!
  
  @IBAction func cancel(_ sender: UIBarButtonItem) {
@@ -53,4 +56,21 @@
 }
 */
 
+- (IBAction)cancel:(id)sender {
+    
+    [self.navigationController popViewControllerAnimated:YES];
+    
+}
+
+- (IBAction)done:(id)sender {
+    
+    NSString *userInput = self.cityTextField.text;
+    if(userInput != nil) {
+        
+        City *city = [[City alloc]init];
+        city.city = self.cityTextField.text;
+        [self.delegate addCity:city];
+    }
+    [self.navigationController popViewControllerAnimated:YES];
+}
 @end

@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CityFormDelegateProtocol.h"
+
+
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CitiesTableViewController : UITableViewController
+@interface CitiesTableViewController : UITableViewController <NewCityFormDelegate>
 
 @end
 

@@ -15,7 +15,6 @@
 		55F9DFCE22B22ACA00900145 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9DFCD22B22ACA00900145 /* main.m */; };
 		55F9DFD822B22ACA00900145 /* TableViewTest2_0Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9DFD722B22ACA00900145 /* TableViewTest2_0Tests.m */; };
 		55F9DFE322B22ACA00900145 /* TableViewTest2_0UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9DFE222B22ACA00900145 /* TableViewTest2_0UITests.m */; };
-		55F9DFF622B22C8C00900145 /* CityFormDelegateProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9DFF522B22C8C00900145 /* CityFormDelegateProtocol.m */; };
 		55F9DFF922B22D7A00900145 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9DFF822B22D7A00900145 /* City.m */; };
 		55F9DFFC22B22EAD00900145 /* CityFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9DFFB22B22EAD00900145 /* CityFormViewController.m */; };
 		55F9DFFF22B230DC00900145 /* CitiesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9DFFE22B230DC00900145 /* CitiesTableViewController.m */; };
@@ -56,7 +55,6 @@
 		55F9DFE222B22ACA00900145 /* TableViewTest2_0UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewTest2_0UITests.m; sourceTree = "<group>"; };
 		55F9DFE422B22ACA00900145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55F9DFF422B22C8C00900145 /* CityFormDelegateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityFormDelegateProtocol.h; sourceTree = "<group>"; };
-		55F9DFF522B22C8C00900145 /* CityFormDelegateProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityFormDelegateProtocol.m; sourceTree = "<group>"; };
 		55F9DFF722B22D7A00900145 /* City.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
 		55F9DFF822B22D7A00900145 /* City.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
 		55F9DFFA22B22EAD00900145 /* CityFormViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityFormViewController.h; sourceTree = "<group>"; };
@@ -122,7 +120,6 @@
 				55F9DFFA22B22EAD00900145 /* CityFormViewController.h */,
 				55F9DFFB22B22EAD00900145 /* CityFormViewController.m */,
 				55F9DFF422B22C8C00900145 /* CityFormDelegateProtocol.h */,
-				55F9DFF522B22C8C00900145 /* CityFormDelegateProtocol.m */,
 				55F9DFF722B22D7A00900145 /* City.h */,
 				55F9DFF822B22D7A00900145 /* City.m */,
 				55F9DFC422B22AC900900145 /* Main.storyboard */,
@@ -282,7 +279,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55F9DFF622B22C8C00900145 /* CityFormDelegateProtocol.m in Sources */,
 				55F9DFFC22B22EAD00900145 /* CityFormViewController.m in Sources */,
 				55F9DFC322B22AC900900145 /* ViewController.m in Sources */,
 				55F9DFFF22B230DC00900145 /* CitiesTableViewController.m in Sources */,
