@@ -26,7 +26,8 @@
 		5515C65F22B15E860062C47A /* prostheticdog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5515C65522B15E850062C47A /* prostheticdog.jpg */; };
 		5515C66022B15E860062C47A /* happyrotty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5515C65622B15E850062C47A /* happyrotty.jpg */; };
 		5515C66322B169D20062C47A /* ColorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5515C66222B169D20062C47A /* ColorCell.m */; };
-		5515C66922B1A66D0062C47A /* DogCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5515C66822B1A66D0062C47A /* DogCollectionViewLayout.m */; };
+		5527AC3422B1C3C1004F3605 /* DogCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5527AC3322B1C3C1004F3605 /* DogCollectionViewCell.m */; };
+		5527AC3722B1CD5E004F3605 /* SectionCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5527AC3622B1CD5E004F3605 /* SectionCollectionReusableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,8 +76,10 @@
 		5515C65622B15E850062C47A /* happyrotty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = happyrotty.jpg; sourceTree = "<group>"; };
 		5515C66122B169D20062C47A /* ColorCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorCell.h; sourceTree = "<group>"; };
 		5515C66222B169D20062C47A /* ColorCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorCell.m; sourceTree = "<group>"; };
-		5515C66722B1A66D0062C47A /* DogCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DogCollectionViewLayout.h; sourceTree = "<group>"; };
-		5515C66822B1A66D0062C47A /* DogCollectionViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DogCollectionViewLayout.m; sourceTree = "<group>"; };
+		5527AC3222B1C3C1004F3605 /* DogCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DogCollectionViewCell.h; sourceTree = "<group>"; };
+		5527AC3322B1C3C1004F3605 /* DogCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DogCollectionViewCell.m; sourceTree = "<group>"; };
+		5527AC3522B1CD5E004F3605 /* SectionCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SectionCollectionReusableView.h; sourceTree = "<group>"; };
+		5527AC3622B1CD5E004F3605 /* SectionCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SectionCollectionReusableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,8 +134,10 @@
 				5515C61C22B14B590062C47A /* AppDelegate.m */,
 				5515C61E22B14B590062C47A /* ViewController.h */,
 				5515C61F22B14B590062C47A /* ViewController.m */,
-				5515C66722B1A66D0062C47A /* DogCollectionViewLayout.h */,
-				5515C66822B1A66D0062C47A /* DogCollectionViewLayout.m */,
+				5527AC3522B1CD5E004F3605 /* SectionCollectionReusableView.h */,
+				5527AC3622B1CD5E004F3605 /* SectionCollectionReusableView.m */,
+				5527AC3222B1C3C1004F3605 /* DogCollectionViewCell.h */,
+				5527AC3322B1C3C1004F3605 /* DogCollectionViewCell.m */,
 				5515C62122B14B590062C47A /* Main.storyboard */,
 				5515C66122B169D20062C47A /* ColorCell.h */,
 				5515C66222B169D20062C47A /* ColorCell.m */,
@@ -312,11 +317,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5515C66922B1A66D0062C47A /* DogCollectionViewLayout.m in Sources */,
 				5515C62022B14B590062C47A /* ViewController.m in Sources */,
+				5527AC3722B1CD5E004F3605 /* SectionCollectionReusableView.m in Sources */,
 				5515C66322B169D20062C47A /* ColorCell.m in Sources */,
 				5515C62B22B14B5A0062C47A /* main.m in Sources */,
 				5515C61D22B14B590062C47A /* AppDelegate.m in Sources */,
+				5527AC3422B1C3C1004F3605 /* DogCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
