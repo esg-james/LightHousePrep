@@ -15,8 +15,4 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)addCity:(City *)city;
 
 @end
-@interface CityFormDelegateProtocol : NSObject
-
-@end
-
 NS_ASSUME_NONNULL_END

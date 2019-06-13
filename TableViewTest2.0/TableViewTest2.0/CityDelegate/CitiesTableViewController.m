@@ -34,6 +34,7 @@
 
 
 - (void)addCity:(City *)city {
+    if(city.city != nil)
     [self.cities addObject:city.city];
     [self.tableView reloadData];
 

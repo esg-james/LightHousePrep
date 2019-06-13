@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		55F9DFC022B22AC900900145 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9DFBF22B22AC900900145 /* AppDelegate.m */; };
-		55F9DFC322B22AC900900145 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9DFC222B22AC900900145 /* ViewController.m */; };
 		55F9DFC622B22AC900900145 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F9DFC422B22AC900900145 /* Main.storyboard */; };
 		55F9DFC822B22ACA00900145 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F9DFC722B22ACA00900145 /* Assets.xcassets */; };
 		55F9DFCB22B22ACA00900145 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F9DFC922B22ACA00900145 /* LaunchScreen.storyboard */; };
@@ -18,6 +17,9 @@
 		55F9DFF922B22D7A00900145 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9DFF822B22D7A00900145 /* City.m */; };
 		55F9DFFC22B22EAD00900145 /* CityFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9DFFB22B22EAD00900145 /* CityFormViewController.m */; };
 		55F9DFFF22B230DC00900145 /* CitiesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9DFFE22B230DC00900145 /* CitiesTableViewController.m */; };
+		55F9E00722B2E21300900145 /* ColorCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9E00622B2E21300900145 /* ColorCollectionViewController.m */; };
+		55F9E00C22B2E2E200900145 /* NewColourCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9E00B22B2E2E200900145 /* NewColourCell.m */; };
+		55F9E01B22B2E9DA00900145 /* NewColourFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9E01A22B2E9DA00900145 /* NewColourFormViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +43,6 @@
 		55F9DFBB22B22AC900900145 /* TableViewTest2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewTest2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F9DFBE22B22AC900900145 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		55F9DFBF22B22AC900900145 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		55F9DFC122B22AC900900145 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		55F9DFC222B22AC900900145 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		55F9DFC522B22AC900900145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55F9DFC722B22ACA00900145 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55F9DFCA22B22ACA00900145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +61,13 @@
 		55F9DFFB22B22EAD00900145 /* CityFormViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityFormViewController.m; sourceTree = "<group>"; };
 		55F9DFFD22B230DC00900145 /* CitiesTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CitiesTableViewController.h; sourceTree = "<group>"; };
 		55F9DFFE22B230DC00900145 /* CitiesTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CitiesTableViewController.m; sourceTree = "<group>"; };
+		55F9E00522B2E21300900145 /* ColorCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorCollectionViewController.h; sourceTree = "<group>"; };
+		55F9E00622B2E21300900145 /* ColorCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorCollectionViewController.m; sourceTree = "<group>"; };
+		55F9E00A22B2E2E200900145 /* NewColourCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewColourCell.h; sourceTree = "<group>"; };
+		55F9E00B22B2E2E200900145 /* NewColourCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewColourCell.m; sourceTree = "<group>"; };
+		55F9E01822B2E5B200900145 /* NewColourDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewColourDelegate.h; sourceTree = "<group>"; };
+		55F9E01922B2E9DA00900145 /* NewColourFormViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewColourFormViewController.h; sourceTree = "<group>"; };
+		55F9E01A22B2E9DA00900145 /* NewColourFormViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewColourFormViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,15 +120,8 @@
 			children = (
 				55F9DFBE22B22AC900900145 /* AppDelegate.h */,
 				55F9DFBF22B22AC900900145 /* AppDelegate.m */,
-				55F9DFC122B22AC900900145 /* ViewController.h */,
-				55F9DFC222B22AC900900145 /* ViewController.m */,
-				55F9DFFD22B230DC00900145 /* CitiesTableViewController.h */,
-				55F9DFFE22B230DC00900145 /* CitiesTableViewController.m */,
-				55F9DFFA22B22EAD00900145 /* CityFormViewController.h */,
-				55F9DFFB22B22EAD00900145 /* CityFormViewController.m */,
-				55F9DFF422B22C8C00900145 /* CityFormDelegateProtocol.h */,
-				55F9DFF722B22D7A00900145 /* City.h */,
-				55F9DFF822B22D7A00900145 /* City.m */,
+				55F9E00122B2D7CE00900145 /* PictureDelegate */,
+				55F9E00022B2D72900900145 /* CityDelegate */,
 				55F9DFC422B22AC900900145 /* Main.storyboard */,
 				55F9DFC722B22ACA00900145 /* Assets.xcassets */,
 				55F9DFC922B22ACA00900145 /* LaunchScreen.storyboard */,
@@ -147,6 +147,34 @@
 				55F9DFE422B22ACA00900145 /* Info.plist */,
 			);
 			path = TableViewTest2.0UITests;
+			sourceTree = "<group>";
+		};
+		55F9E00022B2D72900900145 /* CityDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				55F9DFFD22B230DC00900145 /* CitiesTableViewController.h */,
+				55F9DFFE22B230DC00900145 /* CitiesTableViewController.m */,
+				55F9DFFA22B22EAD00900145 /* CityFormViewController.h */,
+				55F9DFFB22B22EAD00900145 /* CityFormViewController.m */,
+				55F9DFF422B22C8C00900145 /* CityFormDelegateProtocol.h */,
+				55F9DFF722B22D7A00900145 /* City.h */,
+				55F9DFF822B22D7A00900145 /* City.m */,
+			);
+			path = CityDelegate;
+			sourceTree = "<group>";
+		};
+		55F9E00122B2D7CE00900145 /* PictureDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				55F9E00522B2E21300900145 /* ColorCollectionViewController.h */,
+				55F9E00622B2E21300900145 /* ColorCollectionViewController.m */,
+				55F9E00A22B2E2E200900145 /* NewColourCell.h */,
+				55F9E00B22B2E2E200900145 /* NewColourCell.m */,
+				55F9E01922B2E9DA00900145 /* NewColourFormViewController.h */,
+				55F9E01A22B2E9DA00900145 /* NewColourFormViewController.m */,
+				55F9E01822B2E5B200900145 /* NewColourDelegate.h */,
+			);
+			path = PictureDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,10 +307,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55F9E00722B2E21300900145 /* ColorCollectionViewController.m in Sources */,
+				55F9E01B22B2E9DA00900145 /* NewColourFormViewController.m in Sources */,
 				55F9DFFC22B22EAD00900145 /* CityFormViewController.m in Sources */,
-				55F9DFC322B22AC900900145 /* ViewController.m in Sources */,
 				55F9DFFF22B230DC00900145 /* CitiesTableViewController.m in Sources */,
 				55F9DFF922B22D7A00900145 /* City.m in Sources */,
+				55F9E00C22B2E2E200900145 /* NewColourCell.m in Sources */,
 				55F9DFCE22B22ACA00900145 /* main.m in Sources */,
 				55F9DFC022B22AC900900145 /* AppDelegate.m in Sources */,
 			);
