@@ -7,6 +7,7 @@
 //
 
 #import "NewColourFormViewController.h"
+#import "NewColourCell.h"
 
 @interface NewColourFormViewController ()
 
@@ -36,15 +37,27 @@
 */
 - (IBAction)setColourButton:(id)sender {
     
-    self.theColour = [UIColor colorWithRed:[self.rTextField.text intValue]/255.0 green:[self.gTextField.text intValue]/255.0 blue:[self.bTextField.text intValue]/255.0 alpha:1.0];
+    CGFloat red = [self.rTextField.text intValue]/255.0;
+    CGFloat green = [self.gTextField.text intValue]/255.0;
+    CGFloat blue = [self.bTextField.text intValue]/255.0;
+    
+    self.theColour = [UIColor colorWithRed:red green:green blue:blue alpha:1.0];
     
     self.colorView.backgroundColor = self.theColour;
+    
     
 }
 
 - (IBAction)done:(id)sender {
     
-    
+    UIColor *userInput = self.theColour;
+    if(userInput != nil) {
+        
+        NewColourCell *city = [[NewColourCell alloc]init];
+        city.colour = self.theColour;
+        [self.delegate addCell:city];
+    }
+    [self.navigationController popViewControllerAnimated:YES];
     
 }
 @end

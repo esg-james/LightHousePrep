@@ -54,6 +54,16 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
+    if([segue.identifier isEqualToString: @"addCity"]) {
+        NewColourFormViewController *colourVC = segue.destinationViewController.childViewControllers.firstObject;
+        
+        colourVC.delegate = self;
+    }
+    else if([segue.identifier isEqualToString: @"newColour"]) {
+        NewColourFormViewController *colourVC = segue.destinationViewController;
+        
+        colourVC.delegate = self;
+    }
     
 }
 #pragma mark <UICollectionViewDataSource>
@@ -72,40 +82,9 @@ static NSString * const reuseIdentifier = @"Cell";
     if(cell == nil) {
         cell = [[UICollectionViewCell alloc]initWithFrame:self.view.frame];
     }
-    NSLog(@"%ld",indexPath.row);
     cell.backgroundColor = [self.colours objectAtIndex:indexPath.row];
     return cell;
 }
 
-#pragma mark <UICollectionViewDelegate>
-
-/*
-// Uncomment this method to specify if the specified item should be highlighted during tracking
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-	return YES;
-}
-*/
-
-/*
-// Uncomment this method to specify if the specified item should be selected
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-*/
-
-/*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
-}
-
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
-}
-
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
-}
-*/
 
 @end

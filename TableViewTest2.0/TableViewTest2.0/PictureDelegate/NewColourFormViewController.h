@@ -12,12 +12,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NewColourFormViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIView *colorView;
+@property (weak,nonatomic) IBOutlet UIView *colorView;
 @property (weak, nonatomic) IBOutlet UITextField *rTextField;
 @property (weak, nonatomic) IBOutlet UITextField *gTextField;
 @property (weak, nonatomic) IBOutlet UITextField *bTextField;
 
-@property (weak,nonatomic) UIColor *theColour;
+@property (nonatomic) UIColor *theColour;
 
 @property (nonatomic, weak) id  <NewColourDelegate>  delegate;
 
