@@ -20,6 +20,20 @@
 		55F9E00722B2E21300900145 /* ColorCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9E00622B2E21300900145 /* ColorCollectionViewController.m */; };
 		55F9E00C22B2E2E200900145 /* NewColourCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9E00B22B2E2E200900145 /* NewColourCell.m */; };
 		55F9E01B22B2E9DA00900145 /* NewColourFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9E01A22B2E9DA00900145 /* NewColourFormViewController.m */; };
+		55F9E01F22B3290B00900145 /* ImageCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9E01E22B3290B00900145 /* ImageCollectionViewController.m */; };
+		55F9E02322B329AB00900145 /* NewImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9E02222B329AB00900145 /* NewImageCell.m */; };
+		55F9E02622B32AEB00900145 /* NewImageFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9E02522B32AEB00900145 /* NewImageFormViewController.m */; };
+		55F9E03122B32C4600900145 /* happyrotty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55F9E02722B32C4400900145 /* happyrotty.jpg */; };
+		55F9E03222B32C4600900145 /* babynuggets.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55F9E02822B32C4500900145 /* babynuggets.jpg */; };
+		55F9E03322B32C4600900145 /* prostheticdog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55F9E02922B32C4500900145 /* prostheticdog.jpg */; };
+		55F9E03422B32C4600900145 /* maddog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55F9E02A22B32C4500900145 /* maddog.jpg */; };
+		55F9E03522B32C4600900145 /* pugdog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55F9E02B22B32C4500900145 /* pugdog.jpg */; };
+		55F9E03622B32C4600900145 /* morenugget.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55F9E02C22B32C4500900145 /* morenugget.jpg */; };
+		55F9E03722B32C4600900145 /* beautifulhusky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55F9E02D22B32C4500900145 /* beautifulhusky.jpg */; };
+		55F9E03822B32C4600900145 /* fancydog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55F9E02E22B32C4600900145 /* fancydog.jpg */; };
+		55F9E03922B32C4600900145 /* puffdog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55F9E02F22B32C4600900145 /* puffdog.jpg */; };
+		55F9E03A22B32C4600900145 /* dogtrack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55F9E03022B32C4600900145 /* dogtrack.jpg */; };
+		55F9E03D22B3388500900145 /* CityDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9E03C22B3388500900145 /* CityDetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +82,25 @@
 		55F9E01822B2E5B200900145 /* NewColourDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewColourDelegate.h; sourceTree = "<group>"; };
 		55F9E01922B2E9DA00900145 /* NewColourFormViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewColourFormViewController.h; sourceTree = "<group>"; };
 		55F9E01A22B2E9DA00900145 /* NewColourFormViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewColourFormViewController.m; sourceTree = "<group>"; };
+		55F9E01D22B3290B00900145 /* ImageCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCollectionViewController.h; sourceTree = "<group>"; };
+		55F9E01E22B3290B00900145 /* ImageCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionViewController.m; sourceTree = "<group>"; };
+		55F9E02022B3294100900145 /* ImageDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageDelegate.h; sourceTree = "<group>"; };
+		55F9E02122B329AB00900145 /* NewImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewImageCell.h; sourceTree = "<group>"; };
+		55F9E02222B329AB00900145 /* NewImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewImageCell.m; sourceTree = "<group>"; };
+		55F9E02422B32AEB00900145 /* NewImageFormViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewImageFormViewController.h; sourceTree = "<group>"; };
+		55F9E02522B32AEB00900145 /* NewImageFormViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewImageFormViewController.m; sourceTree = "<group>"; };
+		55F9E02722B32C4400900145 /* happyrotty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = happyrotty.jpg; path = ../../CollectionViews/CollectionViews/happyrotty.jpg; sourceTree = "<group>"; };
+		55F9E02822B32C4500900145 /* babynuggets.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = babynuggets.jpg; path = ../../CollectionViews/CollectionViews/babynuggets.jpg; sourceTree = "<group>"; };
+		55F9E02922B32C4500900145 /* prostheticdog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = prostheticdog.jpg; path = ../../CollectionViews/CollectionViews/prostheticdog.jpg; sourceTree = "<group>"; };
+		55F9E02A22B32C4500900145 /* maddog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = maddog.jpg; path = ../../CollectionViews/CollectionViews/maddog.jpg; sourceTree = "<group>"; };
+		55F9E02B22B32C4500900145 /* pugdog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pugdog.jpg; path = ../../CollectionViews/CollectionViews/pugdog.jpg; sourceTree = "<group>"; };
+		55F9E02C22B32C4500900145 /* morenugget.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = morenugget.jpg; path = ../../CollectionViews/CollectionViews/morenugget.jpg; sourceTree = "<group>"; };
+		55F9E02D22B32C4500900145 /* beautifulhusky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = beautifulhusky.jpg; path = ../../CollectionViews/CollectionViews/beautifulhusky.jpg; sourceTree = "<group>"; };
+		55F9E02E22B32C4600900145 /* fancydog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fancydog.jpg; path = ../../CollectionViews/CollectionViews/fancydog.jpg; sourceTree = "<group>"; };
+		55F9E02F22B32C4600900145 /* puffdog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = puffdog.jpg; path = ../../CollectionViews/CollectionViews/puffdog.jpg; sourceTree = "<group>"; };
+		55F9E03022B32C4600900145 /* dogtrack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dogtrack.jpg; path = ../../CollectionViews/CollectionViews/dogtrack.jpg; sourceTree = "<group>"; };
+		55F9E03B22B3388500900145 /* CityDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityDetailsViewController.h; sourceTree = "<group>"; };
+		55F9E03C22B3388500900145 /* CityDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityDetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,10 +153,21 @@
 			children = (
 				55F9DFBE22B22AC900900145 /* AppDelegate.h */,
 				55F9DFBF22B22AC900900145 /* AppDelegate.m */,
+				55F9E01C22B328E000900145 /* ImageDelegate */,
 				55F9E00122B2D7CE00900145 /* PictureDelegate */,
 				55F9E00022B2D72900900145 /* CityDelegate */,
 				55F9DFC422B22AC900900145 /* Main.storyboard */,
 				55F9DFC722B22ACA00900145 /* Assets.xcassets */,
+				55F9E02822B32C4500900145 /* babynuggets.jpg */,
+				55F9E02D22B32C4500900145 /* beautifulhusky.jpg */,
+				55F9E03022B32C4600900145 /* dogtrack.jpg */,
+				55F9E02E22B32C4600900145 /* fancydog.jpg */,
+				55F9E02722B32C4400900145 /* happyrotty.jpg */,
+				55F9E02A22B32C4500900145 /* maddog.jpg */,
+				55F9E02C22B32C4500900145 /* morenugget.jpg */,
+				55F9E02922B32C4500900145 /* prostheticdog.jpg */,
+				55F9E02F22B32C4600900145 /* puffdog.jpg */,
+				55F9E02B22B32C4500900145 /* pugdog.jpg */,
 				55F9DFC922B22ACA00900145 /* LaunchScreen.storyboard */,
 				55F9DFCC22B22ACA00900145 /* Info.plist */,
 				55F9DFCD22B22ACA00900145 /* main.m */,
@@ -159,6 +203,8 @@
 				55F9DFF422B22C8C00900145 /* CityFormDelegateProtocol.h */,
 				55F9DFF722B22D7A00900145 /* City.h */,
 				55F9DFF822B22D7A00900145 /* City.m */,
+				55F9E03B22B3388500900145 /* CityDetailsViewController.h */,
+				55F9E03C22B3388500900145 /* CityDetailsViewController.m */,
 			);
 			path = CityDelegate;
 			sourceTree = "<group>";
@@ -175,6 +221,20 @@
 				55F9E01822B2E5B200900145 /* NewColourDelegate.h */,
 			);
 			path = PictureDelegate;
+			sourceTree = "<group>";
+		};
+		55F9E01C22B328E000900145 /* ImageDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				55F9E01D22B3290B00900145 /* ImageCollectionViewController.h */,
+				55F9E01E22B3290B00900145 /* ImageCollectionViewController.m */,
+				55F9E02022B3294100900145 /* ImageDelegate.h */,
+				55F9E02122B329AB00900145 /* NewImageCell.h */,
+				55F9E02222B329AB00900145 /* NewImageCell.m */,
+				55F9E02422B32AEB00900145 /* NewImageFormViewController.h */,
+				55F9E02522B32AEB00900145 /* NewImageFormViewController.m */,
+			);
+			path = ImageDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,9 +340,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55F9E03222B32C4600900145 /* babynuggets.jpg in Resources */,
+				55F9E03322B32C4600900145 /* prostheticdog.jpg in Resources */,
+				55F9E03A22B32C4600900145 /* dogtrack.jpg in Resources */,
+				55F9E03422B32C4600900145 /* maddog.jpg in Resources */,
 				55F9DFCB22B22ACA00900145 /* LaunchScreen.storyboard in Resources */,
+				55F9E03622B32C4600900145 /* morenugget.jpg in Resources */,
+				55F9E03122B32C4600900145 /* happyrotty.jpg in Resources */,
 				55F9DFC822B22ACA00900145 /* Assets.xcassets in Resources */,
 				55F9DFC622B22AC900900145 /* Main.storyboard in Resources */,
+				55F9E03722B32C4600900145 /* beautifulhusky.jpg in Resources */,
+				55F9E03922B32C4600900145 /* puffdog.jpg in Resources */,
+				55F9E03822B32C4600900145 /* fancydog.jpg in Resources */,
+				55F9E03522B32C4600900145 /* pugdog.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,9 +381,13 @@
 				55F9E01B22B2E9DA00900145 /* NewColourFormViewController.m in Sources */,
 				55F9DFFC22B22EAD00900145 /* CityFormViewController.m in Sources */,
 				55F9DFFF22B230DC00900145 /* CitiesTableViewController.m in Sources */,
+				55F9E03D22B3388500900145 /* CityDetailsViewController.m in Sources */,
+				55F9E02322B329AB00900145 /* NewImageCell.m in Sources */,
 				55F9DFF922B22D7A00900145 /* City.m in Sources */,
+				55F9E02622B32AEB00900145 /* NewImageFormViewController.m in Sources */,
 				55F9E00C22B2E2E200900145 /* NewColourCell.m in Sources */,
 				55F9DFCE22B22ACA00900145 /* main.m in Sources */,
+				55F9E01F22B3290B00900145 /* ImageCollectionViewController.m in Sources */,
 				55F9DFC022B22AC900900145 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

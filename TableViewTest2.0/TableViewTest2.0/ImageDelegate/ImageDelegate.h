@@ -1,5 +1,5 @@
 //
-//  City.h
+//  ImageDelegate.h
 //  TableViewTest2.0
 //
 //  Created by James Oliver on 2019-06-13.
@@ -7,13 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NewImageCell.h"
 
-NS_ASSUME_NONNULL_BEGIN
+@protocol ImageCollectionViewDelegate <NSObject>
 
-@interface City : NSObject
-
-@property (nonatomic) NSString *city;
+-(void)changeImage:(NewImageCell *)image;
 
 @end
-
-NS_ASSUME_NONNULL_END

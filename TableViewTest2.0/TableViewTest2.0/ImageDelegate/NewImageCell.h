@@ -1,19 +1,19 @@
 //
-//  CityFormDelegateProtocol.h
+//  NewImageCell.h
 //  TableViewTest2.0
 //
 //  Created by James Oliver on 2019-06-13.
 //  Copyright © 2019 James Oliver. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "City.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-@protocol NewCityFormDelegate <NSObject>
 
--(void)addCity:(City *)city;
--(void)editCity:(City *)city;
+@interface NewImageCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *dogImageCell;
+
 
 @end
+
 NS_ASSUME_NONNULL_END

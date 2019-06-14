@@ -17,6 +17,8 @@
 
 - (IBAction)done:(id)sender;
 
+@property (nonatomic) City *city;
+
 @end
 
 @implementation CityFormViewController
@@ -68,7 +70,7 @@
     if(userInput != nil) {
         
         City *city = [[City alloc]init];
-        city.city = self.cityTextField.text;
+        city.city = userInput;
         [self.delegate addCity:city];
     }
     [self.navigationController popViewControllerAnimated:YES];

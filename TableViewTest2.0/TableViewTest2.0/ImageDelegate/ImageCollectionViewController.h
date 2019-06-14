@@ -1,5 +1,5 @@
 //
-//  CitiesTableViewController.h
+//  ImageCollectionViewController.h
 //  TableViewTest2.0
 //
 //  Created by James Oliver on 2019-06-13.
@@ -7,14 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CityFormDelegateProtocol.h"
-
-
+#import "ImageDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CitiesTableViewController : UITableViewController <NewCityFormDelegate>
-@property (nonatomic) NSString *theCity;
+@interface ImageCollectionViewController : UICollectionViewController <ImageCollectionViewDelegate>
+
 @end
 
 NS_ASSUME_NONNULL_END

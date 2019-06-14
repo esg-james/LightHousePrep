@@ -8,6 +8,7 @@
 
 #import "CitiesTableViewController.h"
 #import "CityFormViewController.h"
+#import "CityDetailsViewController.h"
 
 @interface CitiesTableViewController () 
 
@@ -40,15 +41,15 @@
 
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if([segue.identifier isEqualToString: @"addCity"]) {
-        CityFormViewController *cityVC = segue.destinationViewController.childViewControllers.firstObject;
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UITableViewCell *)sender {
+    if([segue.identifier isEqualToString: @"editCity"]) {
         
+        CityDetailsViewController *cityVC = segue.destinationViewController;
+        cityVC.theCity = sender.textLabel.text;
         cityVC.delegate = self;
     }
     else if([segue.identifier isEqualToString: @"newCity"]) {
         CityFormViewController *cityVC = segue.destinationViewController;
-        
         cityVC.delegate = self;
     }
     
@@ -72,6 +73,11 @@
     
 }
 
+- (void)editCity:(City *)city {
+    if(city != nil)
+        [self.cities addObject:city.city];
+    [self.tableView reloadData];
+}
 /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
  if segue.identifier == "addCity" {
  guard let newCityFormVC = segue.destination.children.first as? NewCityForm else {
